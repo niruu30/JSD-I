@@ -28,6 +28,7 @@ img {
 }
 .question {
     margin-bottom: 10px;
+    white-space: pre-line;
 }
 .options label {
     display: block;

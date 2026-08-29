@@ -2,2468 +2,1604 @@ const quizData = [
     {
         id: "q1",
         isMultiple: false,
-        question: "Universal Containers wants to back up all of the data and attachments in its Salesforce org once month. Which approach should a developer use to meet this requirement?",
+        question: "A developer initiates a server with the file server.js and adds dependencies in the source code ' s package.json that are required to run the server. Which command should the developer run to start the server locally?",
         options: [
-            { letter: "A", text: "Use the Data Loader command line." },
-            { letter: "B", text: "Create a Schedulable Apex class." },
-            { letter: "C", text: "Schedule a report." },
-            { letter: "D", text: "Define a Data Export scheduled job." }
+            { letter: "A", text: "npm start server.js" },
+            { letter: "B", text: "npm start" },
+            { letter: "C", text: "start server.js" },
+            { letter: "D", text: "node start" }
         ],
-        answer: "D"
+        answer: "B"
     },
     {
         id: "q2",
         isMultiple: false,
-        question: "Cloud Kicks Fitness, an ISV Salesforce partner, is developing a managed package application. One of the application modules allows the user to calculate body fat using the Apex class, BodyFat, and its method, calculateBodyFat(). The product owner wants to ensure this method is accessible by the consumer of the application when developing customizations outside the ISV's package namespace.\nWhich approach should a developer take to ensure calculateBodyFat() is accessible outside the package namespace?",
+        question: "Value of: true + 3 + ' 100 ' + null",
         options: [
-            { letter: "A", text: "Declare the class and method using the public access modifier." },
-            { letter: "B", text: "Declare the class as global and use the public access modifier on the method." },
-            { letter: "C", text: "Declare the class as public and use the global access modifier on the method." },
-            { letter: "D", text: "Declare the class and method using the global access modifier." }
-        ],
-        answer: "D"
-    },
-    {
-        id: "q3",
-        isMultiple: false,
-        question: "As part of a data cleanup strategy, AW Computing wants to proactively delete associated opportunity records when the related Account is deleted. Which automation tool should be used to meet this business requirement?",
-        options: [
-            { letter: "A", text: "Workflow Rules" },
-            { letter: "B", text: "Scheduled job" },
-            { letter: "C", text: "Record-Triggered Flow" },
-            { letter: "D", text: "Process Builder" }
+            { letter: "A", text: "\" 4100 \"" },
+            { letter: "B", text: "104" },
+            { letter: "C", text: "\"4100null\"" },
+            { letter: "D", text: "\"220null\"" }
         ],
         answer: "C"
     },
     {
+        id: "q3",
+        isMultiple: false,
+        question: "Considering type coercion, what does the following expression evaluate to? true + ' 13 ' + NaN",
+        options: [
+            { letter: "A", text: "\' 113NaN \'" },
+            { letter: "B", text: "\' true13NaN \'" },
+            { letter: "C", text: "14" },
+            { letter: "D", text: "\' true13 \'" }
+        ],
+        answer: "B"
+    },
+    {
         id: "q4",
         isMultiple: false,
-        question: "What should be used to create scratch orgs?",
+        question: "A developer needs to debug a Node.js web server because a runtime error keeps occurring at one of the endpoints. The developer wants to test the endpoint on a local machine and make the request against a local server to look at the behavior. In the source code, the server.js file will start the server. The developer wants to debug the Node.js server only using the terminal. \nWhich command can the developer use to open the CLI debugger in their current terminal window? \n(With corrected typing errors: node_inspect # node inspect, node_start_inspect # node start inspect.)",
         options: [
-            { letter: "A", text: "Developer Console" },
-            { letter: "B", text: "Salesforce CLI" },
-            { letter: "C", text: "Workbench" },
-            { letter: "D", text: "Sandbox refresh" }
+            { letter: "A", text: "node start inspect server.js" },
+            { letter: "B", text: "node inspect server.js" },
+            { letter: "C", text: "node server.js --inspect" },
+            { letter: "D", text: "node -i server.js" }
         ],
         answer: "B"
     },
     {
         id: "q5",
         isMultiple: false,
-        question: "Which salesforce org has a complete duplicate copy of the production org including data and configuration?",
+        question: "Which statement accurately describes an aspect of promises?",
         options: [
-            { letter: "A", text: "Developer Pro Sandbox" },
-            { letter: "B", text: "Partial Copy Sandbox" },
-            { letter: "C", text: "Production" },
-            { letter: "D", text: "Full Sandbox" }
+            { letter: "A", text: "Arguments for the callback function passed to .then() are optional." },
+            { letter: "B", text: ".then() cannot be added after a catch." },
+            { letter: "C", text: ".then() manipulates and returns the original promise." },
+            { letter: "D", text: "In a .then() function, returning results is not necessary since callbacks will catch the result of a previous promise." }
         ],
-        answer: "D"
+        answer: "A"
     },
     {
         id: "q6",
-        isMultiple: false,
-        question: "A Salesforce Administrator is creating a record-triggered flow. When certain criteria are met, the flow must call an Apex method to execute complex validation involving several types of objects. When creating the Apex method, which annotation should a developer use to ensure the method. Can be used within the flow?",
+        isMultiple: true,
+        question: "A developer is leading the creation of a new web server for their team that will fulfill API requests from an existing client. The team wants a web server that runs on Node.js, and they want to use the new web framework Minimalist.js. The lead developer wants to advocate for a more seasoned back-end framework that already has a community around it.\nWhich two frameworks could the lead developer advocate for?",
         options: [
-            { letter: "A", text: "@future" },
-            { letter: "B", text: "@RemoteAction" },
-            { letter: "C", text: "@InvocableMethod" },
-            { letter: "D", text: "@AuraEnaled" }
+            { letter: "A", text: "Angular" },
+            { letter: "B", text: "Next" },
+            { letter: "C", text: "Gatsby" },
+            { letter: "D", text: "Next.js" }
         ],
-        answer: "C"
+        answer: ["B", "D"]
     },
     {
         id: "q7",
         isMultiple: false,
-        question: "When a user edits the Postal Code on an Account, a custom Account text field named ''Timezone'' must be updated based on the values in a postalCodeToTimezone_c custom object. What should be built to implement this feature?",
+        question: "A developer imports: \nimport printPrice from ' /path/PricePrettyPrint.js ' ; \nWhat must be true about printPrice for this import to work?",
         options: [
-            { letter: "A", text: "Account custom trigger" },
-            { letter: "B", text: "Account approval process" },
-            { letter: "C", text: "Account assignment rule" },
-            { letter: "D", text: "Account workflow rule" }
+            { letter: "A", text: "printPrice must be a named export" },
+            { letter: "B", text: "printPrice must be an all export" },
+            { letter: "C", text: "printPrice must be the default export" },
+            { letter: "D", text: "printPrice must be a multi export" }
         ],
-        answer: "A"
+        answer: "C"
     },
     {
         id: "q8",
-        isMultiple: false,
-        question: "The values 'High', 'Medium', and 'Low' are Identified as common values for multiple picklist across different object. What is an approach a developer can take to streamline maintenance of the picklist and their values, while also restricting the values to the ones mentioned above?",
+        isMultiple: true,
+        question: "Which three browser specific APIs are available for developers to persist data between page loads?",
         options: [
-            { letter: "A", text: "Create the Picklist on each object and use a Global Picklist Value Set containing the Values." },
-            { letter: "B", text: "Create the Picklist on each object as a required field and select 'Display values alphabeticaly, not in the order entered'." },
-            { letter: "C", text: " Create the Picklist on each object and select 'Restrict picklist to the values defined in the value set'." },
-            { letter: "D", text: "Create the Picklist on each and add a validation rule to ensure data integrity." }
+            { letter: "A", text: "localStorage" },
+            { letter: "B", text: "indexedDB" },
+            { letter: "C", text: "cookies" },
+            { letter: "D", text: "global variables" },
+            { letter: "E", text: "IIFEs" }
         ],
-        answer: "A"
+        answer: ["A", "B", "C"]
     },
     {
         id: "q9",
-        isMultiple: false,
-        question: "A developer writes a trigger on the Account object on the before update event that increments a count field. A workflow rule also increments the count field every time that an Account is created or updated. The field update in the workflow rule is configured to not re-evaluate workflow rules. What is the value of the count field if an Account is inserted with an initial value of zero, assuming no other automation logic is implemented on the Account?",
+        isMultiple: true,
+        question: "const str = ' Salesforce ' ; \nWhich two statements result in the word \" Sales \" ?",
         options: [
-            { letter: "A", text: "1" },
-            { letter: "B", text: "3" },
-            { letter: "C", text: "4" },
-            { letter: "D", text: "2" }
+            { letter: "A", text: "str.substring(0, 5);" },
+            { letter: "B", text: "str.substr(s, 5);" },
+            { letter: "C", text: "str.substring(0, 5);" },
+            { letter: "D", text: "str.substr(0, 5);" }
         ],
-        answer: "D"
+        answer: ["A", "D"]
     },
     {
         id: "q10",
-        isMultiple: false,
-        question: "Which action causes a before trigger to fire by default for Accounts?",
+        isMultiple: true,
+        question: "Refer to the following array: \nlet arr = [1, 2, 3, 4, 5]; \nWhich two lines of code result in a second array, arr2, created such that arr2 is a reference to arr?",
         options: [
-            { letter: "A", text: "Renaming or replacing picklist" },
-            { letter: "B", text: "Importing data using the Data Loader and the Bulk API" },
-            { letter: "C", text: "Converting Leads to Contact accounts" },
-            { letter: "D", text: "Updating addresses using the Mass Address update tool" }
+            { letter: "A", text: "let arr2 = arr.slice(0, 5);" },
+            { letter: "B", text: "let arr2 = Array.from(arr);" },
+            { letter: "C", text: "let arr2 = arr;" },
+            { letter: "D", text: "let arr2 = arr.sort();" }
         ],
-        answer: "B"
+        answer: ["C", "D"]
     },
     {
         id: "q11",
         isMultiple: false,
-        question: "A developer must provide custom user interfaces when users edit a Contact in either Salesforce Classic or Lightning Experience. What should the developer use to override the Contact's Edit button and provide this functionality?",
+        imageUrl: "pics/img1.png",
+        question: "Refer to the code below:",
         options: [
-            { letter: "A", text: "A Visualforce page in Salesforce Classic and a Lightning component in Lightning Experience" },
-            { letter: "B", text: "A Lightning component in 5alesforce Classic and a Lightning component in lightning Experience" },
-            { letter: "C", text: "A Visualforce page in Salesforce Classic and a Lightning page in Lightning Experience" },
-            { letter: "D", text: "A Lightning page in Salesforce Classic and a Visualforce page in Lightning Experience" }
+            { letter: "A", text: "An error" },
+            { letter: "B", text: "NaN" },
+            { letter: "C", text: "undefined" },
+            { letter: "D", text: "\' London \'" }
         ],
-        answer: "A"
+        answer: "B"
     },
     {
         id: "q12",
-        isMultiple: false,
-        question: "AW Computing tracks order information in custom objects called order__c and order_Line_ c- Currently, all shipping information is stored in the order__c object. The company wants to expand Its order application to support split shipments so that any number of order_Line__c records on a single order__c can be shipped to different locations. What should a developer add to fulfill this requirement?",
+        isMultiple: true,
+        imageUrl: "pics/img2.png",
+        question: "A developer needs to dispatch a custom event called update to send information about recordId. Which two options can be inserted at line 02?",
         options: [
-            { letter: "A", text: "Order_shipment_Group_c object and master-detail field on order_Line_c" },
-            { letter: "B", text: "Order_shipment_Group_c object and master-detail field on order_c" },
-            { letter: "C", text: "Order_shipment_Group_c object and master-detail field to order_c and Order Line_c" },
-            { letter: "D", text: "Order_shipment_Group_c object and master-detail field on order_shipment_Group_c" }
+            { letter: "A", text: "{ type: \' update \' , recordId: \' 123abc \' }" },
+            { letter: "B", text: "\' update \' , { detail: { recordId: \' 123abc \' } }" },
+            { letter: "C", text: "\' update \' , \' 123abc \'" },
+            { letter: "D", text: "\' update \' , { recordId: \' 123abc \' }" }
         ],
-        answer: "C"
+        answer: ["B", "D"]
     },
     {
         id: "q13",
         isMultiple: false,
-        question: "What should a developer use to obtain the Id and Name of all the Leads. Accounts, and Contacts that hove the company name 'Universal Containers'?",
+        imageUrl: "pics/img3.png",
+        question: "Which code change should be done for the console to log the following when \" Click me! \" is clicked? \nRow log \nTable log",
         options: [
-            { letter: "A", text: "FIND 'Universal Containers' IN Name Fields RETURNING lead(id, name), account (id, name), contact(id, name)" },
-            { letter: "B", text: "FIND 'Universal Containers' IN CompanyName Fields RETURNING lead(id, name), account (id, name), contact(id, name)" },
-            { letter: "C", text: "SELECT lead(id, name), account (id, name), contact(id, name) FROM Lead, Account, Contact WHERE Name = 'Universal Containers'" },
-            { letter: "D", text: "SELECT Lead.Id, Lead.Name, Account.Id, Account.Name, Contact.Id, Contact.Name FROM Lead, Account, Contact WHERE CompanyName = 'Universal Containers'" }
-        ],
-        answer: "A"
-    },
-    {
-        id: "q14",
-        isMultiple: false,
-        question: "Which aspect of Apex programming is limited due to multitenancy?",
-        options: [
-            { letter: "A", text: "The number of active Apex classes" },
-            { letter: "B", text: "The number of methods in an Apex Class" },
-            { letter: "C", text: "The number of records processed in a loop" },
-            { letter: "D", text: "The number of records returned from database queries" }
+            { letter: "A", text: "Change line 14 to elem.addEventListener( \' click \' , printMessage, true);" },
+            { letter: "B", text: "Remove lines 13 and 14" },
+            { letter: "C", text: "Change line 10 to event.stopPropagation(false);" },
+            { letter: "D", text: "Remove line 10" }
         ],
         answer: "D"
     },
     {
+        id: "q14",
+        isMultiple: true,
+        imageUrl: "pics/img4.png",
+        question: "Which two assert statements are valid tests for this function?",
+        options: [
+            { letter: "A", text: "console.assert(sum3([1, \' 2 \' ]) == 12);" },
+            { letter: "B", text: "console.assert(sum3([ \' hello \' , 2, 3, 4]) === NaN);" },
+            { letter: "C", text: "console.assert(sum3([-3, 2]) === -1);" },
+            { letter: "D", text: "console.assert(sum3([0]) === 0);" }
+        ],
+        answer: ["C", "D"]
+    },
+    {
         id: "q15",
         isMultiple: false,
-        question: "Since Aura application events follow the traditional publish-subscribe model, which method is used to fire an event?",
+        imageUrl: "pics/img5.png",
+        question: "What is logged to the console?",
         options: [
-            { letter: "A", text: "emit()" },
-            { letter: "B", text: "fireEvent()" },
-            { letter: "C", text: "fire()" },
-            { letter: "D", text: "registerEvent()" }
+            { letter: "A", text: "25341" },
+            { letter: "B", text: "12435" },
+            { letter: "C", text: "12534" },
+            { letter: "D", text: "21435" }
         ],
-        answer: "C"
+        answer: "A"
     },
     {
         id: "q16",
         isMultiple: false,
-        question: "A developer needs to have records with specific field values in order to test a new Apex class. What should the developer do to ensure the data is available to the test?",
+        imageUrl: "pics/img6.png",
+        question: "What is the console output?",
         options: [
-            { letter: "A", text: "Use Anonymous Apex to create the required data." },
-            { letter: "B", text: "Use SOQL to query the org for the required data." },
-            { letter: "C", text: "Use Test.loadDataO &lt &gt and reference a CSV file in a static resource." },
-            { letter: "D", text: "Use Test.loadDataO and reference a JSON file in Documents." }
+            { letter: "A", text: "Better student Jackie got 70% on test." },
+            { letter: "B", text: "Uncaught ReferenceError" },
+            { letter: "C", text: "Graduate Student Jane got 100% on test." },
+            { letter: "D", text: "Jackie got 70% on test." }
         ],
         answer: "C"
     },
     {
         id: "q17",
         isMultiple: false,
-        question: "What should a developer do to check the code coverage of a class after running all tests?",
+        imageUrl: "pics/img7.png",
+        question: "This does not print \" Hello World \" .\nWhat change is needed?",
         options: [
-            { letter: "A", text: "View the code coverage percentage or the class using the Overalll code Coverage panel in the Developer Console Test tab." },
-            { letter: "B", text: "Select and run the class on the Apex Test Execution page in the Developer Console." },
-            { letter: "C", text: "View the Class test Percentage tab on the Apex Class list view in Salesforce Setup." },
-            { letter: "D", text: "View the Code Coverage column in the list on the Apex Classes page." }
+            { letter: "A", text: "Change line 2 to console.log( ' Hello ' , name());" },
+            { letter: "B", text: "Change line 7 to }();" },
+            { letter: "C", text: "Change line 9 to sayHello(world)();" },
+            { letter: "D", text: "Change line 5 to function world() {" }
         ],
         answer: "A"
     },
     {
         id: "q18",
         isMultiple: false,
-        question: "Universal Containers has a Visualforce page that displays a table of every Container_c being rented by a given Account. Recently this page failing with a view state limit because some of the customers rent over 10,000 containers. What should a developer change about the Visualforce page to help with the page load errors?",
+        imageUrl: "pics/img8.png",
+        question: "What is logged to the console?",
         options: [
-            { letter: "A", text: "Implement pagination with an OffsetController." },
-            { letter: "B", text: "Use JavaScript remoting with SOQL Offset." },
-            { letter: "C", text: "Use Lazy loading and a transient List variable." },
-            { letter: "D", text: "Implement pagination with a StandardSetController" }
-        ],
-        answer: "D"
-    },
-    {
-        id: "q19",
-        isMultiple: false,
-        question: "A developer Is Integrating with a legacy on-premise SQL database. What should the developer use to ensure the data being Integrated is matched to the right records in Salesforce?",
-        options: [
-            { letter: "A", text: "External Object" },
-            { letter: "B", text: "External ID field" },
-            { letter: "C", text: "Lookup field" },
-            { letter: "D", text: "Formula field" }
-        ],
-        answer: "B"
-    },
-    {
-        id: "q20",
-        isMultiple: false,
-        question: "A developer is creating a Lightning web component to showa list of sales records. The Sales Representative user should be able to see the commission field on each record. The Sales Assistant user should be able to see all fields on the record except the commission field. How should this be enforced so that the component works for both users without showing any errors?",
-        options: [
-            { letter: "A", text: "Use Security. stripInaccessible to remove fields inaccessible to the current user." },
-            { letter: "B", text: "Use Lightning Data Service to get the collection of sales records." },
-            { letter: "C", text: "Use WITH SECURITY_ENFORCED in the SOQL that fetches the data for the component." },
-            { letter: "D", text: " Use Lightning Locker Service to enforce sharing rules and field-level security." }
+            { letter: "A", text: "4 2 1 5 3" },
+            { letter: "B", text: "4 2 1 5 3" },
+            { letter: "C", text: "1 4 2 3 5" },
+            { letter: "D", text: "4 5 1 2 3" }
         ],
         answer: "A"
     },
     {
+        id: "q19",
+        isMultiple: false,
+        imageUrl: "pics/img9.png",
+        question: "A developer is required to write a function that calculates the sum of elements in an array but is getting undefined every time the code is executed. The developer needs to find what is missing in the code below.\nWhich line replacement makes the code work as expected?",
+        options: [
+            { letter: "A", text: "if(arr.length == 0) { return 0; }" },
+            { letter: "B", text: "result = result + current;" },
+            { letter: "C", text: "arr.map((result, current) = > {" },
+            { letter: "D", text: "return result;" }
+        ],
+        answer: "D"
+    },
+    {
+        id: "q20",
+        isMultiple: false,
+        imageUrl: "pics/img10.png",
+        question: "What happens when the code executes?",
+        options: [
+            { letter: "A", text: "The url variable has global scope and line 02 throws an error." },
+            { letter: "B", text: "The url variable has global scope and line 02 executes correctly." },
+            { letter: "C", text: "The url variable has local scope and line 02 executes correctly." },
+            { letter: "D", text: "The url variable has local scope and line 02 throws an error." }
+        ],
+        answer: "B"
+    },
+    {
         id: "q21",
         isMultiple: false,
-        question: "Which scenario is valid for execution by unit tests?",
+        imageUrl: "pics/img11.png",
+        question: "What is the return value of msg when getAvailableilityMessage( \" newUserName \" ) is executed and getAvailableility( \" newUserName \" ) returns false?",
         options: [
-            { letter: "A", text: "Generate a Visualforce PDF with geccontentAsPDF ()." },
-            { letter: "B", text: "Load data from a remote site with a callout." },
-            { letter: "C", text: "Set the created date of a record using a system method." },
-            { letter: "D", text: "Execute anonymous Apex as a different user." }
+            { letter: "A", text: "\" newUserName \"" },
+            { letter: "B", text: "\" msg is not defined \"" },
+            { letter: "C", text: "undefined" },
+            { letter: "D", text: "\" Username available \"" }
         ],
         answer: "C"
     },
     {
         id: "q22",
         isMultiple: false,
-        question: "Universal Containers stores the availability date on each Line Item of an Order and Orders are only shipped when all of the Line Items are available. Which method should be used to calculate the estimated ship date for an Order?",
+        imageUrl: "pics/img12.png",
+        question: "Which JavaScript statement results in changing \" Leo \" to \" The Lion \" ?",
         options: [
-            { letter: "A", text: "Use a LATEST formula on each of the latest availability date fields." },
-            { letter: "B", text: "Use a CEILING formula on each of the Latest availability date fields." },
-            { letter: "C", text: "Use a DAYS formula on each of the availability date fields and a COUNT Roll-Up Summary field on the Order." },
-            { letter: "D", text: "Use a Max Roll-Up Summary field on the Latest availability date fields." }
+            { letter: "A", text: "document.querySelectorAll( \' #main #Leo \' ).innerHTML = \' The Lion \' ;" },
+            { letter: "B", text: "document.querySelector( \' #main li:second-child \' ).innerHTML = \' The Lion \' ;" },
+            { letter: "C", text: "document.querySelectorAll( \' #main li,Leo \' ).innerHTML = \' The Lion \' ;" },
+            { letter: "D", text: "document.querySelector( \' #main li:nth-child(1) \' ).innerHTML = \' The Lion \' ;" }
         ],
         answer: "D"
     },
     {
         id: "q23",
         isMultiple: false,
-        question: "Which statement describes the execution order when trigger are associated to the same object and event?",
+        question: "HTML: \n< p > The current status of an Order: < span id= \" status \" > In Progress < /span > < /p > Which JavaScript statement changes \' In Progress \' to \' Completed \' ?",
         options: [
-            { letter: "A", text: "Triggers are executed in the order they are modified" },
-            { letter: "B", text: "Trigger execution order cannot be guaranteed." },
-            { letter: "C", text: "Triggers are executed in the order they are created." },
-            { letter: "D", text: "Triggers are executed alphabetically by trigger name." }
+            { letter: "A", text: "document.getElementById( \" .status \" ).innerHTML = \' Completed \' ;" },
+            { letter: "B", text: "document.getElementById( \" #status \" ).innerHTML = \' Completed \' ;" },
+            { letter: "C", text: "document.getElementById( \" status \" ).innerHTML = \' Completed \' ;" },
+            { letter: "D", text: "document.getElementById( \" status \" ).Value = \' Completed \' ;" }
         ],
-        answer: "B"
+        answer: "C"
     },
     {
         id: "q24",
         isMultiple: false,
-        question: "The Job_Application__c custom object has a field that is a Master-Detail relationship to the Contact object, where the Contact object is the Master. As part of a feature implementation, a developer needs to retrieve a list containing all Contact records where the related Account Industry is 'Technology' while also retrieving the contact's Job_Application__c records. Based on the object's relationships, what is the most efficient statement to retrieve the list of contacts?",
+        question: "A developer needs the function personalizeWebsiteContent to run when the webpage is fully loaded (HTML and all external resources).\nWhich implementation should be used?",
         options: [
-            { letter: "A", text: "[SELECT Id, (SELECT Id FROM Job_Applications_r) FROM Contact WHERE Account.Industry = 'Technology'];" },
-            { letter: "B", text: "[SELECT Id, (SELECT Id FROM Job_Applications_c) FROM Contact WHERE Accounts.Industry = 'Technology'];" },
-            { letter: "C", text: "[SELECT Id, (SELECT Id FROM Job_Application_c) FROM Contact WHERE Account.Industry = 'Technology'];" },
-            { letter: "D", text: "[SELECT Id, (SELECT Id FROM Job_Applications_r) FROM Contact WHERE Accounts.Industry = 'Technology'];" }
+            { letter: "A", text: "Add a handler to the personalizeWebsiteContent script to handle the DOMContentLoaded event" },
+            { letter: "B", text: "Add a listener to the window object to handle the load event" },
+            { letter: "C", text: "Add a listener to the window object to handle the DOMContentLoaded event" },
+            { letter: "D", text: "Add a handler to the personalizeWebsiteContent script to handle the load event" }
         ],
-        answer: "A"
+        answer: "B"
     },
     {
         id: "q25",
-        isMultiple: false,
-        question: "A developer has the following requirements: * Calculate the total amount on an Order. * Calculate the line amount for each Line Item based on quantity selected and price. * Move Line Items to a different Order if a Line Item is not in stock. Which relationship implementation supports these requirements on its own?",
+        isMultiple: true,
+        question: "Refer to the code below: \nconst addBy = ? \nconst addByEight = addBy(8); \nconst sum = addByEight(50); \nWhich two functions can replace line 01 and return 58 to sum?",
         options: [
-            { letter: "A", text: "Order has a re-parentable lookup field to Line Item." },
-            { letter: "B", text: "Line Item has a re-parentable master-detail field to Order." },
-            { letter: "C", text: "Order has a re-parentable master-detail field to Line Item." },
-            { letter: "D", text: "Line Item has a re-parentable lookup field to Order." }
+            { letter: "A", text: "const addBy = function(num1) {\nreturn function(num2) {\nreturn num1 + num2;\n}\n}" },
+            { letter: "B", text: "const addBy = function(num1) {\nreturn num1 * num2;\n}" },
+            { letter: "C", text: "const addBy = (num1) = > num1 + num2;" },
+            { letter: "D", text: "(Corrected for typing errors)\nconst addBy = (num1) = > {\nreturn function(num2) {\nreturn num1 + num2;\n}\n}" }
         ],
-        answer: "B"
+        answer: ["A", "D"]
     },
     {
         id: "q26",
         isMultiple: false,
-        question: "A developer is writing tests for a class and needs to insert records to validate functionality. Which annotation method should be used to create record for every method in the test class?",
+        question: "What is the value of result when line 10 executes?",
         options: [
-            { letter: "A", text: "@isTest (SeeAllData-true)" },
-            { letter: "B", text: "@TestSetup" },
-            { letter: "C", text: "@StartTest" },
-            { letter: "D", text: "@FreTest" }
-        ],
-        answer: "B"
-    },
-    {
-        id: "q27",
-        isMultiple: false,
-        question: "An org has an existing flow that creates an Opportunity with an Update Records element. A developer must update the flow to also create a 'Contact and store the created Contact's ID on the Opportunity. Which update must the developer make in the flow?",
-        options: [
-            { letter: "A", text: "Add a new Update Records element." },
-            { letter: "B", text: "Add a new Get Records element." },
-            { letter: "C", text: "Add a new Roll back Records element" },
-            { letter: "D", text: "Add a new Create Records element." }
-        ],
-        answer: "D"
-    },
-    {
-        id: "q28",
-        isMultiple: false,
-        question: "Universal Container is building a recruiting app with an Applicant object that stores information about an individual person that represents a job. Each application may apply for more than one job. What should a developer implement to represent that an applicant has applied for a job?",
-        options: [
-            { letter: "A", text: "Lookup field from Applicant to Job" },
-            { letter: "B", text: "Junction object between Applicant and Job" },
-            { letter: "C", text: "Master-detail field from Applicant to Job" },
-            { letter: "D", text: "Formula field on Applicant that references Job" }
-        ],
-        answer: "C"
-    },
-    {
-        id: "q29",
-        isMultiple: false,
-        question: " In the Lightning UI, where should a developer look to find information about a Paused Flow Interview?",
-        options: [
-            { letter: "A", text: "In the system debug log by Altering on Paused Row Interview" },
-            { letter: "B", text: "On the Paused Row Interviews component on the Home page" },
-            { letter: "C", text: "In the Paused Interviews section of the Apex Flex Queue" },
-            { letter: "D", text: "On the Paused Row Interviews related List for a given record" }
-        ],
-        answer: "C"
-    },
-    {
-        id: "q30",
-        isMultiple: false,
-        question: "A developer observes that an Apex test method fails in the Sandbox. To identify the issue, the developer copies the code inside the test method and executes it via the Execute Anonymous tool in the Developer Console. The code then executes with no exceptions or errors. Why did the test method fail in the sandbox and pass in the Developer Console?",
-        options: [
-            { letter: "A", text: "The test method is calling an @future method." },
-            { letter: "B", text: "The test method relies on existing data in the sandbox." },
-            { letter: "C", text: "The test method does not use System.runAs to execute as a specific user." },
-            { letter: "D", text: "The test method has a syntax error in the code." }
-        ],
-        answer: "B"
-    },
-    {
-        id: "q31",
-        isMultiple: false,
-        question: "A developer wrote an Apex method to update a list of Contacts and wants to make it available for use by Lightning web components. Which annotation should the developer add to the Apex method to achieve this?",
-        options: [
-            { letter: "A", text: "@RemoteAction(cacheable=true)" },
-            { letter: "B", text: "@AuraEnabled" },
-            { letter: "C", text: "@AuraEnabled(cacheable=true)" },
-            { letter: "D", text: "@RemoteActio" }
-        ],
-        answer: "B"
-    },
-    {
-        id: "q32",
-        isMultiple: false,
-        question: "Cloud kicks has a multi-screen flow that its call center agents use when handling inbound service desk calls. At one of the steps in the flow, the agents should be presented with a list of order numbers and dates that are retrieved from an external order management system in real time and displayed on the screen. What should a developer use to satisfy this requirement?",
-        options: [
-            { letter: "A", text: "An outbound message" },
-            { letter: "B", text: "An Apex REST class" },
-            { letter: "C", text: "An invocable method" },
-            { letter: "D", text: "An Apex controller" }
-        ],
-        answer: "B"
-    },
-    {
-        id: "q33",
-        isMultiple: false,
-        question: "A developer is migrating a Visualforce page into a Lightning web component. The Visualforce page shows information about a single record. The developer decides to use Lightning Data Service to access record data. Which security consideration should the developer be aware of",
-        options: [
-            { letter: "A", text: "Lightning Data Service ignores field-level security." },
-            { letter: "B", text: "Lightning Data Service handles sharing rules and field-level security." },
-            { letter: "C", text: "The isAccessible ( ) method must be used for field-level access checks" },
-            { letter: "D", text: "The with sharing keyword must be used to enforce sharing rules." }
-        ],
-        answer: "B"
-    },
-    {
-        id: "q34",
-        isMultiple: false,
-        question: "Which Apex class contains methods to return the amount of resources that have been used for a particular governor, such as the number of DML statements?",
-        options: [
-            { letter: "A", text: "OrgLimits" },
-            { letter: "B", text: "Messaging" },
-            { letter: "C", text: "Limits" },
-            { letter: "D", text: "Exception" }
-        ],
-        answer: "C"
-    },
-    {
-        id: "q35",
-        isMultiple: false,
-        question: "What should a developer use to script the deployment and unit test execution as part of continuous integration?",
-        options: [
-            { letter: "A", text: "Salesforce CLI" },
-            { letter: "B", text: "Execute Anonymous" },
-            { letter: "C", text: "Developer Console" },
-            { letter: "D", text: "VS Code" }
+            { letter: "A", text: "Error: myFather.job is not a function" },
+            { letter: "B", text: "undefined Developer" },
+            { letter: "C", text: "John Developer" },
+            { letter: "D", text: "John undefined" }
         ],
         answer: "A"
     },
     {
+        id: "q27",
+        isMultiple: true,
+        question: "Refer to the code declarations below:\nlet str1 = \' Java \' \nlet str2 = \' Script \' ; \nWhich three expressions return the string JavaScript?",
+        options: [
+            { letter: "A", text: "`${str1}${str2}`" },
+            { letter: "B", text: "str1.concat(str2);" },
+            { letter: "C", text: "const({str1, str2});" },
+            { letter: "D", text: "str1 + str2;" },
+            { letter: "E", text: "str1.join(str2);" }
+        ],
+        answer: ["A", "B", "D"]
+    },
+    {
+        id: "q28",
+        isMultiple: false,
+        question: "A developer removes the HTML class attribute from the checkout button, so now it is simply: \n< button > Checkout < /button > \nThere is a test to verify the existence of the checkout button, however it looks for a button with class= \" blue \" \n. The test fails because no such button is found. \nWhich type of test category describes this test?",
+        options: [
+            { letter: "A", text: "True negative" },
+            { letter: "B", text: "True positive" },
+            { letter: "C", text: "False negative" },
+            { letter: "D", text: "False positive" }
+        ],
+        answer: "D"
+    },
+    {
+        id: "q29",
+        isMultiple: true,
+        question: "Given a value, which two options can a developer use to detect if the value is NaN?",
+        options: [
+            { letter: "A", text: "value === Number.NaN" },
+            { letter: "B", text: "value == NaN" },
+            { letter: "C", text: "isNaN(value)" },
+            { letter: "D", text: "Object.is(value, NaN)" }
+        ],
+        answer: ["C", "D"]
+    },
+    {
+        id: "q30",
+        isMultiple: false,
+        question: "Refer to the code: \nconst pi = 3.1415926; \nWhat is the data type of pi?",
+        options: [
+            { letter: "A", text: "Float" },
+            { letter: "B", text: "Double" },
+            { letter: "C", text: "Decimal" },
+            { letter: "D", text: "Number" }
+        ],
+        answer: "D"
+    },
+    {
+        id: "q31",
+        isMultiple: true,
+        question: "A developer wrote the following code to test a sum3 function that takes in an array of numbers and returns the sum of the first three numbers in the array. The test passes:\nlet res = sum3([1, 2, 3]);\nconsole.assert(res === 6);\n\nres = sum3([1, 2, 3, 4]);\nconsole.assert(res === 6);\n\nA different developer made changes to the behavior of sum3 to instead sum all of the numbers present in the array.\nWhich two results occur when running the test on the updated sum3 function?",
+        options: [
+            { letter: "A", text: "The first assertion fails." },
+            { letter: "B", text: "The second assertion passes." },
+            { letter: "C", text: "The second assertion fails." },
+            { letter: "D", text: "The first assertion passes." }
+        ],
+        answer: ["C", "D"]
+    },
+    {
+        id: "q32",
+        isMultiple: false,
+        question: "Refer to the following object:\nconst dog = {\n    firstName: 'Beau',\n    lastName: 'Boo',\n    get fullName() {\n        return this.firstName + ' ' + this.lastName;\n    }\n};\n\nHow can a developer access the fullName property for dog?",
+        options: [
+            { letter: "A", text: "dog.fullName" },
+            { letter: "B", text: "dog.fullName()" },
+            { letter: "C", text: "dog.get.fullName" },
+            { letter: "D", text: "dog.function.fullName()" }
+        ],
+        answer: "A"
+    },
+    {
+        id: "q33",
+        isMultiple: false,
+        question: "A developer creates a class that represents a news story based on the requirements that a Story should have a body, author, and view count. The code is shown below:\nclass Story {\n    // Insert code here\n    this.body = body;\n    this.author = author;\n    this.viewCount = viewCount;\n}\n\nWhich statement should be inserted in the placeholder to allow for a variable to be set to a new instance of a Story with the three attributes correctly populated?",
+        options: [
+            { letter: "A", text: "constructor() {" },
+            { letter: "B", text: "super(body, author, viewCount) {" },
+            { letter: "C", text: "function Story(body, author, viewCount) {" },
+            { letter: "D", text: "constructor(body, author, viewCount) {" }
+        ],
+        answer: "D"
+    },
+    {
+        id: "q34",
+        isMultiple: false,
+        question: "A developer needs to debug a Node.js web server because a runtime error keeps occurring at one of the endpoints. The developer wants to test the endpoint on a local machine and make the request against a local server to look at the behavior. In the source code, the server.js file will start the server. The developer wants to debug the Node.js server only using the terminal.\n\nWhich command can the developer use to open the CLI debugger in their current terminal window?",
+        options: [
+            { letter: "A", text: "node -i server.js" },
+            { letter: "B", text: "node server.js --inspect" },
+            { letter: "C", text: "node start inspect server.js" },
+            { letter: "D", text: "node inspect server.js" }
+        ],
+        answer: "D"
+    },
+    {
+        id: "q35",
+        isMultiple: false,
+        question: "A developer wrote the following code:\nlet x = object.value;\n\ntry {\n    handleObjectValue(x);\n} catch(error) {\n    handleError(error);\n}\n\nThe developer has a getNextValue function to execute after handleObjectValue(), but does not want to execute getNextValue() if an error occurs. How can the developer change the code to ensure this behavior?",
+        options: [
+            { letter: "A", text: "try {\n    handleObjectValue(x);\n} catch(error) {\n    handleError(error);\n} then {\n    getNextValue();\n}" },
+            { letter: "B", text: "try {\n    handleObjectValue(x);\n    getNextValue();\n} catch(error) {\n    handleError(error);\n}" },
+            { letter: "C", text: "try {\n    handleObjectValue(x);\n} catch(error) {\n    handleError(error);\n}\ngetNextValue();" },
+            { letter: "D", text: "try {\n    handleObjectValue(x);\n} catch(error) {\n    handleError(error);\n} finally {\n    getNextValue();\n}" }
+        ],
+        answer: "B"
+    },
+    {
         id: "q36",
         isMultiple: false,
-        question: "A developer must provide custom user interfaces when users edit a Contact in either Salesforce Classic or Lightning Experience. What should the developer use to override the Contact's Edit button and provide this functionality?",
+        question: "A team at Universal Containers works on a big project and uses Yarn to deal with the project's dependencies. A developer added a dependency to manipulate dates and pushed the updates to the remote repository. The rest of the team complains that the dependency does not get downloaded when they execute yarn.\n\nWhat could be the reason for this?",
         options: [
-            { letter: "A", text: "A Visualforce page in Salesforce Classic and a Lightning page in Lightning Experience" },
-            { letter: "B", text: "A Visualforce page in Salesforce Classic and a Lightning component in Lightning Experience" },
-            { letter: "C", text: "A Lightning component in 5alesforce Classic and a Lightning component in lightning Experience" },
-            { letter: "D", text: "A Lightning page in Salesforce Classic and a Visualforce page in Lightning Experience" }
+            { letter: "A", text: "The developer missed the option --add when adding the dependency." },
+            { letter: "B", text: "The developer added the dependency as a dev dependency, and NODE_ENV is set to production." },
+            { letter: "C", text: "The developer added the dependency as a dev dependency, and YARN_ENV is set to production." },
+            { letter: "D", text: "The developer missed the option --save when adding the dependency." }
         ],
         answer: "B"
     },
     {
         id: "q37",
         isMultiple: false,
-        question: "What is the result of the following code? Account a = new Account (); Database.insert (a, false);",
+        question: "Given the code:\nconst copy = JSON.stringify([new String('false'), new Boolean(false), undefined]);\n\nWhat is the value of copy?",
         options: [
-            { letter: "A", text: "The record will not be created and a exception will be thrown." },
-            { letter: "B", text: "The record will be created and no error will be reported." },
-            { letter: "C", text: "The record will be created and a message will be in the debug log." },
-            { letter: "D", text: "The record will not be created and no error will be reported." }
+            { letter: "A", text: "'[\"false\", false, null]'" },
+            { letter: "B", text: "'[false, {}]'" },
+            { letter: "C", text: "'[\"false\", false, undefined]'" },
+            { letter: "D", text: "'[\"false\", {}]'" }
         ],
-        answer: "D"
+        answer: "A"
     },
     {
         id: "q38",
         isMultiple: false,
-        question: "A developer created a custom order management app that uses an Apex class. The order is represented by an Order object and an Orderltem object that has a master-detail relationship to Order. During order processing, an order may be split into multiple orders. What should a developer do to allow their code to move some existing Orderltem records to a new Order record?",
+        question: "Refer to the following code:\nlet a = \"*\";\nlet b = \"**\";\n// x = 3;\nconsole.log(a);\n\nWhat is displayed when the code executes?",
         options: [
-            { letter: "A", text: "Add without sharing to the Apex class declaration." },
-            { letter: "B", text: "Change the master-detail relationship to an external lookup relationship." },
-            { letter: "C", text: "Create a junction object between Orderltem and Order." },
-            { letter: "D", text: "Select the Allow reparenting option on the master-detail relationship." }
+            { letter: "A", text: "ReferenceError: a is not defined" },
+            { letter: "B", text: "*" },
+            { letter: "C", text: "undefined" },
+            { letter: "D", text: "null" }
         ],
-        answer: "C"
+        answer: "B"
     },
     {
         id: "q39",
         isMultiple: false,
-        question: "A developer is debugging the following code to determinate why Accounts are not being created Account a = new Account(Name = 'A'); Database.insert(a, false); How should the code be altered to help debug the issue?",
+        question: "Refer to the following code:\n<html lang=\"en\">\n<body>\n    <button class=\"secondary\">Save draft</button>\n    <button class=\"primary\">Save and close</button>\n</body>\n<script>\nfunction displaySaveMessage(event) {\n    console.log('Save message.');\n}\n\nfunction displaySuccessMessage(event) {\n    console.log('Success message.');\n}\n\nwindow.onload = function() {\n    document.querySelector('.secondary')\n        .addEventListener('click', displaySaveMessage, true);\n    document.querySelector('.primary')\n        .addEventListener('click', displaySuccessMessage, true);\n}\n</script>\n</html>\n\nWhich messages are displayed when the code executes?",
         options: [
-            { letter: "A", text: "Add a try/catch around the insert method" },
-            { letter: "B", text: "Collect the insert method return value a Saveresult variable" },
-            { letter: "C", text: "Set the second insert method parameter to TRUE" },
-            { letter: "D", text: "Add a System.debug() statement before the insert method" }
+            { letter: "A", text: "Outer message" },
+            { letter: "B", text: "Outer message\nInner message" },
+            { letter: "C", text: "Inner message" },
+            { letter: "D", text: "Inner message\nOuter message" }
         ],
         answer: "B"
     },
     {
         id: "q40",
-        isMultiple: false,
-        question: "A developer wants to get access to the standard price book in the org while writing a test class that covers an OpportunityLineItem trigger. Which method allows access to the price book?",
+        isMultiple: true,
+        question: "Which two console logs output NaN?",
         options: [
-            { letter: "A", text: "Use Test.loadData ( )and a static resource to load a standard price book" },
-            { letter: "B", text: "Use @TestVisible to allow the test method to see the standard price book." },
-            { letter: "C", text: "Use Test.getStandardPricebookid() to get the standard price book ID." },
-            { letter: "D", text: "Use @IsTest (SeeAllData=True) and delete the existing standard price book" }
+            { letter: "A", text: "console.log(10 / 0);" },
+            { letter: "B", text: "console.log(parseInt('two'));" },
+            { letter: "C", text: "console.log(10 / Number('5'));" },
+            { letter: "D", text: "console.log(10 / 'five');" }
         ],
-        answer: "C"
+        answer: ["B", "D"]
     },
     {
         id: "q41",
         isMultiple: false,
-        question: "A custom picklist field, Food_Preference__c, exist on a custom object. The picklist contains the following options: 'Vegan','Kosher','No Preference'. The developer must ensure a value is populated every time a record is created or updated. What is the most efficient way to ensure a value is selected every time a record is saved?",
+        question: "Refer to the code below:\n<html>\n<body>\n    <div id=\"logo\">Hello Logo!</div>\n    <button id=\"test\">Click me</button>\n</body>\n<script>\nfunction printMessage(event) {\n    console.log('This is a test message');\n}\n\nlet el = document.getElementById('test');\nel.addEventListener('click', printMessage, false);\n</script>\n</html>\n\nWhich action should be done?",
         options: [
-            { letter: "A", text: "Set 'Use the first value in the list as the default value' as True." },
-            { letter: "B", text: "Mark the field as Required on the object's page layout." },
-            { letter: "C", text: "Set a validation rule to enforce a value is selected." },
-            { letter: "D", text: "Mark the field as Required on the field definition." }
+            { letter: "A", text: "Add event.removeEventListener(); to the window.onload event handler." },
+            { letter: "B", text: "Add event.removeEventListener(); to the printMessage function." },
+            { letter: "C", text: "Add event.stopPropagation(); to the printMessage function." },
+            { letter: "D", text: "Add event.stopPropagation(); to the window.onload event handler." }
         ],
-        answer: "D"
+        answer: "C"
     },
     {
         id: "q42",
         isMultiple: false,
-        question: "When a user edits the Postal Code on an Account, a custom Account text field named 'Timezone' must be updated based on the values another custom object object called. What is the optimal way to Implement this feature?",
+        question: "Refer to the code below:\nlet o = {\n    get js() {\n        let city1 = String('St. Louis');\n        let city2 = String('New York');\n\n        return {\n            firstCity: city1.toLowerCase(),\n            secondCity: city2.toLowerCase(),\n        };\n    }\n};\n\nWhat value can a developer expect when referencing o.js.secondCity?",
         options: [
-            { letter: "A", text: "Build an account assignment rule." },
-            { letter: "B", text: "Build a flow with flow Builder." },
-            { letter: "C", text: "Create an account approval process." },
-            { letter: "D", text: "Create a formula field." }
+            { letter: "A", text: "undefined" },
+            { letter: "B", text: "An error" },
+            { letter: "C", text: "'New York'" },
+            { letter: "D", text: "'new york'" }
         ],
-        answer: "B"
+        answer: "D"
     },
     {
         id: "q43",
         isMultiple: false,
-        question: "A custom object Trainer_c has a lookup field to another custom object Gym___c. Which SOQL query will get the record for the Viridian City gym and it's trainers?",
+        question: "Refer to the code below:\nnew Promise((resolve, reject) => {\n    const fraction = Math.random();\n    if (fraction > 0.5) reject('fraction > 0.5, ' + fraction);\n    resolve(fraction);\n})\n.then(() => console.log('resolved'))\n.catch((error) => console.error(error))\n.finally(() => console.log('when am I called?'));\n\nWhen does Promise.finally get called?",
         options: [
-            { letter: "A", text: "SELECT ID FROM Trainer_c WHERE Gym__r.Name- Viridian City Gym'" },
-            { letter: "B", text: "SELECT Id, (SELECT Id FROM Trainer_c) FROM Gym_c WHERE Name- Viridian City Gym'" },
-            { letter: "C", text: "SELECT Id, (SELECT Id FROM Trainers) FROM Gym_C WHERE Name- Viridian City Gym'" },
-            { letter: "D", text: "SELECT Id, (SELECT Id FROM Trainers__r) FROM Gym__c WHERE Name = 'Viridian City Gym'" }
+            { letter: "A", text: "When rejected" },
+            { letter: "B", text: "When resolved and settled" },
+            { letter: "C", text: "When resolved" },
+            { letter: "D", text: "When resolved or rejected" }
         ],
         answer: "D"
     },
     {
         id: "q44",
         isMultiple: false,
-        question: "What can be used to override the Account's standard Edit button for Lightning Experience?",
+        question: "Refer to the code:\nlet array = [1, 2, 3, 4, 4, 5, 4, 4];\nfor (let i = 0; i < array.length; i++) {\n    if (array[i] === 4) {\n        array.splice(i, 1);\n        i--;\n    }\n}\n\nWhat is the value of array after execution?",
         options: [
-            { letter: "A", text: "Lightning action" },
-            { letter: "B", text: "Lightning component" },
-            { letter: "C", text: "Lightning page" },
-            { letter: "D", text: "Lightning flow" }
+            { letter: "A", text: "[1, 2, 3, 4, 5, 4]" },
+            { letter: "B", text: "[1, 2, 3, 5]" },
+            { letter: "C", text: "[1, 2, 3, 4, 5, 4, 4]" },
+            { letter: "D", text: "[1, 2, 3, 4, 4, 5, 4]" }
         ],
         answer: "B"
     },
     {
         id: "q45",
         isMultiple: false,
-        question: "A developer is creating an app that contains multiple Lightning web components. One of the child components is used for navigation purposes. When a user click a button called component, the parent component must be alerted so it can navigate to the next page. How should this be accomplished?",
+        question: "Refer to the code below:\nlet total = 10;\nconst interval = setInterval(() => {\n    total++;\n    clearInterval(interval);\n    total++;\n}, 0);\ntotal++;\nconsole.log(total);\n\nConsidering that JavaScript is single-threaded, what is the output after the code executes?",
         options: [
-            { letter: "A", text: "Create a custom event." },
-            { letter: "B", text: "Update a property on the parent." },
-            { letter: "C", text: "Call a method in the Apex controller." },
-            { letter: "D", text: "Fire a notification." }
+            { letter: "A", text: "11" },
+            { letter: "B", text: "12" },
+            { letter: "C", text: "10" },
+            { letter: "D", text: "13" }
         ],
         answer: "A"
     },
     {
         id: "q46",
         isMultiple: false,
-        question: "How can a developer check the test coverage of active Process Builder and Flows deploying them in a Changing Set?",
+        question: "A developer at Universal Containers creates a new landing page based on HTML, CSS, and JavaScript. To ensure that visitors have a good experience, a script named personalizeWebsiteContent needs to be executed to do some custom initialization when the webpage is fully loaded with HTML content and all related files.\n\nWhich statement should be used to call personalizeWebsiteContent based on the above business requirement?",
         options: [
-            { letter: "A", text: "Use the code Coverage Setup page" },
-            { letter: "B", text: "Use the Apex test result class" },
-            { letter: "C", text: "Use the Flow properties page." },
-            { letter: "D", text: "Use SOQL and the Tooling API" }
-        ],
-        answer: "D"
-    },
-    {
-        id: "q47",
-        isMultiple: false,
-        question: " A developer must create a lightning component that allows users to input contact record information to create a contact record, including a salary__c custom field. what should the developer use, along with a lightning-record-edit form, so that salary__c field functions as a currency input and is only viewable and editable by users that have the correct field level permissions on salary__C?",
-        options: [
-            { letter: "A", text: "&ltligthning-input-field field-name='Salary__c'&gt&lt/lightning-input-field&gt" },
-            { letter: "B", text: "&ltlightning-input-currency&gt value='Salary__c'&gt&lt/lightning-input-currency&gt" },
-            { letter: "C", text: "&ltlightning-input&gt type='number' value='Salary__c' formatter='currency'&gt&lt/lightning-input&gt" },
-            { letter: "D", text: "&ltlightning-formatted-number&gt value='Salary__c' format-style='currency'&gt&lt/lightning-formatted-number&gt" }
-        ],
-        answer: "A"
-    },
-    {
-        id: "q48",
-        isMultiple: false,
-        question: "A software company uses the following objects and relationships: * Case: to handle customer support issues, * Defect_c: a custom object to represent known issues with the company's software, * case_Defect__c: a junction object between Case and Defector to represent that a defect Is a customer issue What should be done to share a specific Case-Defect_c record with a user?",
-        options: [
-            { letter: "A", text: "Share the parent Defect_c record." },
-            { letter: "B", text: "Share the Case_Defect_c record" },
-            { letter: "C", text: "Share the parent Case and Defect_c records." },
-            { letter: "D", text: "Share the parent Case record." }
+            { letter: "A", text: "document.addEventListener('DOMContentLoaded', personalizeWebsiteContent);" },
+            { letter: "B", text: "document.addEventListener('onDOMContentLoaded', personalizeWebsiteContent);" },
+            { letter: "C", text: "window.addEventListener('load', personalizeWebsiteContent);" },
+            { letter: "D", text: "window.addEventListener('onload', personalizeWebsiteContent);" }
         ],
         answer: "C"
     },
     {
+        id: "q47",
+        isMultiple: false,
+        question: "Refer to the following code:\nfunction changeValue(obj) {\n    obj.value = obj.value / 2;\n}\n\nconst objA = { value: 10 };\nconst objB = objA;\n\nchangeValue(objB);\nconst result = objA.value;\n\nWhat is the value of result after the code executes?",
+        options: [
+            { letter: "A", text: "low" },
+            { letter: "B", text: "10" },
+            { letter: "C", text: "5" },
+            { letter: "D", text: "undefined" }
+        ],
+        answer: "C"
+    },
+    {
+        id: "q48",
+        isMultiple: false,
+        question: "A developer has an ErrorHandler module that contains multiple functions.\n\nWhat kind of export should be leveraged so that multiple functions can be used?",
+        options: [
+            { letter: "A", text: "Multi" },
+            { letter: "B", text: "Named" },
+            { letter: "C", text: "Default" },
+            { letter: "D", text: "All" }
+        ],
+        answer: "B"
+    },
+    {
         id: "q49",
         isMultiple: false,
-        question: "Universal Containers implemented a private sharing model for the Account object. A custom Account search tool was developed with Apex to help sales representatives find accounts that match multiple criteria they specify. Since its release, users of the tool report they can see Accounts they do not own. What should the developer use to enforce sharing permission for the currently logged-in user while using the custom search tool?",
+        question: "Given the following code:\nlet x = ('15' + 10) * 2;\n\nWhat is the value of x?",
         options: [
-            { letter: "A", text: "Use the schema describe calls to determine if the logged-in users has access to the Account object." },
-            { letter: "B", text: "Use the without sharing keyword on the class declaration." },
-            { letter: "C", text: "Use the UserInfo Apex class to filter all SOQL queries to returned records owned by the logged-in user." },
-            { letter: "D", text: "Use the with sharing keyword on the class declaration." }
+            { letter: "A", text: "1520" },
+            { letter: "B", text: "3020" },
+            { letter: "C", text: "50" },
+            { letter: "D", text: "35" }
         ],
-        answer: "D"
+        answer: "B"
     },
     {
         id: "q50",
         isMultiple: false,
-        question: "A developer is asked to create a Visualforce page for Opportunities that allows users to save or merge the current record. Which approach should the developer to meet this requirement?",
+        question: "At Universal Containers, every team has its own way of copying JavaScript objects. The code snippet shows an implementation from one team:\nfunction Person() {\n    this.firstName = \"John\";\n    this.lastName = \"Doe\";\n    this.name = () => {\n        console.log(`Hello ${this.firstName} ${this.lastName}`);\n    };\n}\n\nconst john = new Person();\nconst dan = JSON.parse(JSON.stringify(john));\ndan.firstName = 'Dan';\ndan.name();\n\nWhat is the output of the code execution?",
         options: [
-            { letter: "A", text: "A custom controller extension" },
-            { letter: "B", text: "A custom controller" },
-            { letter: "C", text: "Visualforce page JavaScript" },
-            { letter: "D", text: "Standard controller methods" }
+            { letter: "A", text: "Hello John Doe" },
+            { letter: "B", text: "Hello Dan Doe" },
+            { letter: "C", text: "TypeError: dan.name is not a function" },
+            { letter: "D", text: "Hello Dan" }
         ],
-        answer: "A"
+        answer: "C"
     },
     {
         id: "q51",
         isMultiple: true,
-        question: "Which two sfdx commands can be used to add testing data to a Developer sandbox?",
+        question: "Refer to the following code:\nlet codeName = 'Bond';\nlet sampleText = `The name is ${codeName}, Jim ${codeName}`;\n\nA developer is trying to determine if a certain substring is part of a string.\nWhich three code statements return true?",
         options: [
-            { letter: "A", text: "Forced: data:bulk:upsert" },
-            { letter: "B", text: "Forced: data: object :upsert" },
-            { letter: "C", text: "Forced: data: tree: upsert" },
-            { letter: "D", text: "Forced: data:async:upsert" }
+            { letter: "A", text: "sampleText.includes('Jim');" },
+            { letter: "B", text: "sampleText.includes('The', 1);" },
+            { letter: "C", text: "sampleText.includes('Jim', 4);" },
+            { letter: "D", text: "sampleText.indexOf('Bond') !== -1;" },
+            { letter: "E", text: "sampleText.substring('Jim');" }
         ],
-        answer: ["A", "C"]
+        answer: ["A", "C", "D"]
     },
     {
         id: "q52",
-        isMultiple: true,
-        question: "What are three ways for a developer to execute tests in an org? Choose 3.",
+        isMultiple: false,
+        question: "Refer to the following code:\nlet obj = {\n    foo: 1,\n    bar: 2\n};\nlet output = [];\nfor (let something in obj) {\n    output.push(something);\n}\nconsole.log(output);\n\nWhat is the output?",
         options: [
-            { letter: "A", text: "Bulk API" },
-            { letter: "B", text: "Tooling API" },
-            { letter: "C", text: "Setup Menu" },
-            { letter: "D", text: "Salesforce DX" },
-            { letter: "E", text: "Metadata API." }
+            { letter: "A", text: "[\"bar\", \"foo\"]" },
+            { letter: "B", text: "[1, 2]" },
+            { letter: "C", text: "[\"foo\", \"bar\"]" },
+            { letter: "D", text: "[\"foo:1\", \"bar:2\"]" }
         ],
-        answer: ["B", "C", "D"]
+        answer: "C"
     },
     {
         id: "q53",
-        isMultiple: true,
-        question: "Which two settings must be defined in order to update a record of a junction object? Choose 2 answers.",
+        isMultiple: false,
+        question: "Refer to the following code:\nconst myFunction = arr => {\n    return arr.reduce((result, current) => {\n        return result + current;\n    }, 10);\n};\n\nWhat is the output of this function when called with an empty array?",
         options: [
-            { letter: "A", text: "Read access on the primary relationship" },
-            { letter: "B", text: "Read/Write access on the secondary relationship" },
-            { letter: "C", text: "Read/Write access on the primary relationship" },
-            { letter: "D", text: "Read/Write access on the junction object" }
+            { letter: "A", text: "Returns 0" },
+            { letter: "B", text: "Throws an error" },
+            { letter: "C", text: "Returns NaN" },
+            { letter: "D", text: "Returns 10" }
         ],
-        answer: ["B", "C"]
+        answer: "D"
     },
     {
         id: "q54",
         isMultiple: true,
-        question: "In terms of the MVC paradigm, what are two advantages of implementing the layer of a Salesforce application using Aura Component-based development over Visualforce? Choose 2 answers.",
+        question: "Which two code snippets show working examples of a recursive function?",
         options: [
-            { letter: "A", text: "Self-contained and reusable units of an application" },
-            { letter: "B", text: "Rich component ecosystem" },
-            { letter: "C", text: "Automatic code generation" },
-            { letter: "D", text: "Server-side run-time debugging" }
-        ],
-        answer: ["A", "B"]
-    },
-    {
-        id: "q55",
-        isMultiple: true,
-        question: "Which three code lines are required to create a Lightning component on a Visualforce page? Choose 3 answers.",
-        options: [
-            { letter: "A", text: "$Lightning.createComponent" },
-            { letter: "B", text: "&ltapex:slds/&gt" },
-            { letter: "C", text: "$Lightning.useComponent" },
-            { letter: "D", text: "$Lightning.use" },
-            { letter: "E", text: "&ltapex:includeLightning/&gt" }
-        ],
-        answer: ["A", "D", "E"]
-    },
-    {
-        id: "q56",
-        isMultiple: true,
-        question: "A developer created a trigger on the Account object and wants to test if the trigger is properly bulkifield. The developer team decided that the trigger should be tested with 200 account records with unique names. What two things should be done to create the test data within the unit test with the least amount of code? Choose 2 answers.",
-        options: [
-            { letter: "A", text: "Use the @isTest(seeAllData=true) annotation in the test class." },
-            { letter: "B", text: "Use the @isTest(isParallel=true) annotation in the test class." },
-            { letter: "C", text: "Create a static resource containing test data." },
-            { letter: "D", text: "Use Test.loadData to populate data in your test methods." }
+            { letter: "A", text: "const sumToTen = numVar => {\n    if (numVar < 0) return;\n    return sumToTen(numVar + 1);\n};" },
+            { letter: "B", text: "function factorial(numVar) {\n    if (numVar < 0) return;\n    if (numVar === 0) return 1;\n    return numVar - 1;\n}" },
+            { letter: "C", text: "const factorial = numVar => {\n    if (numVar < 0) return;\n    if (numVar === 0) return 1;\n    return numVar * factorial(numVar - 1);\n};" },
+            { letter: "D", text: "let countingDown = function(startNumber) {\n    if (startNumber > 0) {\n        console.log(startNumber);\n        return countingDown(startNumber - 1);\n    } else {\n        return startNumber;\n    }\n};" }
         ],
         answer: ["C", "D"]
     },
     {
+        id: "q55",
+        isMultiple: false,
+        question: "A developer executes:\ndocument.cookie;\ndocument.cookie = 'key=John Smith';\n\nWhat is the behavior?",
+        options: [
+            { letter: "A", text: "Cookies are read and the key value is set, and all cookies are wiped." },
+            { letter: "B", text: "Cookies are read and the key value is set, the remaining cookies are unaffected." },
+            { letter: "C", text: "Cookies are read, but the key value is not set because the value is not URL encoded." },
+            { letter: "D", text: "Cookies are not read because line 01 should be document.cookies, but the key value is set and all cookies are wiped." }
+        ],
+        answer: "B"
+    },
+    {
+        id: "q56",
+        isMultiple: false,
+        question: "Refer to the code below:\nconst pi = 3.1415926;\n\nWhat is the data type of pi?",
+        options: [
+            { letter: "A", text: "Number" },
+            { letter: "B", text: "Float" },
+            { letter: "C", text: "Double" },
+            { letter: "D", text: "Decimal" }
+        ],
+        answer: "A"
+    },
+    {
         id: "q57",
         isMultiple: true,
-        question: "A developer wants to invoke on outbound message when a record meets a specific criteria. Which three features satisfy this use case? Choose 3 answer.",
+        question: "A developer has a fizzbuzz function that, when passed in a number, returns the following:\n* 'fizz' if the number is divisible by 3.\n* 'buzz' if the number is divisible by 5.\n* 'fizzbuzz' if the number is divisible by both 3 and 5.\n* Empty string '' if the number is divisible by neither 3 nor 5.\n\nWhich two test cases properly test scenarios for the fizzbuzz function?",
         options: [
-            { letter: "A", text: "Process builder can be used to check the record criteria and send an outbound message with Apex Code." },
-            { letter: "B", text: "Workflows can be used to check the record criteria and send an outbound message." },
-            { letter: "C", text: "Visual Workflow can be used to check the record criteria and send an outbound message without Apex Code." },
-            { letter: "D", text: "Approval Process has the capacity to check the record criteria and send an outbound message without Apex Code." },
-            { letter: "E", text: "Process builder can be used to check the record criteria and send an outbound message without Apex Code." }
+            { letter: "A", text: "let res = fizzbuzz(true);\nconsole.assert(res === '');" },
+            { letter: "B", text: "let res = fizzbuzz(3);\nconsole.assert(res === '');" },
+            { letter: "C", text: "let res = fizzbuzz(5);\nconsole.assert(res === 'fizz');" },
+            { letter: "D", text: "let res = fizzbuzz(15);\nconsole.assert(res === 'fizzbuzz');" }
         ],
-        answer: ["A", "B", "D"]
+        answer: ["A", "D"]
     },
     {
         id: "q58",
-        isMultiple: true,
-        question: "Which three options allow a developer to use custom styling in a Visualforce page? (Choose 3.)",
+        isMultiple: false,
+        question: "A page loads 50+ <div class=\"ad-library-item\"> elements, all ads. A developer wants to quickly and temporarily remove them.\n\nWhich option should the developer use?",
         options: [
-            { letter: "A", text: "A static resource" },
-            { letter: "B", text: "&ltapex:stylesheets&gttag" },
-            { letter: "C", text: "&ltapex:style&gttag" },
-            { letter: "D", text: "&ltapex:stylesheet&gt tag" },
-            { letter: "E", text: "Inline CSS" }
+            { letter: "A", text: "Use the browser console to execute a script that prevents the load event from firing." },
+            { letter: "B", text: "Use the DOM inspector to prevent the load event from firing." },
+            { letter: "C", text: "Use the browser console to execute a script that removes all elements containing the class ad-library-item." },
+            { letter: "D", text: "Use the DOM inspector to remove all elements containing the class ad-library-item." }
         ],
-        answer: ["A", "D", "E"]
+        answer: "C"
     },
     {
         id: "q59",
-        isMultiple: true,
-        question: "Universal Container* decides to use purely declarative development to build out a new Salesforce application. Which two options can be used to build out logic layer for this application? Choose 2 answer",
+        isMultiple: false,
+        question: "Refer to the following code:\nfunction Monster() {\n    this.name = 'hello';\n}\nconst m = Monster();\n\nWhat happens due to the missing new keyword?",
         options: [
-            { letter: "A", text: "Remote Actions" },
-            { letter: "B", text: "Record- Triggered flow" },
-            { letter: "C", text: "Validation Rules" },
-            { letter: "D", text: "Batch Jobs" }
+            { letter: "A", text: "The m variable is assigned the correct object." },
+            { letter: "B", text: "window.name is assigned to 'hello' and the variable m remains undefined." },
+            { letter: "C", text: "window.m is assigned the correct object." },
+            { letter: "D", text: "The m variable is assigned the correct object but this.name remains undefined." }
         ],
-        answer: ["B", "C"]
+        answer: "B"
     },
     {
         id: "q60",
         isMultiple: true,
-        question: "What are two use cases for executing Anonymous Apex code? Choose 2 answers",
+        question: "Given two expressions var1 and var2, what are two valid ways to return the concatenation of the two expressions and ensure it is data type string?",
         options: [
-            { letter: "A", text: "To schedule an Apex class to run periodically" },
-            { letter: "B", text: "To delete 15,000 inactive Accounts In a single transaction after a deployment" },
-            { letter: "C", text: "To add unit test code coverage to an org" },
-            { letter: "D", text: "To run a batch Apex class to update all Contacts" }
+            { letter: "A", text: "String(var1).concat(var2)" },
+            { letter: "B", text: "String.concat(var1 + var2)" },
+            { letter: "C", text: "var1 + var2" },
+            { letter: "D", text: "var1.toString() + var2.toString()" }
         ],
         answer: ["A", "D"]
     },
     {
         id: "q61",
-        isMultiple: true,
-        question: "What are three characteristics of change set deployments? Choose 3 answers",
+        isMultiple: false,
+        question: "Refer to the code:\nfunction execute() {\n    return new Promise((resolve, reject) => reject());\n}\n\nlet promise = execute();\n\npromise\n    .then(() => console.log('Resolved1'))\n    .then(() => console.log('Resolved2'))\n    .then(() => console.log('Resolved3'))\n    .catch(() => console.log('Rejected'))\n    .then(() => console.log('Resolved4'));\n\nWhat is the result when the Promise in the execute function is rejected?",
         options: [
-            { letter: "A", text: "Deployment is done in a one-way, single transaction." },
-            { letter: "B", text: "Sending a change set between two orgs requires a deployment connection." },
-            { letter: "C", text: "Change sets can only be used between related organizations." },
-            { letter: "D", text: "Change sets can deploy custom settings data." },
-            { letter: "E", text: "Change sets can be used to transfer records." }
+            { letter: "A", text: "Resolved1 Resolved2 Resolved3 Rejected Resolved4" },
+            { letter: "B", text: "Rejected" },
+            { letter: "C", text: "Resolved1 Resolved2 Resolved3 Resolved4" },
+            { letter: "D", text: "Rejected Resolved4" }
         ],
-        answer: ["A", "B", "C"]
+        answer: "D"
     },
     {
         id: "q62",
-        isMultiple: true,
-        question: "Universal Containers hires a developer to build a custom search page to help user- find the Accounts they want. Users will be able to search on Name, Description, and a custom comments field. Which consideration should the developer be aware of when deciding between SOQL and SOSL? Choose 2 answers.",
+        isMultiple: false,
+        question: "Given the following code:\nlet x = null;\nconsole.log(typeof x);\n\nWhat is the output?",
         options: [
-            { letter: "A", text: "SOQL is faster for text searches." },
-            { letter: "B", text: "SOSL is faster for text searches." },
-            { letter: "C", text: "SOQL is able to return more records." },
-            { letter: "D", text: "SOSL is able to return more records." }
+            { letter: "A", text: "\"object\"" },
+            { letter: "B", text: "\"undefined\"" },
+            { letter: "C", text: "\"x\"" },
+            { letter: "D", text: "\"null\"" }
         ],
-        answer: ["B", "C"]
+        answer: "A"
     },
     {
         id: "q63",
         isMultiple: true,
-        question: " For which three items can 2 trace flag be configured? Choose 3 answers",
+        question: "Refer to the following JavaScript:\nfunction Tiger() {\n    this.type = 'Cat';\n    this.size = 'large';\n}\n\nlet tony = new Tiger();\ntony.roar = () => {\n    console.log(\"They're great!\");\n};\n\nfunction Lion() {\n    this.type = 'Cat';\n    this.size = 'large';\n}\n\nlet leo = new Lion();\n// Insert code here\nleo.roar();\n\nWhich two statements could be inserted at the placeholder to enable leo.roar()?",
         options: [
-            { letter: "A", text: "User" },
-            { letter: "B", text: "Visualforce" },
-            { letter: "C", text: "Apex Trager" },
-            { letter: "D", text: "Flow" },
-            { letter: "E", text: "Apex Class" }
+            { letter: "A", text: "leo.roar = () => { console.log(\"They're pretty good!\"); };" },
+            { letter: "B", text: "Object.assign(leo, tony);" },
+            { letter: "C", text: "Object.assign(leo, Tiger);" },
+            { letter: "D", text: "leo.prototype.roar = () => { console.log(\"They're pretty good!\"); };" }
         ],
-        answer: ["A", "C", "E"]
+        answer: ["A", "B"]
     },
     {
         id: "q64",
-        isMultiple: true,
-        question: "What are two ways for a developer to execute tests in an org?",
+        isMultiple: false,
+        question: "Which statement allows a developer to update the browser navigation history without a page refresh?",
         options: [
-            { letter: "A", text: "Tooling API" },
-            { letter: "B", text: "Matadata API" },
-            { letter: "C", text: "Bulk API" },
-            { letter: "D", text: "Developer console" }
+            { letter: "A", text: "window.customHistory.pushState(newStateObject, '', null);" },
+            { letter: "B", text: "window.history.createState(newStateObject, '');" },
+            { letter: "C", text: "window.history.pushState(newStateObject, '', null);" },
+            { letter: "D", text: "window.history.updateState(newStateObject, '');" }
         ],
-        answer: ["A", "D"]
+        answer: "C"
     },
     {
         id: "q65",
-        isMultiple: true,
-        question: "The Account object in an organization has a master detail relationship to a child object called Branch. The following automations exist: * Rollup summary fields, * Custom validation rules, * Duplicate rules A developer created a trigger on the Account object. What two things should the developer consider while testing the trigger code? Choose 2 answers",
+        isMultiple: false,
+        question: "Refer to the following code:\nlet requestPromise = client.getRequest;\n\nrequestPromise().then((response) => {\n    handleResponse(response);\n});\n\nThe developer wants to gracefully handle errors from a Promise-based GET request.\nWhich code modification is correct?",
         options: [
-            { letter: "A", text: "The validation rules will cause the trigger to fire again." },
-            { letter: "B", text: "Rollup summary fields can cause the parent record to go through Save." },
-            { letter: "C", text: "The trigger may fire multiple times during a transaction." },
-            { letter: "D", text: "Duplicate rules are executed once all DML operations commit to the database." }
+            { letter: "A", text: "Wrap the requestPromise().then(...) call in a try/catch block." },
+            { letter: "B", text: "Duplicate option A by wrapping the requestPromise().then(...) call in a try/catch block." },
+            { letter: "C", text: "Add a .catch() handler to the Promise chain." },
+            { letter: "D", text: "Use a .finally() handler to handle errors." }
         ],
-        answer: ["B", "C"]
+        answer: "C"
     },
     {
         id: "q66",
-        isMultiple: true,
-        question: "A development team wants to use a deployment script to automatically deploy to a sandbox during their development cycles. Which two tools can they use to run a script that deploys to a sandbox?",
+        isMultiple: false,
+        question: "A developer publishes a new version of a package with new features that do not break backward compatibility. The previous version number was 1.1.3.\n\nFollowing semantic versioning formats, what should the new package version number be?",
         options: [
-            { letter: "A", text: "VS Code" },
-            { letter: "B", text: "Developer Console" },
-            { letter: "C", text: "Change Sets" },
-            { letter: "D", text: "SFDX CLI" }
+            { letter: "A", text: "1.2.3" },
+            { letter: "B", text: "1.1.4" },
+            { letter: "C", text: "2.0.0" },
+            { letter: "D", text: "1.2.0" }
         ],
-        answer: ["A", "D"]
+        answer: "D"
     },
     {
         id: "q67",
         isMultiple: true,
-        question: "Which two are best practices when it comes to component and application event handling? (Choose two.)",
+        question: "A developer uses a parsed JSON string to work with user information as in the block below:\nconst userInformation = {\n    \"id\": \"user-01\",\n    \"email\": \"user01@universalcontainers.demo\",\n    \"age\": 25\n};\n\nWhich two options access the email attribute in the object?",
         options: [
-            { letter: "A", text: "Try to use application events as opposed to component events." },
-            { letter: "B", text: "Handle low-level events in the event handler and re-fire them as higher-level events." },
-            { letter: "C", text: "Reuse the event logic in a component bundle, by putting the logic in the helper." },
-            { letter: "D", text: "Use component events to communicate actions that should be handled at the application level." }
+            { letter: "A", text: "userInformation.email" },
+            { letter: "B", text: "userInformation.get(\"email\")" },
+            { letter: "C", text: "userInformation[\"email\"]" },
+            { letter: "D", text: "userInformation[email]" }
         ],
-        answer: ["B", "C"]
+        answer: ["A", "C"]
     },
     {
         id: "q68",
-        isMultiple: true,
-        question: "What are two ways a developer can get the status of an enqeued job for a class that queueable interface? Choose 2 answers.",
+        isMultiple: false,
+        question: "Refer to the following code:\nlet car1 = new Promise((_, reject) =>\n    setTimeout(reject, 2000, \"Car 1 crashed in\")\n);\n\nlet car2 = new Promise(resolve =>\n    setTimeout(resolve, 1500, \"Car 2 completed\")\n);\n\nlet car3 = new Promise(resolve =>\n    setTimeout(resolve, 3000, \"Car 3 completed\")\n);\n\nPromise.race([car1, car2, car3])\n    .then(value => {\n        let result = `${value} the race.`;\n    })\n    .catch(err => {\n        console.log(\"Race is cancelled.\", err);\n    });\n\nWhat is the value of result when Promise.race executes?",
         options: [
-            { letter: "A", text: "View the apex Jobs page" },
-            { letter: "B", text: "View the apex status Page" },
-            { letter: "C", text: "View the apex flex Queue" },
-            { letter: "D", text: "Query the AsyncApexJobe object" }
+            { letter: "A", text: "Car 3 completed the race." },
+            { letter: "B", text: "Car 2 completed the race." },
+            { letter: "C", text: "Race is cancelled." },
+            { letter: "D", text: "Car 1 crashed in the race." }
         ],
-        answer: ["A", "D"]
+        answer: "B"
     },
     {
         id: "q69",
-        isMultiple: true,
-        question: "A developer is tasked to perform a security review of the ContactSearch Apex class that exists in the system. Within the class, the developer identifies the following method as a security threat: List<Contact> performSearch(String lastName){ return Database.query('Select Id, FirstName, LastName FROM Contact WHERE LastName Like %'+lastName+'%); } What are two ways the developer can update the method to prevent a SOQL injection attack? Choose 2 answers",
+        isMultiple: false,
+        question: "A developer writes the code below to return a message to a user attempting to register a new username. If the username is available, a variable named msg is declared and assigned a value on line 03.\n\nfunction getAvailabilityMessage(item) {\n    if (getAvailability(item)) {\n        var msg = \"Username available\";\n        return msg;\n    }\n}\n\nWhat is returned when the username is available?",
         options: [
-            { letter: "A", text: "Use the escapeSingleQuote method to sanitize the parameter before its use." },
-            { letter: "B", text: "Use variable binding and replace the dynamic query with a static SOQL." },
-            { letter: "C", text: "Use the @Readonly annotation and the with sharing keyword on the class." },
-            { letter: "D", text: "Use a regular expression on the parameter to remove special characters." }
+            { letter: "A", text: "\"msg is not defined\"" },
+            { letter: "B", text: "\"newUserName\"" },
+            { letter: "C", text: "\"Username available\"" },
+            { letter: "D", text: "undefined" }
         ],
-        answer: ["A", "B"]
+        answer: "C"
     },
     {
         id: "q70",
-        isMultiple: true,
-        question: "When a user edits the postal Code on an Account, a custom Account text field named. 'Timezone' must be updated based on the values in a PostalCodeToTimezone_c custom object. Which two automationtools can be used to implement this feature? Choose 2 answers",
+        isMultiple: false,
+        question: "Refer to the code:\nconsole.log('Start');\nPromise.resolve('Success').then(function(value) {\n    console.log('Success');\n});\nconsole.log('End');\n\nWhat is the output after the code executes successfully?",
         options: [
-            { letter: "A", text: "Quick actions" },
-            { letter: "B", text: "Account trigger" },
-            { letter: "C", text: "Approval process" },
-            { letter: "D", text: "Fast field Updates record-triggered flow" }
+            { letter: "A", text: "Start\nSuccess\nEnd" },
+            { letter: "B", text: "Start\nEnd\nSuccess" },
+            { letter: "C", text: "End\nStart\nSuccess" },
+            { letter: "D", text: "Success\nStart\nEnd" }
         ],
-        answer: ["B", "D"]
+        answer: "B"
     },
     {
         id: "q71",
-        isMultiple: true,
-        question: "A business has a proprietary Order Management System (OMS) that creates orders from their website and fulfills the orders. When the order is created in the OMS, an integration also creates an order record in Salesforce and relates it to the contact as identified by the email on the order. As the order goes through different stages in the OMS, the integration also updates It in Salesforce. It is noticed that each update from the OMS creates a new order record in Salesforce. Which two actions will prevent the duplicate order records from being created in Salesforce? Choose 2 answers",
+        isMultiple: false,
+        question: "A developer publishes a new version of a package with bug fixes but no breaking changes. The old version number was 2.1.1.\n\nWhat should the new package version number be based on semantic versioning?",
         options: [
-            { letter: "A", text: "Ensure that the order number in the OMS is unique." },
-            { letter: "B", text: "Use the email on the contact record as an external ID." },
-            { letter: "C", text: "Write a before trigger on the order object to delete any duplicates." },
-            { letter: "D", text: "Use the order number from the OMS as an external ID." }
+            { letter: "A", text: "2.1.2" },
+            { letter: "B", text: "2.2.0" },
+            { letter: "C", text: "2.2.1" },
+            { letter: "D", text: "3.1.1" }
         ],
-        answer: ["A", "D"]
+        answer: "A"
     },
     {
         id: "q72",
-        isMultiple: true,
-        question: "When importing and exporting data into Salesforce, which two statements are true? Choose 2 answers",
+        isMultiple: false,
+        question: "Universal Containers (UC) just launched a new landing page, but users complain that the website is slow. A developer found some functions that might cause this problem. To verify this, the developer decides to execute everything and log the time each of these three suspicious functions consumes.\n\nconsole.time('Performance');\n\nmaybeAHeavyFunction();\n\nthisCouldTakeTooLong();\n\norMaybeThisOne();\n\nconsole.timeEnd('Performance');\n\nWhich function can the developer use to obtain the time spent by every one of the three functions?",
         options: [
-            { letter: "A", text: "Bulk API can be used to bypass the storage limits when importing large data volumes in development environments." },
-            { letter: "B", text: "Data import wizard is a client application provided by Salesforce." },
-            { letter: "C", text: "Developer and Developer Pro sandboxes have different storage limits." },
-            { letter: "D", text: "Bulk API can be used to import large data volumes in development environments without bypassing the storage limits." }
+            { letter: "A", text: "console.timeLog()" },
+            { letter: "B", text: "console.trace()" },
+            { letter: "C", text: "console.timeStamp()" },
+            { letter: "D", text: "console.getTime()" }
         ],
-        answer: ["C", "D"]
+        answer: "A"
     },
     {
         id: "q73",
-        isMultiple: true,
-        question: "How can a developer avoid exceeding governor limits when using an Apex Trigger?choose 2 answers",
+        isMultiple: false,
+        question: "A developer wants to use a module named universalContainerslib and then call functions from it. How should a developer import every function from the module and then call the functions foo and bar?",
         options: [
-            { letter: "A", text: "By using a helper class that can be invoked from multiple triggers." },
-            { letter: "B", text: "By performing DML transactions on lists of SObjects." },
-            { letter: "C", text: "By using the Database class to handle DML transactions." },
-            { letter: "D", text: "By using Maps to hold data from query results." }
+            { letter: "A", text: "import * as lib from '/path/universalContainerslib.js';\nlib.foo();\nlib.bar();" },
+            { letter: "B", text: "import * from '/path/universalContainerslib.js';\nuniversalContainerslib.foo();\nuniversalContainerslib.bar();" },
+            { letter: "C", text: "import all from '/path/universalContainerslib.js';\nuniversalContainerslib.foo();\nuniversalContainerslib.bar();" },
+            { letter: "D", text: "import { foo, bar } from '/path/universalContainerslib.js';\nfoo();\nbar();" }
         ],
-        answer: ["B", "D"]
+        answer: "A"
     },
     {
         id: "q74",
-        isMultiple: true,
-        question: "What is a capability of formula fields? (Choose 3",
+        isMultiple: false,
+        question: "Refer to the code:\nlet car1 = new Promise((_, reject) =>\n    setTimeout(reject, 2000, \"Car 1 crashed in\")\n);\n\nlet car2 = new Promise(resolve =>\n    setTimeout(resolve, 1500, \"Car 2 completed\")\n);\n\nlet car3 = new Promise(resolve =>\n    setTimeout(resolve, 3000, \"Car 3 completed\")\n);\n\nPromise.race([car1, car2, car3])\n    .then(value => {\n        let result = `${value} the race.`;\n    })\n    .catch(err => {\n        console.log(\"Race is cancelled.\", err);\n    });\n\nWhat is the value of result when Promise.race executes?",
         options: [
-            { letter: "A", text: "Determine if a datetime field has passed using the NOW function." },
-            { letter: "B", text: "Generate a link using the HYPERLINK function to a specific record in a legacy system." },
-            { letter: "C", text: "Determine which of three different images to display using the IF function." },
-            { letter: "D", text: "Display the previous values for a field using the PRIORVALUE function." },
-            { letter: "E", text: "Return and display a field value from another object using the VLOOKUP function." }
+            { letter: "A", text: "Car 2 completed the race." },
+            { letter: "B", text: "Car 3 completed the race." },
+            { letter: "C", text: "Race is cancelled." },
+            { letter: "D", text: "Car 1 crashed in the race." }
         ],
-        answer: ["A", "B", "C"]
+        answer: "A"
     },
     {
         id: "q75",
         isMultiple: true,
-        question: "A developer needs to test an Invoicing system integration. After reviewing the number of transactions required for the test, the developer estimates that the test data will total about 2 GB of data storage. Production data is not required for the integration testing. Which two environments meet the requirements for testing? (Choose two.)",
+        question: "Refer to the code below:\nx = 3.14;\n\nfunction myFunction() {\n    'use strict';\n    y = x;\n}\n\nz = x;\nmyFunction();\n\nConsidering the implications of 'use strict' on line 04, which three statements describe the execution of the code?",
         options: [
-            { letter: "A", text: "Developer Sandbox" },
-            { letter: "B", text: "Developer Edition" },
-            { letter: "C", text: "Partial Sandbox" },
-            { letter: "D", text: "Developer Pro Sandbox" },
-            { letter: "E", text: "Full Sandbox" }
-        ],
-        answer: ["C", "E"]
-    },
-    {
-        id: "q76",
-        isMultiple: true,
-        question: "Which three steps allow a custom SVG to be included in a Lightning web component? Choose 3 answers",
-        options: [
-            { letter: "A", text: "Import the SVG as a content asset file." },
-            { letter: "B", text: "Import the static resource and provide a getter for it in JavaScript." },
-            { letter: "C", text: "Reference the getter in the HTML template." },
-            { letter: "D", text: "Reference the import in the HTML template." },
-            { letter: "E", text: "Upload the SVG as a static resource." }
-        ],
-        answer: ["B", "C", "E"]
-    },
-    {
-        id: "q77",
-        isMultiple: true,
-        question: "Universal Containers decides to use purely declarative development to build out a new Salesforce application. Which three options can be used to build out the business logic layer for this application? Choose 3 answers",
-        options: [
-            { letter: "A", text: "Process builder" },
-            { letter: "B", text: "Validation Rules" },
-            { letter: "C", text: "Flow Builder" }
-        ],
-        answer: ["A", "B", "C"]
-    },
-    {
-        id: "q78",
-        isMultiple: true,
-        question: "Universal Containers decides to use exclusively declarative development to build out a new Salesforce application. Which three options should be used to build out the database layer for the application? (Choose three.)",
-        options: [
-            { letter: "A", text: "Process Builder" },
-            { letter: "B", text: "Roll-up summaries" },
-            { letter: "C", text: "Triggers" },
-            { letter: "D", text: "Relationships" },
-            { letter: "E", text: "Custom objects and fields" }
+            { letter: "A", text: "'use strict' is hoisted, so it has an effect on all lines." },
+            { letter: "B", text: "z is equal to 3.14." },
+            { letter: "C", text: "'use strict' has an effect between line 04 and the end of the file." },
+            { letter: "D", text: "'use strict' has an effect only on line 05." },
+            { letter: "E", text: "Line 05 throws an error." }
         ],
         answer: ["B", "D", "E"]
     },
     {
-        id: "q79",
-        isMultiple: true,
-        question: "Which two SOSL searches will return records matching search criteria contained in any of the searchable text fields on an object? Choose 2 answers",
+        id: "q76",
+        isMultiple: false,
+        question: "Refer to the following code:\nfor (let number = 2; number <= 5; number += 1) {\n    // faster code statement here\n}\n\nWhich statement meets the requirements to log an error when the Boolean statement evaluates to false?",
         options: [
-            { letter: "A", text: "[find 'acme*' in text fields returning account,opportunity]" },
-            { letter: "B", text: "[find 'acme*' in all fields returning account,opportunity]" },
-            { letter: "C", text: "[find 'acme*' returning account,opportunity]" },
-            { letter: "D", text: "[find 'acme*' in any fields returning account,opportunity]" }
+            { letter: "A", text: "console.classy(number + 2 === 0);" },
+            { letter: "B", text: "assert(number + 2 === 0);" },
+            { letter: "C", text: "console.assert(number + 2 === 0);" },
+            { letter: "D", text: "console.error(number + 2 === 0);" }
         ],
-        answer: ["B", "C"]
+        answer: "C"
+    },
+    {
+        id: "q77",
+        isMultiple: false,
+        question: "Refer to the code below:\nconst objBook = {\n    title: 'JavaScript'\n};\n\nObject.preventExtensions(objBook);\nconst newObjBook = objBook;\nnewObjBook.author = 'Robert';\n\nWhat are the values of objBook and newObjBook respectively?",
+        options: [
+            { letter: "A", text: "{ title: 'JavaScript' }\n{ title: 'JavaScript' }" },
+            { letter: "B", text: "{ author: 'Robert', title: 'JavaScript' }\nundefined" },
+            { letter: "C", text: "{ author: 'Robert' }\n{ author: 'Robert', title: 'JavaScript' }" },
+            { letter: "D", text: "{ author: 'Robert', title: 'JavaScript' }\n{ author: 'Robert', title: 'JavaScript' }" }
+        ],
+        answer: "A"
+    },
+    {
+        id: "q78",
+        isMultiple: false,
+        question: "Which is the correct implementation of try...catch for countsDeep()?",
+        options: [
+            { letter: "A", text: "try {\n    countsDeep();\n} handleError(e) {\n    catch(e);\n}" },
+            { letter: "B", text: "setTimeout(function() {\n    try {\n        countsDeep();\n    } catch (e) {\n        handleError(e);\n    }\n}, 1000);" },
+            { letter: "C", text: "try {\n    setTimeout(function() {\n        countsDeep();\n    }, 1000);\n} catch (e) {\n    handleError(e);\n}" },
+            { letter: "D", text: "try {\n    setTimeout(function() {\n        countsDeep();\n    }, 1000);\n} catch (e) {\n    handleError(e);\n}" }
+        ],
+        answer: "B"
+    },
+    {
+        id: "q79",
+        isMultiple: false,
+        question: "Refer to code below:\nlet first = 'who';\nlet second = 'what';\n\ntry {\n    try {\n        throw new Error('Sad trombone');\n    } catch (err) {\n        first = 'Why';\n    } finally {\n        second = 'when';\n    }\n} catch (err) {\n    second = 'Where';\n}\n\nWhat are the values for first and second once the code executes?",
+
+        options: [
+            { letter: "A", text: "First is why and second is when." },
+            { letter: "B", text: "First is who and second is where." },
+            { letter: "C", text: "First is Who and second is When." },
+            { letter: "D", text: "First is why and second is where." }
+        ],
+
+        answer: "A"
     },
     {
         id: "q80",
-        isMultiple: true,
-        question: "In which two org types can a developer create new Apex Classes? Choose 2 answers",
+        isMultiple: false,
+        question: "Refer to the following code:\nfunction myFunction() {\n    a = a + b;\n    var b = 1;\n}\n\nmyFunction();\nconsole.log(a);\nconsole.log(b);\n\nWhich statement is correct?",
         options: [
-            { letter: "A", text: "Developer Edition" },
-            { letter: "B", text: "Sandbox" },
-            { letter: "C", text: "Unlimited" },
-            { letter: "D", text: "Enterprise Edition" }
+            { letter: "A", text: "Line 02 throws a reference error, therefore line 03 is never executed." },
+            { letter: "B", text: "Both line 02 and line 03 are executed, but the values printed are undefined." },
+            { letter: "C", text: "Both line 02 and line 03 are executed, and the variables are hoisted." },
+            { letter: "D", text: "Line 08 outputs the variable, but line 09 throws an error." }
         ],
-        answer: ["A", "B"]
+        answer: "D"
     },
     {
         id: "q81",
-        isMultiple: true,
-        question: "What is a benefit of the Lightning Component framework?Choose 3 answers",
+        isMultiple: false,
+        question: "Given the following code:\nfunction Person() {\n    this.firstName = 'John';\n}\n\nPerson.proto = {\n    job: x => 'Developer'\n});\n\nconst myFather = new Person();\nconst result = myFather.firstName + ' ' + myFather.job();\n\nWhat is the value of result when the code executes?",
         options: [
-            { letter: "A", text: "It uses a traditional publish-subscribe model." },
-            { letter: "B", text: "It uses an MVC architectural design pattern." },
-            { letter: "C", text: "It uses an event-driven architecture." },
-            { letter: "D", text: "It uses client-side Apex controllers for logic." },
-            { letter: "E", text: "It uses server-side JavaScript controller for logic." }
+            { letter: "A", text: "Error: myFather.job is not a function" },
+            { letter: "B", text: "undefined Developer" },
+            { letter: "C", text: "John Developer" },
+            { letter: "D", text: "John undefined" }
         ],
-        answer: ["A", "B", "C"]
+        answer: "A"
     },
     {
         id: "q82",
         isMultiple: true,
-        question: "Which two process automations can be used on their own to send Salesforce Outbound Message? Choose 2 answers",
+        question: "Which three actions can the code execute in the browser console?",
         options: [
-            { letter: "A", text: "Workflow Rule" },
-            { letter: "B", text: "Process Builder" },
-            { letter: "C", text: "Flow Builder" },
-            { letter: "D", text: "Strategy Builder" }
+            { letter: "A", text: "Run code that is not related to the page." },
+            { letter: "B", text: "View and change security cookies." },
+            { letter: "C", text: "Display a report showing the performance of a page." },
+            { letter: "D", text: "View, change, and debug the JavaScript code of the page." },
+            { letter: "E", text: "View and change the DOM of the page." }
         ],
-        answer: ["A", "C"]
+        answer: ["A", "D", "E"]
     },
     {
         id: "q83",
-        isMultiple: true,
-        question: "A developer has a single custom controller class that works with a Visualforce Wizard to support creating and editing multiple subjects. The wizard accepts data from user inputs across multiple Visualforce pages and from a parameter on the initial URL. Which three statements are useful inside the unit test to effectively test the custom controller? Choose 3 answers",
+        isMultiple: false,
+        question: "A developer wants to use a try...catch statement to catch any error that countSheep() may throw and pass it to a handleError() function.\n\nWhat is the correct implementation of the try...catch?",
         options: [
-            { letter: "A", text: "public ExtendedController(ApexPages StandardController cntrl) { }" },
-            { letter: "B", text: "ApexPages.CurrentPage().getParameters().put('input\', 'TestValue');" },
-            { letter: "C", text: "insert pageRef." },
-            { letter: "D", text: "Test.setCurrentPage(pageRef);" },
-            { letter: "E", text: "String nextPage- controller.save().getUrl();" }
+            { letter: "A", text: "try {\n    setTimeout(function() {\n        countSheep();\n    }, 1000);\n} catch (e) {\n    handleError(e);\n}" },
+            { letter: "B", text: "try {\n    countSheep();\n} finally {\n    handleError(e);\n}" },
+            { letter: "C", text: "setTimeout(function() {\n    try {\n        countSheep();\n    } catch (e) {\n        handleError(e);\n    }\n}, 1000);" },
+            { letter: "D", text: "try {\n    countSheep();\n} handleError(e) {\n    catch(e);\n}" }
         ],
-        answer: ["B", "D", "E"]
+        answer: "C"
     },
     {
         id: "q84",
         isMultiple: true,
-        question: " If apex code executes inside the execute() method of an Apex class when implementing the Batchable interface, which statement are true regarding governor limits? Choose 2 answers",
+        question: "Given the code below:\n\nWhich three code segments result in a correct conversion from number to string? Choose 3 answers.",
         options: [
-            { letter: "A", text: "The Apex governor limits cannot be exceeded due to the asynchronous nature of the transaction." },
-            { letter: "B", text: "The Apex governor limits are relaxed while calling the costructor of the Apex class." },
-            { letter: "C", text: "The Apex governor limits might be higher due to the asynchronous nature of the transaction" },
-            { letter: "D", text: "The apex governor limits are reset for each iteration of the execute() method." }
+            { letter: "A", text: "let scrValue = String(numValue);" },
+            { letter: "B", text: "let strValue = numValue.toString();" },
+            { letter: "C", text: "let strValue = numValue.toText();" },
+            { letter: "D", text: "let strValue = '' + numValue;" },
+            { letter: "E", text: "let strValue = (String)numValue;" }
         ],
-        answer: ["C", "D"]
+        answer: ["A", "B", "D"]
     },
     {
         id: "q85",
-        isMultiple: true,
-        question: "A developer needs to create a custom button for the Account object that, when clicked, will perform a series of calculation and redirect the user to a custom visualforce page. Which three attributes need to be defined with values in the <apex:page></apex:page> tag to accomplish this? Choose 3 answers",
+        isMultiple: false,
+        question: "Refer to the following code:\n\n<html lang=\"en\">\n<body>\n<div onclick=\"console.log('Outer message');\">\n<button id=\"myButton\">Click me</button>\n</div>\n</body>\n<script>\nfunction displayMessage(ev) {\n    ev.stopPropagation();\n    console.log('Inner message.');\n}\nconst elem = document.getElementById('myButton');\nelem.addEventListener('click', displayMessage);\n</script>\n</html>\n\nWhat will the console show when the button is clicked?",
         options: [
-            { letter: "A", text: "standard Controller" },
-            { letter: "B", text: "readOnly" },
-            { letter: "C", text: "Action" },
-            { letter: "D", text: "extensions" },
-            { letter: "E", text: "renderAs" }
+            { letter: "A", text: "Inner message\nOuter message" },
+            { letter: "B", text: "Inner message" },
+            { letter: "C", text: "Outer message" },
+            { letter: "D", text: "Outer message\nInner message" }
         ],
-        answer: ["A", "C", "D"]
+        answer: "B"
     },
     {
         id: "q86",
-        isMultiple: true,
-        question: "Which three data types can a SOQL query return? Choose 3 answers.",
+        isMultiple: false,
+        question: "A developer creates a simple webpage with an input field. When a user enters text in the input field and clicks the button, the actual value of the field must be displayed in the console.\n\nHere is the HTML file content:\n<input type=\"text\" value=\"Hello\" name=\"input\">\n<button type=\"button\">Display</button>\n\nThe developer wrote the JavaScript code below:\n\nconst button = document.querySelector('button');\nbutton.addEventListener('click', () => {\n    const input = document.querySelector('input');\n    console.log(input.getAttribute('value'));\n});\n\nWhen the user clicks the button, the output is always \"Hello\".\n\nWhat needs to be done to make this code work as expected?",
         options: [
-            { letter: "A", text: "List" },
-            { letter: "B", text: "Long" },
-            { letter: "C", text: "Integer" },
-            { letter: "D", text: "sObject" }
+            { letter: "A", text: "Replace line 03 with const input = document.getElementByName('input');" },
+            { letter: "B", text: "Replace line 02 with button.addEventListener(\"onclick\", function() {" },
+            { letter: "C", text: "Replace line 02 with button.addCallback(\"click\", function() {" },
+            { letter: "D", text: "Replace line 04 with console.log(input.value);" }
         ],
-        answer: ["A", "C", "D"]
+        answer: "D"
     },
     {
         id: "q87",
-        isMultiple: true,
-        question: "What is accurate statement about with sharing keyword? Choose 2 answers.",
+        isMultiple: false,
+        question: "Given the code below:\n\n01 function GameConsole(name) {\n02     this.name = name;\n03 }\n04\n05 GameConsole.prototype.load = function(gamename) {\n06     console.log(`${this.name} is loading a game: ${gamename} ...`);\n07 }\n08 function Console16Bit(name) {\n09     GameConsole.call(this, name);\n10 }\n11 Console16Bit.prototype = Object.create(GameConsole.prototype);\n12 // insert code here\n13     console.log(`${this.name} is loading a cartridge game: ${gamename} ...`);\n14 }\n15 const console16bit = new Console16Bit('SNEGeneziz');\n16 console16bit.load('Super Monic 3x Force');\n\nWhat should a developer insert at line 12 to output the following message using the method?\n\nSNEGeneziz is loading a cartridge game: Super Monic 3x Force ...",
         options: [
-            { letter: "A", text: "Either inner or outer classes can be declared as with sharing, but not both." },
-            { letter: "B", text: "Both inner and outer classes can be declared as with sharing." },
-            { letter: "C", text: "Inner classes do not inherit the sharing settings from the container class." },
-            { letter: "D", text: "Inner classes inherit the sharing settings from the container class." }
+            { letter: "A", text: "Console16Bit.prototype.load = function(gamename) {" },
+            { letter: "B", text: "Console16Bit.prototype.load(gamename) = function() {" },
+            { letter: "C", text: "Console16Bit = Object.create(GameConsole.prototype).load = function(gamename) {" },
+            { letter: "D", text: "Console16Bit.prototype.load(gamename) {" }
         ],
-        answer: ["B", "C"]
+        answer: "A"
     },
     {
         id: "q88",
-        isMultiple: true,
-        question: "What is a good practice for a developer to follow when writing a trigger? (Choose 2)",
+        isMultiple: false,
+        question: "Given the following code:\n\n<input type=\"file\" onchange=\"previewFile()\">\n<img src=\"\" height=\"200\" alt=\"Image Preview...\"/>\n\nThe JavaScript portion is:\n\n01 function previewFile(){\n02     const preview = document.querySelector('img');\n03     const file = document.querySelector('input[type=file]').files[0];\n04     // line 4 code\n05     reader.addEventListener(\"load\", () => {\n06         preview.src = reader.result;\n07     }, false);\n08     // line 8 code\n09 }\n\nIn lines 04 and 08, which code allows the user to select an image from their local computer and to display the image in the browser?",
         options: [
-            { letter: "A", text: "Using the Map data structure to hold query results by ID." },
-            { letter: "B", text: "Using @future methods to perform DML operations." },
-            { letter: "C", text: "Using synchronous callouts to call external systems." },
-            { letter: "D", text: "Using the Set data structure to ensure distinct records." }
+            { letter: "A", text: "04 const reader = new FileReader();\n08 if (file) URL.createObjectURL(file);" },
+            { letter: "B", text: "04 const reader = new File();\n08 if (file) reader.readAsDataURL(file);" },
+            { letter: "C", text: "04 const reader = new File();\n08 if (file) URL.createObjectURL(file);" },
+            { letter: "D", text: "04 const reader = new FileReader();\n08 if (file) reader.readAsDataURL(file);" }
         ],
-        answer: ["A", "D"]
+        answer: "D"
     },
     {
         id: "q89",
         isMultiple: true,
-        question: "A developer can use the debug log to see which three types of information? Choose 3 answers",
+        question: "Refer to the following code:\n\nlet sampleText = 'The quick brown fox jumps';\n\nA developer needs to determine if a certain substring is part of a string.\nWhich three expressions return true for the given substring? Choose 3 answers.",
         options: [
-            { letter: "A", text: "HTTP callout to external systems" },
-            { letter: "B", text: "Resource usage and limits" },
-            { letter: "C", text: "Database changes" },
-            { letter: "D", text: "Actions triggered by time-based workflow" },
-            { letter: "E", text: "User login events" }
+            { letter: "A", text: "sampleText.includes(' quick ', 4);" },
+            { letter: "B", text: "sampleText.includes(' quick ') !== -1;" },
+            { letter: "C", text: "sampleText.includes(' Fox ', 3)" },
+            { letter: "D", text: "sampleText.includes('fox');" },
+            { letter: "E", text: "sampleText.includes(' fox ');" }
         ],
-        answer: ["A", "B", "C"]
+        answer: ["A", "D", "E"]
     },
     {
         id: "q90",
-        isMultiple: true,
-        question: "In Lightning component framework, which resource can be used to fire events? Choose 2 answers.",
+        isMultiple: false,
+        question: "A developer creates a new web server that uses Node.js. It imports a server library that uses events and callbacks for handling server functionality.\n\nThe server library is imported with require and is made available to the code by a variable named server. The developer wants to log any issues that the server has while booting up.\n\nGiven the code and the information the developer has, which code logs an error at boot with an event?",
         options: [
-            { letter: "A", text: "Visualforce controller actions" },
-            { letter: "B", text: "Third-party Javascript code" },
-            { letter: "C", text: "Javascript controller actions" },
-            { letter: "D", text: "Third-party web service code" }
+            { letter: "A", text: "try {\n    server.start();\n} catch(error) {\n    console.log('ERROR', error);\n}" },
+            { letter: "B", text: "server.catch((server) => {\n    console.log('ERROR', error);\n});" },
+            { letter: "C", text: "server.on('error', (error) => {\n    console.log('ERROR', error);\n});" },
+            { letter: "D", text: "server.error((server) => {\n    console.log('ERROR', error);\n});" }
         ],
-        answer: ["B", "C"]
+        answer: "C"
     },
     {
         id: "q91",
-        isMultiple: true,
-        question: "What are two considerations for custom Apex Exception classes? Choose 2 answers.",
+        isMultiple: false,
+        question: "A developer has a formatName function that takes two arguments, firstName and lastName, and returns a string. They want to schedule the function to run once after five seconds.\n\nWhat is the correct syntax to schedule this function?",
         options: [
-            { letter: "A", text: "Custom Exceptions cannot be extended by other Exception classes." },
-            { letter: "B", text: "Constructor for custom Exceptions can only accept string values as arguments." },
-            { letter: "C", text: "Custom Exception class names must end with the word 'Exception'." },
-            { letter: "D", text: "Custom Exception classes must extend the base Exception class." }
+            { letter: "A", text: "setTimeout('formatName', 5000, 'John', 'Doe');" },
+            { letter: "B", text: "setTimeout(() => { formatName('John', 'Doe') }, 5000);" },
+            { letter: "C", text: "setTimeout(formatName('John', 'Doe'), 5000);" },
+            { letter: "D", text: "setTimeout(formatName(), 5000, \"John\", \"Doe\");" }
         ],
-        answer: ["C", "D"]
+        answer: "B"
     },
     {
         id: "q92",
-        isMultiple: true,
-        question: "Which two statements are true about Apex code executed in Anonymous Blocks? Choose 2 answers",
+        isMultiple: false,
+        question: "A developer receives a comment from the Tech Lead that the code given below has an error:\n\nconst monthName = 'July';\nconst year = 2019;\nif(year === 2019) {\n    monthName = 'June';\n}\n\nWhich line edit should be made to make this code run?",
         options: [
-            { letter: "A", text: "The code runs in system mode having access to all objects and fields." },
-            { letter: "B", text: "The code runs with the permissions of the user specified in the runAs() statement" },
-            { letter: "C", text: "The code runs with the permissions of the logged user." },
-            { letter: "D", text: "All DML operations are automatically rolled back." },
-            { letter: "E", text: "Successful DML operations are automatically committed." }
+            { letter: "A", text: "03 if (year == 2019) {" },
+            { letter: "B", text: "02 let year = 2019;" },
+            { letter: "C", text: "01 let monthName = 'July';" },
+            { letter: "D", text: "02 const year = 2020;" }
         ],
-        answer: ["C", "E"]
+        answer: "C"
     },
     {
         id: "q93",
         isMultiple: true,
-        question: "Universal Containers wants Opportunities to be locked from editing when reaching the Closed/Won stage. Which two strategies should a developer use to accomplish this? (Choose two.)",
+        question: "A developer is wondering whether to use Promise.then or Promise.catch, especially when a Promise throws an error.\n\nWhich two promises are rejected? Choose 2 answers.",
         options: [
-            { letter: "A", text: "Use a validation rule." },
-            { letter: "B", text: "Use the Process Automation Settings." },
-            { letter: "C", text: "Use a Trigger." },
-            { letter: "D", text: "Use a Visual Workflow." }
+            { letter: "A", text: "Promise.reject('cool error here').catch(error => console.error(error));" },
+            { letter: "B", text: "Promise.reject('cool error here').then(error => console.error(error));" },
+            { letter: "C", text: "new Promise(() => { throw 'cool error here'; }).then(null, error => console.error(error));" },
+            { letter: "D", text: "new Promise((resolve, reject) => { throw 'cool error here'; }).catch(error => console.error(error));" }
         ],
-        answer: ["A", "C"]
+        answer: ["A", "D"]
     },
     {
         id: "q94",
         isMultiple: true,
-        question: "A developer needs to know if all tests currently pass in a Salesforce environment. Which feature can the developer use? (Choose 2)",
+        question: "What are two unique features of functions defined with a fat arrow as compared to a normal function definition? Choose 2 answers.",
         options: [
-            { letter: "A", text: "Workbench Metadata Retrieval" },
-            { letter: "B", text: "Salesforce UI Apex Test Execution" },
-            { letter: "C", text: "Developer Console" },
-            { letter: "D", text: "ANT Migration Tool" }
+            { letter: "A", text: "If the function has a single expression in the function body, the expression will be evaluated and implicitly returned." },
+            { letter: "B", text: "The function receives an argument that is always in scope, called parentThis, which is the enclosing lexical scope." },
+            { letter: "C", text: "The function uses the this from the enclosing scope." },
+            { letter: "D", text: "The function generates its own this, making it useful for separating the function's scope from its enclosing scope." }
         ],
-        answer: ["B", "C"]
+        answer: ["A", "C"]
     },
     {
         id: "q95",
         isMultiple: true,
-        question: "Universal Containers has created a unique process for tracking container repairs. A custom field, status__c, has been created within the container__c custom object. A developer is tasked with sending notifications to multiple external systems every time the value of the status__picklist changes. Which two tools should the developer use to meet the business requirement and ensure low maintenance of the solution? Choose 2 answers",
+        question: "Which three options show valid methods for creating a fat arrow function? Choose 3 answers.",
         options: [
-            { letter: "A", text: "Platform event" },
-            { letter: "B", text: "Apex trigger" },
-            { letter: "C", text: "Apex callouts" },
-            { letter: "D", text: "Record-Triggered flow" }
+            { letter: "A", text: "[] => (console.log('executed');)" },
+            { letter: "B", text: "(x, y, z) => (console.log('executed');)" },
+            { letter: "C", text: "x, y, z => (console.log('executed');)" },
+            { letter: "D", text: "x => (console.log('executed');)" },
+            { letter: "E", text: "() => (console.log('executed');)" }
         ],
-        answer: ["A", "C"]
+        answer: ["B", "D", "E"]
     },
     {
         id: "q96",
-        isMultiple: true,
-        question: "Which three web technologies can be integrated into a Visualforce page? (Choose three.)",
+        isMultiple: false,
+        question: "Which JavaScript methods can be used to serialize an object into a string and deserialize a JSON string into an object, respectively?",
         options: [
-            { letter: "A", text: "JavaScript" },
-            { letter: "B", text: "Java" },
-            { letter: "C", text: "CSS" },
-            { letter: "D", text: "HTML" },
-            { letter: "E", text: "PHP" }
+            { letter: "A", text: "JSON.parse and JSON.deserialize" },
+            { letter: "B", text: "JSON.stringify and JSON.parse" },
+            { letter: "C", text: "JSON.serialize and JSON.deserialize" },
+            { letter: "D", text: "JSON.encode and JSON.decode" }
         ],
-        answer: ["A", "C", "D"]
+        answer: "B"
     },
     {
         id: "q97",
-        isMultiple: true,
-        question: "Given: Map <ID, Account> accountMap = new Map<ID, Account> ([SELECT Id, Name FROM Account]); What are three valid Apex loop structures for iterating through items in the collection? (Choose three.)",
+        isMultiple: false,
+        question: "Which code statement correctly retrieves and returns an object from localStorage?",
         options: [
-            { letter: "A", text: "for (Account accountRecord : accountMap.keySet()) {...}" },
-            { letter: "B", text: "for (Integer i=0; I &lt accountMap.size(); i++) {...}" },
-            { letter: "C", text: "for (ID accountID : accountMap.keySet()) {...}" },
-            { letter: "D", text: "for (ID accountID : accountMap) {...}" },
-            { letter: "E", text: "for (Account accountRecord : accountMap.values()) {...}" },
+            { letter: "A", text: "const retrieveFromLocalStorage = (storageKey) => {\n    return window.localStorage[storageKey];\n}" },
+            { letter: "B", text: "const retrieveFromLocalStorage = () => {\n    return JSON.stringify(window.localStorage.getItem(storageKey));\n}" },
+            { letter: "C", text: "const retrieveFromLocalStorage = (storageKey) => {\n    return window.localStorage.getItem(storageKey);\n}" },
+            { letter: "D", text: "const retrieveFromLocalStorage = (storageKey) => {\n    return JSON.parse(window.localStorage.getItem(storageKey));\n}" }
         ],
-        answer: ["B", "C", "E"]
+        answer: "D"
     },
     {
         id: "q98",
         isMultiple: true,
-        question: "What is a valid source and destination pair that can send or receive change sets? (Choose 2)",
+        question: "A developer creates a generic function to log custom messages in the console. To do this, the function below is implemented.\n\n01 function logStatus(status){\n02     console./*Answer goes here*/('Item status is: %s', status);\n03 }\n\nWhich three console logging methods allow the use of string substitution in line 02? Choose 3 answers.",
         options: [
-            { letter: "A", text: "Sandbox to Sandbox" },
-            { letter: "B", text: "Developer Edition to Sandbox" },
-            { letter: "C", text: "Sandbox to Production" },
-            { letter: "D", text: "Developer Edition to Production" }
+            { letter: "A", text: "Error" },
+            { letter: "B", text: "Assert" },
+            { letter: "C", text: "Log" },
+            { letter: "D", text: "Message" },
+            { letter: "E", text: "Info" }
         ],
-        answer: ["A", "C"]
+        answer: ["A", "C", "E"]
     },
     {
         id: "q99",
-        isMultiple: true,
-        question: "A Licensed_Professional__c custom object exist in the system with two Master-Detail fields for the following objects: Certification__c and Contact. Users with the 'Certification Representative' role can access the Certification records they own and view the related Licensed Professionals records, however users with the 'Salesforce representative' role report they cannot view any Licensed professional records even though they own the associated Contact record. What are two likely causes of users in the 'Sales Representative' role not being able to access the Licensed Professional records? Choose 2 answers",
+        isMultiple: false,
+        question: "A developer uses the code below to format a date:\n\nconst date = new Date(2020, 05, 10);\nconst dateDisplayOptions = {\n    year: 'numeric',\n    month: 'long',\n    day: 'numeric'\n};\n\nconst formattedDate = date.toLocaleDateString('en', dateDisplayOptions);\n\nAfter executing, what is the value of formattedDate?",
         options: [
-            { letter: "A", text: "The organization recently modified the Sales representative role to restrict Read/Write access to Licensed_Professional__c" },
-            { letter: "B", text: "The organization has a private sharing model for Certification__c, and Certification__c is the primary relationship in the Licensed_Professional__c object. " },
-            { letter: "C", text: "The organization has a private sharing model for Certification__c, and Contact is the primary relationship in the Licensed_Professional__c object" },
-            { letter: "D", text: "The organization's sharing rules for Licensed_Professional__c have not finished their recalculation process." }
+            { letter: "A", text: "June 10, 2020" },
+            { letter: "B", text: "May 10, 2020" },
+            { letter: "C", text: "November 05, 2020" },
+            { letter: "D", text: "October 05, 2020" }
         ],
-        answer: ["A", "B"]
+        answer: "A"
     },
     {
         id: "q100",
         isMultiple: true,
-        question: "A developer needs to create a custom Visualforce button for the Opportunity object page layout that will cause a web service to be called and redirect the user to a new page when clicked. Which three attributes need to be defined in the <apex:page> tag of the Visualforce page to enable this functionality? Choose three answers.",
+        question: "Which two options are core Node.js modules? Choose 2 answers.",
         options: [
-            { letter: "A", text: "Controller" },
-            { letter: "B", text: "StandardController" },
-            { letter: "C", text: "Action" },
-            { letter: "D", text: "Extensions" }
+            { letter: "A", text: "iostream" },
+            { letter: "B", text: "http" },
+            { letter: "C", text: "exception" },
+            { letter: "D", text: "worker" }
         ],
-        answer: ["B", "C", "D"]
+        answer: ["A", "B"]
     },
     {
         id: "q101",
         isMultiple: false,
-        question: "A developer creates a new Apex trigger with a helper class, and writes a test class that only exercises 95% coverage of new Apex helper class. Change Set deployment to production fails with the test coverage warning: 'Test coverage of selected Apex Trigger is 0%, at least 1% test coverage is required' What should the developer do to successfully deploy the new Apex trigger and helper class?",
+        question: "Cloud Kicks has a class to represent items for sale in an online store, as shown below:\n\nclass Item {\n    constructor(name, price) {\n        this.name = name;\n        this.price = price;\n    }\n    formattedPrice() {\n        return '$' + String(this.price);\n    }\n}\n\nA new business requirement comes in that requests a ClothingItem class that should have all of the properties and methods of the Item class but will also have properties that are specific to clothes.\n\nWhich line of code properly declares the ClothingItem class such that it inherits from Item?",
         options: [
-            { letter: "A", text: "Increase the test class coverage on the helper class" },
-            { letter: "B", text: "Remove the falling test methods from the test class." },
-            { letter: "C", text: "Create a test class and methods to cover the Apex trigger" },
-            { letter: "D", text: "Run the tests using the 'Run All Tests' method." }
+            { letter: "A", text: "class ClothingItem implements Item {" },
+            { letter: "B", text: "class ClothingItem {" },
+            { letter: "C", text: "class ClothingItem extends Item {" },
+            { letter: "D", text: "class ClothingItem super Item {" }
         ],
         answer: "C"
     },
     {
         id: "q102",
         isMultiple: false,
-        question: "When viewing a Quote, the sales representative wants to easily see how many discounted items are included in the Quote Line Items. What should a developer do to meet this requirement?",
+        question: "Which statement accurately describes the behaviour of the async/await keywords?",
         options: [
-            { letter: "A", text: "Create a trigger on the Quote object that queries the Quantity field on discounted Quote Line Items." },
-            { letter: "B", text: "Create a roll-up summary field on the Quote object that performs a SUM on the quote Line Item Quantity field, filtered for only discounted Quote Line Items." },
-            { letter: "C", text: "Create a Workflow Rule on the Quote Line Item object that updates a field on the parent Quote when the item is discounted." },
-            { letter: "D", text: "Create a formula field on the Quote object that performs a SUM on the Quote Line Item Quantity field, filtered for only discounted Quote Line Items." }
+            { letter: "A", text: "The associated function will always return a promise." },
+            { letter: "B", text: "The associated function sometimes returns a promise." },
+            { letter: "C", text: "The associated class contains some asynchronous functions." },
+            { letter: "D", text: "The associated function can only be called via asynchronous methods." }
         ],
-        answer: "B"
+        answer: "A"
     },
     {
         id: "q103",
         isMultiple: false,
-        question: "Which statement generates a list of Leads and Contacts that have a field with the phrase 'ACME'?",
+        question: "Refer to the code below:\n\n01 try {\n02     greeting = 'Goodbye';\n03     salutation = 'Hello, Hello, Hello';\n04     greeting = 'Hello';\n05     console.log('Hello');\n06     salutation = 'Goodbye';\n07 } catch(err) {\n08     salutation = 'Hey hello';\n09 } finally {\n10     salutation = 'Hello, Hello';\n11 }\n\nLine 05 causes an error.\nWhat are the values of greeting and salutation once code completes?",
         options: [
-            { letter: "A", text: "List&ltList &ltsObject&gt&gt searchList = (FIND '*ACME*' IN ALL FIELDS RETURNING Contact, Lead);" },
-            { letter: "B", text: "Map &ltsObject&gt searchList = (FIND '*ACME*' IN ALL FIELDS RETURNING Contact, Lead);" },
-            { letter: "C", text: "List &ltsObject&gt searchList = (FIND '*ACME*' IN ALL FIELDS RETURNING Contact, Lead);" },
-            { letter: "D", text: "List&ltList &lt sObject&gt&gt searchList = (SELECT Name, ID FROM Contact, Lead WHERE Name like '%ACME%');" }
+            { letter: "A", text: "Greeting is Goodbye and salutation is I say Hello." },
+            { letter: "B", text: "Greeting is Hello and salutation is Hello, Hello" },
+            { letter: "C", text: "Greeting is Hello and salutation is I say hello." },
+            { letter: "D", text: "Greeting is Goodbye and salutation is Hello, Hello." }
         ],
-        answer: "A"
+        answer: "B"
     },
     {
         id: "q104",
         isMultiple: false,
-        question: "A developer needs to join data received from an integration with an external system with parent records in Salesforce. The data set does not contain the Salesforce IDs of the parent records, but it does have a foreign key attribute that can be used to identify the parent. Which action will allow the developer to relate records in the data model without knowing the Salesforce ID?",
+        question: "Given HTML below:\n\n<div>\n    <div id=\"row-uc\">Universal Container</div>\n    <div id=\"row-aa\">Applied Shipping</div>\n    <div id=\"row-bt\">Burlington Textiles</div>\n</div>\n\nWhich statement adds the priority-account CSS class to the Universal Container row?",
         options: [
-            { letter: "A", text: "Create a custom field on the child object of type External Relationship." },
-            { letter: "B", text: "Create and populate a custom field on the parent object marked as Unique." },
-            { letter: "C", text: "Create and populate a custom field on the parent object marked as an External ID." },
-            { letter: "D", text: "Create a custom field on the child object of type Foreign Key." }
+            { letter: "A", text: "document.querySelector('#row-uc').classes.push('priority-account');" },
+            { letter: "B", text: "document.querySelector('#row-uc').classList.add('priority-account');" },
+            { letter: "C", text: "document.querySelectorAll('#row-uc').classList.add('priority-account');" },
+            { letter: "D", text: "document.queryElementById('row-uc').addClass('priority-account');" }
         ],
-        answer: "C"
+        answer: "B"
     },
     {
         id: "q105",
-        isMultiple: false,
-        question: "Which approach should be used to provide test data for a test class?",
+        isMultiple: true,
+        question: "Refer to the code below:\n\nlet inArray = [[1, 2], [3, 4, 5]];\n\nWhich two statements result in the array [1, 2, 3, 4, 5]?\nChoose 2 answers.",
         options: [
-            { letter: "A", text: "Use a test data factory class to create test data." },
-            { letter: "B", text: "Access data in @TestVisible class variables." },
-            { letter: "C", text: "Query for existing records in the database." },
-            { letter: "D", text: "Execute anonymous code blocks that create data." }
+            { letter: "A", text: "[].concat.apply([], inArray);" },
+            { letter: "B", text: "[].concat([...inArray]);" },
+            { letter: "C", text: "[].concat.apply(inArray, []);" },
+            { letter: "D", text: "[].concat(...inArray);" }
         ],
-        answer: "A"
+        answer: ["A", "D"]
     },
     {
         id: "q106",
-        isMultiple: false,
-        question: "A developer needs to confirm that a Contact trigger works correctly without changing the organization's data. What should the developer do to test the Contact trigger?",
+        isMultiple: true,
+        question: "Universal Containers (UC) notices that its application that allows users to search for accounts makes a network request each time a key is pressed. This results in too many requests for the server to handle.\n\nTo address this problem, UC decides to implement a debounce function on the string change handler.\n\nWhat are three key steps to implement this debounce function?\nChoose 3 answers.",
         options: [
-            { letter: "A", text: "Use the Open execute Anonymous feature on the Developer Console to run an 'insert Contact' DMLstatement" },
-            { letter: "B", text: "Use the Test menu on the Developer Console to run all test classes for the Contact trigger" },
-            { letter: "C", text: "Use Deploy from the VSCode IDE to display an 'insert Contact' Apex class." },
-            { letter: "D", text: "Use the New button on the Salesforce Contacts Tab to create a new Contact record." }
+            { letter: "A", text: "Store the timerId of the setTimeout last enqueued by the search string change handler." },
+            { letter: "B", text: "If there is an existing setTimeout and the search string changes, cancel the existing setTimeout using the persisted timerId and replace it with a new setTimeout." },
+            { letter: "C", text: "Ensure that the network request has the property debounce set to true." },
+            { letter: "D", text: "If there is an existing setTimeout and the search string changes, allow the existing setTimeout to finish, and do not enqueue a new setTimeout." },
+            { letter: "E", text: "When the search string changes, enqueue the request within a setTimeout." }
         ],
-        answer: "B"
+        answer: ["A", "B", "E"]
     },
     {
         id: "q107",
         isMultiple: false,
-        question: "A developer is creating a Visualforce page that allows users to create multiple Opportunities. The developer is asked to verify the current user's default Opportunity record type, and set certain default values based on the record type before inserting the record. How can the developer find the current user's default record type?",
+        question: "Refer to the following code:\n\nfunction test(val) {\n    if (val === undefined) {\n        return 'Undefined values!';\n    }\n    if (val === null) {\n        return 'Null value!';\n    }\n    return val;\n}\n\nlet x;\ntest(x);\n\nWhat is returned by the function call?",
         options: [
-            { letter: "A", text: "Query the Profile where the ID equals userInfo.getProfileID() and then use the profile.Opportunity.getDefaultRecordType() method." },
-            { letter: "B", text: "Use Opportunity.SObjectType.getDescribe().getRecordTypeInfos() to get a list of record types, and iterate trought them until isdefaultRecordTypeMapping() is true." },
-            { letter: "C", text: "Use the Schema.userInfo.Opportunity.getDefaultRecordType() method." },
-            { letter: "D", text: "Create the opportunity and check the opportunity.recordType before inserting, which will have the record ID of the current user's default record type" }
+            { letter: "A", text: "Undefined" },
+            { letter: "B", text: "'Null value!'" },
+            { letter: "C", text: "The function call throws an error." },
+            { letter: "D", text: "'Undefined values!'" }
         ],
-        answer: "B"
+        answer: "D"
     },
     {
         id: "q108",
-        isMultiple: false,
-        question: "A PrimaryId_c custom field exists on the candidate_c custom object. The filed is used to store each candidate's id number and is marked as Unique in the schema definition. As part of a data enrichment process. Universal Containers has a CSV file that contains updated data for all candidates in the system, the file contains each Candidate's primary id as a data point. Universal Containers wants to upload this information into Salesforce, while ensuring all data rows are correctly mapped to a candidate in the system. Which technique should the developer implement to streamline the data upload?",
+        isMultiple: true,
+        question: "Given the expressions var1 and var2, what are two valid ways to return the concatenation of the two expressions and ensure it is a string?\nChoose 2 answers.",
         options: [
-            { letter: "A", text: "A Update the PrimaryId_c field definition to mark it as an External Id." },
-            { letter: "B", text: "Create a before Insert trigger to correctly map the records." },
-            { letter: "C", text: "Create a Process Builder on the Candidate_c object to map the records." },
-            { letter: "D", text: "Upload the CSV into a custom object related to Candidate_c." }
+            { letter: "A", text: "String(var1).concat(var2)" },
+            { letter: "B", text: "var1 + var2" },
+            { letter: "C", text: "var1.toString() + var2.toString()" },
+            { letter: "D", text: "String.concat(var1 + var2)" }
         ],
-        answer: "A"
+        answer: ["A", "C"]
     },
     {
         id: "q109",
         isMultiple: false,
-        question: "A developer is asked to create a Visualforce page that lists the contacts owned by the current user. This component will be embedded In a Lightning page. Without writing unnecessary code, which controller should be used for this purpose?",
+        question: "Given the following code:\n\ndocument.body.addEventListener('click', (event) => {\n    if (/* CODE REPLACEMENT HERE */) {\n        console.log('button clicked!');\n    }\n});\n\nWhich replacement for the conditional statement allows a developer to correctly determine that a button on the page is clicked?",
         options: [
-            { letter: "A", text: "Standard list controller" },
-            { letter: "B", text: "Lightning controller" },
-            { letter: "C", text: "Custom controller" },
-            { letter: "D", text: "Standard controller" }
+            { letter: "A", text: "event.nodeTarget == this" },
+            { letter: "B", text: "event.target.nodeName == 'BUTTON'" },
+            { letter: "C", text: "button.addEventListener('click')" },
+            { letter: "D", text: "event.clicked" }
         ],
-        answer: "A"
+        answer: "B"
     },
     {
         id: "q110",
         isMultiple: false,
-        question: "How can a developer determine, from the DescribeSObjectResult, if the current user will be able to create records for an object in Apex?",
+        question: "Refer to the code below:\n\nconsole.log(0);\nsetTimeout(() => {\n    console.log(1);\n});\nconsole.log(2);\nsetTimeout(() => {\n    console.log(3);\n}, 0);\nconsole.log(4);\n\nIn which sequence will the numbers be logged?",
         options: [
-            { letter: "A", text: "By using the hasAccess() method." },
-            { letter: "B", text: "By using the canCreate() method." },
-            { letter: "C", text: "By using the isCreatable() method." },
-            { letter: "D", text: "By using the isInsertable() method." }
+            { letter: "A", text: "13024" },
+            { letter: "B", text: "02413" },
+            { letter: "C", text: "02431" },
+            { letter: "D", text: "01234" }
         ],
         answer: "C"
     },
     {
         id: "q111",
         isMultiple: false,
-        question: "A developer is creating an enhancement to an application that will allow people to be related to their employer. Which date model should be used to track the data?",
+        question: "Refer to the code snippet:\n\nfunction getAvailabilityMessage(item) {\n    if (getAvailability(item)) {\n        var msg = \"Username available\";\n    }\n    return msg;\n}\n\nA developer writes this code to return a message to a user attempting to register a new username. If the username is available, the variable msg contains the message. What is the return value of msg when getAvailabilityMessage(\"newUserName\") is executed and getAvailability(\"newUserName\") returns false?",
         options: [
-            { letter: "A", text: "Create a master detail relationship to indicate that a person has an employer." },
-            { letter: "B", text: "Create a junction object to relate many people to many employers trough lookup relationship." },
-            { letter: "C", text: "Create a junction object to relate many people to many employers trough master-detail relationship." },
-            { letter: "D", text: "Create a lookup relationship to indicate that a person has an employer." }
+            { letter: "A", text: "\"Msg is not defined\"" },
+            { letter: "B", text: "\"newUserName\"" },
+            { letter: "C", text: "\"Username available\"" },
+            { letter: "D", text: "undefined" }
         ],
         answer: "D"
     },
     {
         id: "q112",
         isMultiple: false,
-        question: "A developer has requirement to write Apex code to update a large number of account records on a nightly basis. The system administrator needs to be able to schedule the class to run after business hours on an as-needed basis. Which class definition should be used to successfully implement this requirement?",
+        question: "Refer to the code below:\n\nlet timedFunction = () => {\n    console.log('Timer called.');\n};\nlet timerId = setTimeout(timedFunction, 1000);\n\nWhich statement allows a developer to cancel the scheduled timed function?",
         options: [
-            { letter: "A", text: "Gloabal inherited sharing class processAccount Processor implements Database&gtBachable&ltsObject&gt Schedulable." },
-            { letter: "B", text: "Global inherited sharing class ProcessAccountProcess Implements Queueable" },
-            { letter: "C", text: "Global inherited sharing class ProcessAccountProcessor implements Database. Batchable&ltsObject&gt" },
-            { letter: "D", text: "Global inherited sharing class ProcessAccount Process implements Queueable" }
+            { letter: "A", text: "removeTimeout(timedFunction);" },
+            { letter: "B", text: "removeTimeout(timerId);" },
+            { letter: "C", text: "clearTimeout(timerId);" },
+            { letter: "D", text: "clearTimeout(timedFunction);" }
         ],
-        answer: "A"
+        answer: "C"
     },
     {
         id: "q113",
-        isMultiple: false, question: "A developer is tasked with performing a complex validation using Apex as part of advanced business logic. certain criteria are met for a PurchaseOrder, the developer must throw a custom exception. What is the correct way for the developer to declare a class that can be used as an exception?",
+        isMultiple: false,
+        question: "Refer to the code below:\n\n01 let car1 = new Promise((_, reject) =>\n02     setTimeout(reject, 2000, \"Car 1 crashed in\"));\n03 let car2 = new Promise(resolve => setTimeout(resolve, 1500, \"Car 2 completed\"));\n04 let car3 = new Promise(resolve => setTimeout(resolve, 3000, \"Car 3 completed\"));\n05 Promise.race([car1, car2, car3])\n06 .then(value => {\n07     let result = `${value} the race.`;\n08 })\n09 .catch(err => {\n10     console.log(\"Race is cancelled.\", err);\n11 });\n\nWhat is the value of result when Promise.race executes?",
         options: [
-            { letter: "A", text: "public class PurchaseOrderException implements Exception ()" },
-            { letter: "B", text: "public class PurchaseOrder extends Exception ()" },
-            { letter: "C", text: "public class PurchaseOrder implements Exception ()" },
-            { letter: "D", text: "public class PurchaseOrderException extends Exception ()" }
+            { letter: "A", text: "Car 3 completed the race." },
+            { letter: "B", text: "Car 1 crashed in the race." },
+            { letter: "C", text: "Race is cancelled." },
+            { letter: "D", text: "Car 2 completed the race." }
         ],
         answer: "D"
     },
     {
         id: "q114",
         isMultiple: false,
-        question: "A developer must provide a custom user interface when users edit a Contact. Users must be able to use the interface in Salesforce Classic and Lightning Experience. What should the developer do to provide the custom user interface?",
+        question: "Refer to the code below:\n\nconst searchText = \"Yay! Salesforce is amazing!\";\nlet result1 = searchText.search(/sales/i);\nlet result21 = searchText.search(/sales/i);\nconsole.log(result1);\nconsole.log(result2);\n\nAfter running this code, which result is displayed on the console?",
         options: [
-            { letter: "A", text: "A. Override the Contact's Edit button with a Lightning component in Salesforce Classic and a Lightning component in Lightning experience." },
-            { letter: "B", text: "Override the Contact's Edit button with a Lightning page Salesforce Classic and a Visualforce page in Lightning Experience." },
-            { letter: "C", text: "Override the Contact's Edit button with a Visualforce page in Salesforce Classic and a Lightning page in Lightning experience." },
-            { letter: "D", text: "Override the Contact's Edit button with a Visualforce page in Salesforce Classic and a Lightning component in Lightning Experience." }
+            { letter: "A", text: "5 > 0" },
+            { letter: "B", text: "5 > -1" },
+            { letter: "C", text: "true > false" },
+            { letter: "D", text: "5 > undefined" }
         ],
         answer: "D"
     },
     {
         id: "q115",
         isMultiple: false,
-        question: "A developer must modify the following code snippet to prevent the number of SOQL queries issued from exceeding the platform governor limit. public class without sharing OpportunityService( public static List&ltOpportunityLineItem&gt getOpportunityProducts(Set&ltId&gt opportunityIds){ List&ltOpportunitylineItem&gt oppLineItems = new List&ltOpportunityLineItem&gt(); for(Id thisOppId : opportunityIds){ oppLineItems.addAll([Select Id FROM OpportunityLineItems WHERE OpportunityId = :thisOppId)]; } return oppLineItems; } } The above method might be called during a trigger execution via a Lightning component. Which technique should be implemented to avoid reaching the governor limit?",
+        question: "Given the following code:\n\nlet counter = 0;\nconst logCounter = () => {\n    console.log(counter);\n};\n\nlogCounter();\nsetTimeout(logCounter, 1000);\nsetTimeout(() => {\n    counter++;\n    logCounter();\n}, 1000);\n\nWhat will be the first four numbers logged?",
         options: [
-            { letter: "A", text: "Refactor the code above to perform only one SOQL query, filtering by the Set of opportunityIds." },
-            { letter: "B", text: "Refector the code above to perform the SOQL query only if the Set of opportunityIds contains less 100 Ids." },
-            { letter: "C", text: "Use the System.Limits.getlimitQueries() method to ensure the number of queries is less than 100." },
-            { letter: "D", text: "Use the System.Limits.getQueries() method to ensure the number of queries is less than 100." }
-        ],
-        answer: "A"
-    },
-    {
-        id: "q116",
-        isMultiple: false,
-        question: "Which statement about the Lookup Relationship between a Custom Object and a Standard Object is correct?",
-        options: [
-            { letter: "A", text: "The Custom Object will be deleted when the referenced Standard Object is deleted." },
-            { letter: "B", text: "The Lookup Relationship cannot be marked as required on the page layout for the Custom Object." },
-            { letter: "C", text: "The Lookup Relationship on the Custom Object can prevent the deletion of the Standard Object." },
-            { letter: "D", text: "The Custom Object inherits security from the referenced Standard Objects." }
+            { letter: "A", text: "0012" },
+            { letter: "B", text: "0123" },
+            { letter: "C", text: "0112" },
+            { letter: "D", text: "0122" }
         ],
         answer: "C"
     },
     {
-        id: "q117",
+        id: "q116",
         isMultiple: false,
-        question: "What is a correct pattern to follow when programming in Apex on a Multi-tenant platform?",
+        question: "Refer to the code below:\n\nfunction changeValue(param) {\n    param = 5;\n}\n\nlet a = 10;\nlet b = 10;\n\nchangeValue(b);\nconst result = a + '-' + b;\n\nWhat is the value of result when the code executes?",
         options: [
-            { letter: "A", text: "Queries select the fewest fields and records possible to avoid exceeding governor limits." },
-            { letter: "B", text: "Apex code is created in a separate environment from schema to reduce deployment errors." },
-            { letter: "C", text: "DML is performed on one record at a time to avoid possible data concurrency issues." },
-            { letter: "D", text: "Apex classes use the 'with sharing' keyword to prevent access from other server tenants." }
-        ],
-        answer: "A"
-    },
-    {
-        id: "q118",
-        isMultiple: false,
-        question: "Universal Containers stores Orders and Line Items in Salesforce. For security reason, financial representatives are allowed to see information on the Order such as order amount, but they are not allowed to see the Line items on the Order. Which type of relationship should be used?",
-        options: [
-            { letter: "A", text: "Master Detail" },
-            { letter: "B", text: "Indirect lookup" },
-            { letter: "C", text: "Lookup" },
-            { letter: "D", text: "Direct Lookup" }
-        ],
-        answer: "A"
-    },
-    {
-        id: "q119",
-        isMultiple: false,
-        question: "How should a custom user interface be provided when a user edits an Account in Lightning Experience?",
-        options: [
-            { letter: "A", text: "Override the Account's Edit button with Lightning Flow" },
-            { letter: "B", text: "Override the Account's Edit button with Lightning component." },
-            { letter: "C", text: "Override the Account's Edit button with Lightning page." },
-            { letter: "D", text: "Overridethe Account's Edit button with Lightning Action" }
+            { letter: "A", text: "10-5" },
+            { letter: "B", text: "10-10" },
+            { letter: "C", text: "5-10" },
+            { letter: "D", text: "5-5" }
         ],
         answer: "B"
     },
     {
+        id: "q117",
+        isMultiple: false,
+        question: "A developer writes the code below to calculate the factorial of a given number.\n\nfunction factorial(number) {\n    return number + factorial(number - 1);\n}\nfactorial(3);\n\nWhat is the result of executing line 04?",
+        options: [
+            { letter: "A", text: "0" },
+            { letter: "B", text: "6" },
+            { letter: "C", text: "-Infinity" },
+            { letter: "D", text: "RuntimeError" }
+        ],
+        answer: "D"
+    },
+    {
+        id: "q118",
+        isMultiple: false,
+        question: "Refer to the following object:\n\nconst cat = {\n    firstName: 'Fancy',\n    lastName: 'Whiskers',\n    get fullName() {\n        return this.firstName + ' ' + this.lastName;\n    }\n};\n\nHow can a developer access the fullName property for cat?",
+        options: [
+            { letter: "A", text: "cat.get.fullName" },
+            { letter: "B", text: "cat.fullName" },
+            { letter: "C", text: "cat.function.fullName()" },
+            { letter: "D", text: "cat.fullName()" }
+        ],
+        answer: "B"
+    },
+    {
+        id: "q119",
+        isMultiple: true,
+        question: "Given two expressions var1 and var2, what are two valid ways to return the logical AND of the two expressions and ensure it is data type Boolean?\nChoose 2 answers.",
+        options: [
+            { letter: "A", text: "var1 && var2" },
+            { letter: "B", text: "var1.toBoolean() && var2.toBoolean()" },
+            { letter: "C", text: "Boolean(var1 && var2)" },
+            { letter: "D", text: "Boolean(var1) && Boolean(var2)" }
+        ],
+        answer: ["C", "D"]
+    },
+    {
         id: "q120",
         isMultiple: false,
-        question: "A developer created a visualforce page using a custom controller that calls an apex helper class. A method in the helper class hits a governor limit. what is the result of the transaction?",
+        question: "A developer has the function shown below, that is called when a page loads.\n\nfunction onload() {\n    console.log(\"Page has loaded!\");\n}\n\nWhere can the developer see the log statement after loading the page in the browser?",
         options: [
-            { letter: "A", text: "All changes in the transaction are rolled back" },
-            { letter: "B", text: "The helper class creates a savepoint and continues" },
-            { letter: "C", text: "All changes made by the custom controller are saved" },
-            { letter: "D", text: "The custom controller calls the helper class method again" }
+            { letter: "A", text: "Browser JavaScript console" },
+            { letter: "B", text: "Terminal running the web server" },
+            { letter: "C", text: "Browser performance tools" },
+            { letter: "D", text: "On the webpage" }
         ],
         answer: "A"
     },
     {
         id: "q121",
-        isMultiple: true,
-        imageUrl: "pics/img1.png",
-        question: "Given the following code snippet, that is part of a custom controller for a Visualforce page. In which two ways can the try/catch be enclosed to enforce object and field-level permissions and prevent the DML statement from being executed if the current logged-in user does not have the appropriate level of access? Choose 2 answers",
+        isMultiple: false,
+        question: "Refer to the code below:\n\nasync function functionUnderTest(isOK) {\n    if (isOK) return 'OK';\n    throw new Error('not OK');\n}\n\nWhich assertion accurately tests the above code?",
         options: [
-            { letter: "A", text: "Use if (Schema, sobjectType, Contact, isUpdatable())" },
-            { letter: "B", text: "Use if (Schema , sobjectType. Contact. Field, Is_Active_c. is Updateable())" },
-            { letter: "C", text: "Use if (Schema.sObjectType.Contact.isAccessible())" },
-            { letter: "D", text: "Use if (thisContact.Owner = = UserInfo.getuserId())" }
+            { letter: "A", text: "console.assert(await functionUnderTest(true), 'not OK')" },
+            { letter: "B", text: "console.assert(await functionUnderTest(true), 'OK')" },
+            { letter: "C", text: "console.assert(await functionUnderTest(false), 'not OK')" },
+            { letter: "D", text: "console.assert(await functionUnderTest(true), 'OK')" }
         ],
-        answer: ["A", "B"]
+        answer: "D"
     },
     {
         id: "q122",
         isMultiple: false,
-        imageUrl: "pics/img2.png",
-        question: "A lead developer creates an Apex interface called 'Laptop'. Consider the following code snippet. How can a developer use the Laptop Interface within the Silverlaptop class?",
+        question: "A developer has the following array of hourly wages:\n\nlet arr = [8, 5, 9, 75, 11, 25, 7, 75, 13, 25];\n\nFor workers making less than $10 an hour, the rate should be multiplied by 1.25 and returned in a new array.\nHow should the developer implement the request?",
         options: [
-            { letter: "A", text: "@Extends(class='Laptop') public class SilverLaptop" },
-            { letter: "B", text: "public calss SilverLaptop extends Laptop" },
-            { letter: "C", text: "@Interface (class='Laptop') public class SilverLaptop" },
-            { letter: "D", text: "public class Silverlaptop implements Laptop" }
+            { letter: "A", text: "let arr1 = arr.filterBy((val) => val < 10).map((num) => num * 1.25);" },
+            { letter: "B", text: "let arr1 = arr.filter((val) => val < 10).map((num) => { num * 1.25 });" },
+            { letter: "C", text: "let arr1 = arr.filter((val) => val < 10).map((num) => num = 1.25);" },
+            { letter: "D", text: "let arr1 = arr.map((num) => { return num * 1.25 }).filter((val) => { return val < 10 });" }
         ],
         answer: "D"
     },
     {
         id: "q123",
         isMultiple: false,
-        imageUrl: "pics/img3.png",
-        question: "Refer to the following Apex code. What is the value of x when it is written to the debug log?",
+        question: "Refer to the code below:\n\n01 const server = require('server');\n02 /* Insert code here */\n\nA developer imports a library that creates a web server. The imported library uses events and callbacks to start the server. Which code should be inserted at the line 03 to set up an event and start the web server?",
         options: [
-            { letter: "A", text: "0" },
-            { letter: "B", text: "1" },
-            { letter: "C", text: "2" },
-            { letter: "D", text: "3" }
-        ],
-        answer: "C"
-    },
-    {
-        id: "q124",
-        isMultiple: false,
-        imageUrl: "pics/img4.png",
-        question: "Refer to the following code snippet for an environment has more than 200 Accounts belonging to the 'Technology' industry. When the code execution, which two events occur as a result of the Apex transaction?",
-        options: [
-            { letter: "A", text: "If executed in an asynchronous context, the apex transaction is likely to fall by exceeding the DML governor limit" },
-            { letter: "B", text: "The Apex transaction fails with the following message. 'SObject row was retrieved via SOQL without querying the requested field Account.Is.Tech__c'." },
-            { letter: "C", text: "The Apex transaction succeeds regardless of any uncaught exception and all processed accounts are updated." },
-            { letter: "D", text: "If executed In a synchronous context, the apex transaction is likely to fall by exceeding the DHL governor limit." }
+            { letter: "A", text: "server()" },
+            { letter: "B", text: "server.on('connect', (port) => {\n    console.log('Listening on ', port);\n})" },
+            { letter: "C", text: "Server.start();" },
+            { letter: "D", text: "console.log('Listening on ', port);" },
+            { letter: "E", text: "serve((port) => {" }
         ],
         answer: "B"
     },
     {
-        id: "q125",
-        isMultiple: false,
-        imageUrl: "pics/img5.png",
-        question: "The following code snippet is executed by a Lightning web component in an environment with more than 2,000 lead records. Which governor limit will likely be exceeded within the Apex transaction?",
+        id: "q124",
+        isMultiple: true,
+        question: "Refer to the following code that imports a module named utils:\n\nimport { foo, bar } from '/path/Utils.js';\nfoo();\nbar();\n\nWhich two implementations of Utils.js export foo and bar such that the code above runs without error?\nChoose 2 answers.",
         options: [
-            { letter: "A", text: "Total number of DML statement issued" },
-            { letter: "B", text: "Total number of records processed as a result of DML statements" },
-            { letter: "C", text: "Total number of SOQL queries issued" },
-            { letter: "D", text: "Total number of records retrieved by SOQL queries" }
+            { letter: "A", text: "const foo = () => { return 'foo'; }\nconst bar = () => { return 'bar'; }\nexport { bar, foo }" },
+            { letter: "B", text: "// FooUtils.js and BarUtils.js exist\nimport { foo } from '/path/FooUtils.js';\nimport { bar } from '/path/BarUtils.js';" },
+            { letter: "C", text: "export default class {\n    foo() { return 'foo'; }\n    bar() { return 'bar'; }\n}" },
+            { letter: "D", text: "const foo = () => { return 'foo'; }\nconst bar = () => { return 'bar'; }\nexport default foo, bar;" }
         ],
-        answer: "A"
+        answer: ["A", "C"]
+    },
+    {
+        id: "q125",
+        isMultiple: true,
+        question: "A test has a dependency on database.query. During the test, the dependency is replaced with an object called database with the method Calculator.query, that returns an array. The developer does not need to verify how many times the method has been called.\nWhich two test approaches describe the requirement?\nChoose 2 answers.",
+        options: [
+            { letter: "A", text: "Black box" },
+            { letter: "B", text: "White box" },
+            { letter: "C", text: "Substitution" },
+            { letter: "D", text: "Stubbing" }
+        ],
+        answer: ["B", "C"]
     },
     {
         id: "q126",
         isMultiple: false,
-        imageUrl: "pics/img6.png",
-        question: "Based on this code, what is the value of x?",
+        question: "Refer to the code below:\n\nfunction foo() {\n    const a = 2;\n    function bar() {\n        console.log(a);\n    }\n    return bar;\n}\n\nWhy does the function bar have access to variable a?",
         options: [
-            { letter: "A", text: "2" },
-            { letter: "B", text: "1" },
-            { letter: "C", text: "4" },
-            { letter: "D", text: "3" }
-        ],
-        answer: "C"
-    },
-    {
-        id: "q127",
-        isMultiple: false,
-        imageUrl: "pics/img7.png",
-        question: "Given the code below. What should a developer do to correct the code so that there is no chance of hitting a governor limit?",
-        options: [
-            { letter: "A", text: "Rework the code and eliminate the for loop." },
-            { letter: "B", text: "Combine the two SELECT statements into a single SOQL statement." },
-            { letter: "C", text: "Add a LIMIT clause to the first SELECT SOQL statement." },
-            { letter: "D", text: "Add a WHERE clause to the first SELECT SOQL statement." }
-        ],
-        answer: "B"
-    },
-    {
-        id: "q128",
-        isMultiple: false,
-        imageUrl: "pics/img8.png",
-        question: "What is the result of the debug statements in testMethod3 when you create test data using testSetup in below code?",
-        options: [
-            { letter: "A", text: "Account0.Phone=333-8781, Account1.Phone=333-8780" },
-            { letter: "B", text: "Account0.Phone=888-1515, Account1.Phone=999-1515" },
-            { letter: "C", text: "Account0.Phone=888-1515, Account1.Phone=999-2525" },
-            { letter: "D", text: "Account0.Phone=333-8780, Account1.Phone=333-8781" }
+            { letter: "A", text: "Prototype chain" },
+            { letter: "B", text: "Hoisting" },
+            { letter: "C", text: "Inner function's scope" },
+            { letter: "D", text: "Outer function's scope" }
         ],
         answer: "D"
     },
     {
+        id: "q127",
+        isMultiple: true,
+        question: "Given a value, which three options can a developer use to detect if the value is NaN?\nChoose 3 answers.",
+        options: [
+            { letter: "A", text: "value === Number.NaN" },
+            { letter: "B", text: "Number.isNaN(value)" },
+            { letter: "C", text: "value == NaN" },
+            { letter: "D", text: "value !== value" },
+            { letter: "E", text: "Object.is(value, NaN)" }
+        ],
+        answer: ["B", "D", "E"]
+    },
+    {
+        id: "q128",
+        isMultiple: true,
+        question: "A developer is trying to convince management that their team will benefit from using Node.js for a backend server that they are going to create. The server will be a web server that handles API requests from a website that the team has already built using HTML, CSS, and JavaScript.\n\nWhich three benefits of Node.js can the developer use to persuade their manager?\nChoose 3 answers.",
+        options: [
+            { letter: "A", text: "Performs a static analysis on code before execution to look for runtime errors." },
+            { letter: "B", text: "Uses non-blocking functionality for performant request handling." },
+            { letter: "C", text: "Installs with its own package manager to install and manage third-party libraries." },
+            { letter: "D", text: "Ensures stability with one major release every few years." },
+            { letter: "E", text: "Executes server-side JavaScript code to avoid learning a new language." }
+        ],
+        answer: ["B", "C", "E"]
+    },
+    {
         id: "q129",
         isMultiple: false,
-        imageUrl: "pics/img9.png",
-        question: "Given the following Anonymous Block. What should a developer consider for an environment that has over10,000 Case records?",
+        question: "A developer writes the code below to calculate the factorial of a given number:\n\nfunction sum(number) {\n    return number * sum(number - 1);\n}\nsum(3);\n\nWhat is the result of executing the code?",
         options: [
-            { letter: "A", text: "The transaction will succeed and changes will be committed." },
-            { letter: "B", text: "The transaction will fail due to exceeding the governor limit." },
-            { letter: "C", text: "The try/catch block will handle any DML exceptions thrown." },
-            { letter: "D", text: "The try/catch block will handle exceptions thrown by governor limits." }
+            { letter: "A", text: "0" },
+            { letter: "B", text: "Error" },
+            { letter: "C", text: "6" },
+            { letter: "D", text: "-Infinity" }
         ],
         answer: "B"
     },
     {
         id: "q130",
-        isMultiple: false,
-        imageUrl: "pics/img10.png",
-        question: "Considering the following code snippet. When the code executes, a DML exception is thrown. How should the developer modify the code to ensure exceptions are handled gracefully?",
+        isMultiple: true,
+        question: "Refer to the code:\n\nfunction Animal(size, type) {\n    this.size = size || \"small\";\n    this.type = type || \"Animal\";\n    this.canTalk = false;\n}\n\nlet Pet = function (size, type, name, owner) {\n    Animal.call(this, size, type);\n    this.name = name;\n    this.owner = owner;\n}\n\nPet.prototype = Object.create(Animal.prototype);\nlet pet1 = new Pet();\nconsole.log(pet1);\n\nGiven the code above, which three properties are set pet1?\nChoose 3 answers.",
         options: [
-            { letter: "A", text: "Implement the upsert DML statement." },
-            { letter: "B", text: "Implement Change Data Capture." },
-            { letter: "C", text: "Remove null items from the list if Accounts." },
-            { letter: "D", text: "Implement a try/catch block for the DML." }
+            { letter: "A", text: "Owner" },
+            { letter: "B", text: "Size" },
+            { letter: "C", text: "canTalk" },
+            { letter: "D", text: "Type" },
+            { letter: "E", text: "Name" }
         ],
-        answer: "D"
+        answer: ["B", "C", "D"]
     },
     {
         id: "q131",
         isMultiple: false,
-        imageUrl: "pics/img11.png",
-        question: "What will be the output in the debug log in the event of a QueryExeption during a call to the @query method in the following Example?",
+        question: "Refer to the code below:\n\nflag();\nanotherFlag();\n\nfunction flag() {\n    console.log(\"flag\");\n}\n\nconst anotherFlag = () => {\n    console.log(\"flag\");\n}\n\nWhat is result of the code block?",
         options: [
-            { letter: "A", text: "Querying Accounts. Custom Exception." },
-            { letter: "B", text: "Querying Accounts. Custom Exception Done." },
-            { letter: "C", text: "Querying Accounts. Query Exception." },
-            { letter: "D", text: "Querying Accounts. Query Exception. Done" }
-        ],
-        answer: "D"
-    },
-    {
-        id: "q132",
-        isMultiple: true,
-        question: "Which three statements are accurate about debug logs? Choose 3 answers.",
-        options: [
-            { letter: "A", text: "Debug logs can be set for specific users, classes, and triggers." },
-            { letter: "B", text: "Debug log levels are cumulative, where FINE log level includes all events logged at the DEBUG, INFO, WARN, and ERROR levels." },
-            { letter: "C", text: "System debug logs are retained for 24 hours." },
-            { letter: "D", text: "The maximum size of a debug log is 5 MB." },
-            { letter: "E", text: "Only the 20 most recent debug logs for a user are kept." }
-        ],
-        answer: ["A", "B", "C"]
-    },
-    {
-        id: "q133",
-        isMultiple: false,
-        imageUrl: "pics/img12.png",
-        question: "A lead object has a custom field Prior_Email__c. The following trigger is intended to copy the current Email into the Prior_Email__c field any time the Email field is changed. Which type of exception will this trigger cause?",
-        options: [
-            { letter: "A", text: "A DML exception" },
-            { letter: "B", text: "A null reference exception" },
-            { letter: "C", text: "A compile time exception" },
-            { letter: "D", text: "A limit exception when doing a bulk update" }
-        ],
-        answer: "A"
-    },
-    {
-        id: "q134",
-        isMultiple: true,
-        imageUrl: "pics/img13.png",
-        question: "As a part of class implementation a developer must execute a SOQL query against a large data set based on the contact object. The method implementation is as follows. Which two methods are best practice to implement heap size control for the above code? (Choose 2 Answers)",
-        options: [
-            { letter: "A", text: "Use a SOQL FOR loop, to chunk the result set in batches of 200 records." },
-            { letter: "B", text: "Use visual keyword when declaring the retrieve variable." },
-            { letter: "C", text: "Use WHERE clauses on the SOQL query to reduce the number of records retrieved." },
-            { letter: "D", text: "Use the FOR UPDATE option on the SOQL query to lock down the records retrieved." }
-        ],
-        answer: ["A", "C"]
-    },
-    {
-        id: "q135",
-        isMultiple: false,
-        imageUrl: "pics/img14.png",
-        question: "A developer is building custom search functionality that uses SOSL to search account and contact records that match search terms provided by the end user. The feature is exposed through a Lightning web component, and the end user is able to provide a list of terms to search. Consider the following code snippet. What is the maximum number of search terms the end user can provide to successfully execute the search without exceeding a governor limit?",
-        options: [
-            { letter: "A", text: "2,000" },
-            { letter: "B", text: "20" },
-            { letter: "C", text: "200" },
-            { letter: "D", text: "150" }
-        ],
-        answer: "A"
-    },
-    {
-        id: "q136",
-        isMultiple: false,
-        imageUrl: "pics/img15.png",
-        question: "A developer has the controller class below. Which code block will run successfully in an execute anonymous window?",
-        options: [
-            { letter: "A", text: "myFooController m = new myFooController();System.assert(m.prop ==null);" },
-            { letter: "B", text: "myFooController m = new myFooController();System.assert(m.prop !=null);" },
-            { letter: "C", text: "myFooController m = new myFooController();System.assert(m.prop ==0);" },
-            { letter: "D", text: "myFooController m = new myFooController();System.assert(m.prop ==1);" }
-        ],
-        answer: "A"
-    },
-    {
-        id: "q137",
-        isMultiple: true,
-        imageUrl: "pics/img16.png",
-        question: "Assuming that name is a String obtained by an <apex:inputText> tag on a Visualforce page, which two SOQL queries performed are safe from SOQL injection? Choose 2 answers.",
-        options: [
-            { letter: "A", text: "Option A" },
-            { letter: "B", text: "Option B" },
-            { letter: "C", text: "Option C" },
-            { letter: "D", text: "Option D" }
-        ],
-        answer: ["C", "D"]
-    },
-    {
-        id: "q138",
-        isMultiple: false,
-        imageUrl: "pics/img17.png",
-        question: "An Apex method, getAccounts, that returns a list of Accounts given a searchTern, is available for Lightning Web Components to use. What is the correct definition of a Lightning Web Component property that uses the getAccounts method?",
-        options: [
-            { letter: "A", text: "Option A" },
-            { letter: "B", text: "Option B" },
-            { letter: "C", text: "Option C" },
-            { letter: "D", text: "Option D" }
-        ],
-        answer: "D"
-    },
-    {
-        id: "q139",
-        isMultiple: false,
-        imageUrl: "pics/img18.png",
-        question: "Which Lightning code segment should be written to declare dependencies on a Lightning component, c:accountList, that is used in a Visualforce page?",
-        options: [
-            { letter: "A", text: "Option A" },
-            { letter: "B", text: "Option B" },
-            { letter: "C", text: "Option C" },
-            { letter: "D", text: "Option D" }
-        ],
-        answer: "A"
-    },
-    {
-        id: "q140",
-        isMultiple: false,
-        imageUrl: "pics/img19.png",
-        question: "A developer needs to implement a custom SOAP Web Service that is used by an external Web Application. The developer chooses to Include helper methods that are not used by the Web Application In the Implementation of the Web Service Class. Which code segment shows the correct declaration of the class and methods?",
-        options: [
-            { letter: "A", text: "Option A" },
-            { letter: "B", text: "Option B" },
-            { letter: "C", text: "Option C" },
-            { letter: "D", text: "Option D" }
+            { letter: "A", text: "The console logs only 'flag'." },
+            { letter: "B", text: "The console logs 'flag' and 'another flag'." },
+            { letter: "C", text: "The console logs 'flag' and then an error is thrown." },
+            { letter: "D", text: "An error is thrown." }
         ],
         answer: "C"
     },
-    {
-        id: "q141",
-        isMultiple: false,
-        imageUrl: "pics/img20.png",
-        question: "Which option would a developer use to display the Accounts created in the current week and the number of related Contacts using a debug statement in Apex?",
-        options: [
-            { letter: "A", text: "Option A" },
-            { letter: "B", text: "Option B" },
-            { letter: "C", text: "Option C" },
-            { letter: "D", text: "Option D" }
-        ],
-        answer: "A"
-    },
-    {
-        id: "q142",
-        isMultiple: false,
-        question: "A developer declared a class as follow. public class wysiwyg { // Properties and methods including DML } Which invocation of a class method will obey the organization-wide defaults and sharing settings for the running user in the Salesforce Organization?",
-        options: [
-            { letter: "A", text: "A developer using the Developer Console that invokes a method in this class from the execute anonymous window." },
-            { letter: "B", text: "A Visualforce page with an Apex controller that invokes a method in this class." },
-            { letter: "C", text: "An Apex Trigger that invokes a helper method in this class." },
-            { letter: "D", text: "A user on an external system that has an API call into Salesforce that invokes a method in this class." }
-        ],
-        answer: "A"
-    },
-    {
-        id: "q143",
-        isMultiple: true,
-        question: "A developer has a single custom controller class that works with a Visualforce Wizard to support creating and editing multiple sObjects. The wizard accepts data from user inputs across multiple Visualforce pages and from a parameter on the initial URL. Which statement is unnecessary inside the unit test for the custom controller?",
-        options: [
-            { letter: "A", text: "String nextPage = controller.save().getUrl();" },
-            { letter: "B", text: "ApexPages.currentPage().getParameters().put('input', 'TestValue')" },
-            { letter: "C", text: "Test.setCurrentPage(pageRef)" },
-            { letter: "D", text: "Public ExtendedController (ApexPages.StandardController cntrl) { }" }
-        ],
-        answer: ["A", "D"]
-    },
-    {
-        id: "q144",
-        isMultiple: false,
-        imageUrl: "pics/img21.png",
-        question: "A developer must create a ShippingCalculator class that cannot be instantiated and must include a working default implementation of a calculate method, that sub-classes can override. What is the correct implementation of the ShippingCalculator class?",
-        options: [
-            { letter: "A", text: "Option A" },
-            { letter: "B", text: "Option B" },
-            { letter: "C", text: "Option C" },
-            { letter: "D", text: "Option D" }
-        ],
-        answer: "A"
-    },
-    {
-        id: "q145",
-        isMultiple: false,
-        question: "A custom Visualforce controller calls the ApexPages,addMessage () method, but no messages are rendering on the page. Which component should be added to the Visualforce page to display the message?",
-        options: [
-            { letter: "A", text: "&ltapex: pageMessages /&gt" },
-            { letter: "B", text: "&ltApex: facet name='message'/&gt" },
-            { letter: "C", text: "&ltapex: pageMessage severity='info'/&gt" },
-            { letter: "D", text: "&ltApex: message for='info'/&gt" }
-        ],
-        answer: "A"
-    },
-    {
-        id: "q146",
-        isMultiple: false,
-        question: "A developer wants to override a button using Visualforce on an object. What is the requirement?",
-        options: [
-            { letter: "A", text: "The action attribute must be set to a controller method." },
-            { letter: "B", text: "The standardController attribute must be set to the object." },
-            { letter: "C", text: "The object record must be instantiated in a controller or extension." },
-            { letter: "D", text: "The controller or extension must have a PageReference method." }
-        ],
-        answer: "B"
-    },
-    {
-        id: "q147",
-        isMultiple: false,
-        question: "Which action can a developer take to reduce the execution time of the following code?",
-        imageUrl: "pics/img22.png",
-        options: [
-            { letter: "A", text: "Create an apex helper class for the SOQL" },
-            { letter: "B", text: "Add a group by clause to the contact SOQL" },
-            { letter: "C", text: "Put the account loop inside the contact loop" },
-            { letter: "D", text: "Use a map &ltId,Contact&gt for allaccounts" }
-        ],
-        answer: "D"
-    },
-    {
-        id: "q148",
-        isMultiple: true,
-        question: "A developer creates a custom exception as shown below: ",
-        imageUrl: "pics/img23.png",
-        options: [
-            { letter: "A", text: "New ParityException();" },
-            { letter: "B", text: "Throw new parityException ();" },
-            { letter: "C", text: "Throw new ParityException (parity does not match);" },
-            { letter: "D", text: "New ParityException (parity does not match);" }
-        ],
-        answer: ["B", "C"]
-    },
-    {
-        id: "q149",
-        isMultiple: true,
-        question: "A custom exception class can extend other classes besides the Exception class. (Choose three.)",
-        options: [
-            { letter: "A", text: "A custom exception class cannot contain member variables or methods." },
-            { letter: "B", text: "A custom exception class must extend the system Exception class." },
-            { letter: "C", text: "A custom exception class name must end with 'Exception'." },
-            { letter: "D", text: "A custom exception class can extend other classes besides the Exception class." },
-            { letter: "E", text: "Acustom exception class can implement one or many interfaces." }
-        ],
-        answer: ["B", "C", "E"]
-    },
-    {
-        id: "q150",
-        isMultiple: false,
-        imageUrl: "pics/img24.png",
-        question: "A developer created a Visualforce page and custom controller to display the account type field as shown below. Custom controller code. In Visualforce page snippet: The Account Type is {!actType} The value of the account type field is not being displayed correctly on the page. Assuming the custom controller is property referenced on the Visualforce page, what should the developer do to correct the problem?",
-        options: [
-            { letter: "A", text: "Add a getter method for the actType attribute." },
-            { letter: "B", text: "Add with sharing to the custom controller." },
-            { letter: "C", text: "Change theAccount attribute to public." },
-            { letter: "D", text: "Convert theAccount.Type to a String." }
-        ],
-        answer: "A"
-    },
-    {
-        id: "q151",
-        isMultiple: false,
-        question: "An Opportunity needs to have an amount rolled up from a custom object that is not in a masterdetail relationship. How can this be achieved?",
-        options: [
-            { letter: "A", text: "Write a trigger on the child object and use a red-black tree sorting to sum the amount for all related child objects under the Opportunity." },
-            { letter: "B", text: "Write a trigger on the child object and use an aggregate function to sum the amount for all related child objects under the Opportunity." },
-            { letter: "C", text: "Write a Process Builder that links the custom object to the Opportunity." },
-            { letter: "D", text: "Use the Streaming API to create real-time roll-up summaries." }
-        ],
-        answer: "B"
-    },
-    {
-        id: "q152",
-        isMultiple: false,
-        question: "Account acct = [SELECT Id from Account limit 1]; Given the code above, how can a developer get the type of object from acct?",
-        options: [
-            { letter: "A", text: "Call 'acct.getsObjectType()'" },
-            { letter: "B", text: "Call 'Account.SobjectType'" },
-            { letter: "C", text: "Call 'Account.getSobjectType()'" },
-            { letter: "D", text: "Call 'acct.SobjectType'" }
-        ],
-        answer: "A"
-    },
-    {
-        id: "q153",
-        isMultiple: false,
-        question: "When using SalesforceDX, what does a developer need to enable to create and manage scratch orgs?",
-        options: [
-            { letter: "A", text: "Production" },
-            { letter: "B", text: "Dev Hub" },
-            { letter: "C", text: "Environment Hub" },
-            { letter: "D", text: "Sandbox" }
-        ],
-        answer: "B"
-    },
-    {
-        id: "q154",
-        isMultiple: true,
-        question: "Which two operations can be performed using a formula field? Choose 2 answers",
-        options: [
-            { letter: "A", text: "Calculating a score on a Lead based on the information from another field." },
-            { letter: "B", text: "Triggering a Process Builder." },
-            { letter: "C", text: "Displaying an Image based on the Opportunity Amount." },
-            { letter: "D", text: "Displaying the last four digits of an encrypted Social Security number." }
-        ],
-        answer: ["A", "C"]
-    },
-    {
-        id: "q155",
-        isMultiple: false,
-        question: "A recursive transaction is limited by a DML statement creating records for these two objects: 1. Accounts, 2. Contacts. The Account trigger hits a stack depth of 16. Which statement is true regarding the outcome of the transaction?",
-        options: [
-            { letter: "A", text: "The transaction fails and all the changes are rolled back." },
-            { letter: "B", text: "The transaction fails only if the Contact trigger stack depth is greater or equal to 16." },
-            { letter: "C", text: "The transaction succeeds and all the changes are committed to the database." },
-            { letter: "D", text: "The transaction succeeds as long as the Contact trigger stack depth is less than 16." }
-        ],
-        answer: "C"
-    },
-    {
-        id: "q156",
-        isMultiple: false,
-        question: "Which annotation exposes an Apex class as a RESTful web service?",
-        options: [
-            { letter: "A", text: "RemoteAction" },
-            { letter: "B", text: "RestResource" },
-            { letter: "C", text: "HttpInvocable" },
-            { letter: "D", text: "AuraEnabled" }
-        ],
-        answer: "B"
-    },
-    {
-        id: "q157",
-        isMultiple: true,
-        question: "Which two automation tools include a graphical designer? Choose 2 answers.",
-        options: [
-            { letter: "A", text: "Approvals" },
-            { letter: "B", text: "Process builder" },
-            { letter: "C", text: "Flow builder" },
-            { letter: "D", text: "Workflows" }
-        ],
-        answer: ["B", "C"]
-    },
-    {
-        id: "q158",
-        isMultiple: true,
-        question: "A developer identifies the following triggers on the Expense_c object: DeleteExpense, applyDefaultstoexpense validateexpenseupdate; The triggers process before delete, before insert, and before update events respectively. Which two techniques should the developer implement to ensure trigger best practice are followed?",
-        options: [
-            { letter: "A", text: "Unify all three triggers in a single trigger on the Expense__c object that includes all events." },
-            { letter: "B", text: "Unify the before insert and before update triggers and use Process Builder for the delete action." },
-            { letter: "C", text: "Create helper classes to execute the appropriate logic when a record is saved." },
-            { letter: "D", text: "Maintain all three triggers on the Expense__c object, but move the Apex logic out for the trigger definition." }
-        ],
-        answer: ["A", "C"]
-    },
-    {
-        id: "q159",
-        isMultiple: false,
-        question: "Which Apex collection is used to ensure that all values are unique?",
-        options: [
-            { letter: "A", text: "An Enum" },
-            { letter: "B", text: "A List" },
-            { letter: "C", text: "An sObject" },
-            { letter: "D", text: "A Set" }
-        ],
-        answer: "D"
-    },
-    {
-        id: "q160",
-        isMultiple: false,
-        question: "What can be developed using the Lightning Component framework?",
-        options: [
-            { letter: "A", text: "Dynamic web sites" },
-            { letter: "B", text: "Salesforce integrations" },
-            { letter: "C", text: "Hosted web applications" },
-            { letter: "D", text: "Single-page web apps" }
-        ],
-        answer: "D"
-    },
-    {
-        id: "q161",
-        isMultiple: false,
-        question: "A developer is asked to create a Visualforce page that displays some Account fields as well as fields configured on the page layout for related Contacts. How should the developer implement this request?",
-        options: [
-            { letter: "A", text: "Use the &ltapex:relatedList&gt tag." },
-            { letter: "B", text: "Create a controller extension." },
-            { letter: "C", text: "Add a method to the standard controller." },
-            { letter: "D", text: "Use the &ltapex:include&gt tag." }
-        ],
-        answer: "A"
-    },
-    {
-        id: "q162",
-        isMultiple: false,
-        question: "A developer wants to retrieve the Contacts and Users with the email address 'dev@uc.com'. Which SOSL statement should the developer use?",
-        options: [
-            { letter: "A", text: "FIND {Email = 'dev@uc.com'} IN Contact, User" },
-            { letter: "B", text: "FIND {dev@uc.com} IN Email Fields RETURNING Contact (Email), User (Email)" },
-            { letter: "C", text: "FIND Email IN Contact, User FOR {dev2uc.com}" },
-            { letter: "D", text: "FIND {Email = 'dev@uc.com'} RETURNING Contact (Email), User (Email)" }
-        ],
-        answer: "B"
-    },
-    {
-        id: "q163",
-        isMultiple: true,
-        question: "Which two statement can a developer use to throw a custom exception of type MissingFieldValueException? hoose 2 answers.",
-        options: [
-            { letter: "A", text: "Throw new MissingFieldValueException();" },
-            { letter: "B", text: "Throw (MissingFieldValueException,'Problem occurred');" },
-            { letter: "C", text: "Throw new MissingFieldValueException('Problem occurred');" },
-            { letter: "D", text: "Throw Exception(new MissingFieldValueException());" }
-        ],
-        answer: ["A", "C"]
-    },
-    {
-        id: "q164",
-        isMultiple: false,
-        question: "What can used to delete components from production?",
-        options: [
-            { letter: "A", text: "An ant migration tool deployment with destructivechanges xml file and the components to delete in the package .xml file." },
-            { letter: "B", text: "A change set deployment with the delete option checked." },
-            { letter: "C", text: "A change set deployment with a destructivechanges XML file." },
-            { letter: "D", text: "An ant migration tool deployment with a destructivechanges XML file and an empty package .xml file." }
-        ],
-        answer: "A"
-    },
-    {
-        id: "q165",
-        isMultiple: true,
-        question: "What are two characteristics of partial copy sandboxes versus full sandboxes? Choose 2 answers.",
-        options: [
-            { letter: "A", text: "Provides more data record storage" },
-            { letter: "B", text: "Supports more frequent refreshes" },
-            { letter: "C", text: "Includes a subset of metadata" },
-            { letter: "D", text: "Requires a sandbox template" }
-        ],
-        answer: ["A", "C"]
-    },
-    {
-        id: "q166",
-        isMultiple: true,
-        question: "Which two are phases in the Aura application event propagation framework? Choose 2 answers",
-        options: [
-            { letter: "A", text: "Bubble" },
-            { letter: "B", text: "Emit" },
-            { letter: "C", text: "Default" },
-            { letter: "D", text: "Control" }
-        ],
-        answer: ["A", "C"]
-    },
-    {
-        id: "q167",
-        isMultiple: false,
-        question: "A developer must troubleshoot to pinpoint the causes of performance issues when a custom page loads in their org. Which tool should the developer use to troubleshoot?",
-        options: [
-            { letter: "A", text: "Developer Console" },
-            { letter: "B", text: "Visual Studio Core IDE" },
-            { letter: "C", text: "Salesforce CLI" },
-            { letter: "D", text: "AppExchange" }
-        ],
-        answer: "A"
-    },
-    {
-        id: "q168",
-        isMultiple: true,
-        question: "A developer created a child Lightning web component nested inside a parent Lightning web component, parent component needs to pass a string value to the child component. In which two ways can this be accomplished? Choose 2 answers.",
-        options: [
-            { letter: "A", text: "The parent component can use a custom event to pass the data to the child component." },
-            { letter: "B", text: "The parent component can use a public property to pass the data to the child component." },
-            { letter: "C", text: "The parent component can use the Apex controller class to send data to the child component." },
-            { letter: "D", text: "The parent component can invoke a method in the child component." }
-        ],
-        answer: ["B", "D"]
-    },
-    {
-        id: "q169",
-        isMultiple: false,
-        imageUrl: "pics/img25.png",
-        question: "A developer creates a custom controller and custom Visualforce page by using the following code block. What does the user see when accessing the custom page?",
-        options: [
-            { letter: "A", text: ",, Method2 , getMyString" },
-            { letter: "B", text: ", , Method2," },
-            { letter: "C", text: "GetMyString , , ," },
-            { letter: "D", text: "GetMyString , , Method2 , getMystring" }
-        ],
-        answer: "D"
-    },
-    {
-        id: "q170",
-        isMultiple: false,
-        question: "A developer is asked to write negative tests as part of the unit testing for a method that calculates a person's age based on birth date. What should the negative tests include?",
-        options: [
-            { letter: "A", text: "Throwing a custom exception in the unit test." },
-            { letter: "B", text: "Assert that past dates are accepted by the method." },
-            { letter: "C", text: "Assert that a null value is accepted by the method." },
-            { letter: "D", text: "Assert that future dates are rejected by the method." }
-        ],
-        answer: "D"
-    },
-    {
-        id: "q171",
-        isMultiple: false,
-        question: "A Visualforce page uses the Contact standard controller. How can a developer display the Name from the parent Account record on the page?",
-        options: [
-            { letter: "A", text: "Use an additional standard controller for Accounts." },
-            { letter: "B", text: "Use SOQL syntax to find the related Accounts Name field." },
-            { letter: "C", text: "Use the (!contact.Account.Name) merge field syntax." },
-            { letter: "D", text: "Use additional Apex logic within the controller to query for the Name field." }
-        ],
-        answer: "C"
-    },
-    {
-        id: "q172",
-        isMultiple: true,
-        question: "Which two roll-up summary field types are required to find the average of values on detail records in a Master-Detail relationship?",
-        options: [
-            { letter: "A", text: "Roll-up summary field of type TOTAL" },
-            { letter: "B", text: "Roll-up summary field of type NUM" },
-            { letter: "C", text: "Roll-up summary field of type SUM" },
-            { letter: "D", text: "Roll-up summary field of type COUNT" }
-        ],
-        answer: ["C", "D"]
-    },
-    {
-        id: "q173",
-        isMultiple: true,
-        question: "Which user can edit a record after it has been locked for approval? (Choose 2).",
-        options: [
-            { letter: "A", text: "Any user who approved the record previously." },
-            { letter: "B", text: "A user who is assigned as the current approver." },
-            { letter: "C", text: "Any user with a higher role in the hierarchy." },
-            { letter: "D", text: "An administrator." }
-        ],
-        answer: ["B", "D"]
-    },
-    {
-        id: "q174",
-        isMultiple: false,
-        question: "What is a key difference between a Master-Detail Relationship and a Lookup Relationship?",
-        options: [
-            { letter: "A", text: "A Master-Detail Relationship detail record inherits the sharing and security of its master record." },
-            { letter: "B", text: "A Lookup Relationship is a required field on an object." },
-            { letter: "C", text: "When a record of a master object in a Lookup Relationship is deleted, the detail records are also deleted." },
-            { letter: "D", text: "When a record of a master object in a Master-Detail Relationship is deleted, the detail records are kept and not deleted." }
-        ],
-        answer: "A"
-    },
-    {
-        id: "q175",
-        isMultiple: false,
-        question: "What can a developer use to determine if the core Apex code exceeds any governor limits in a test class during bulk execution?",
-        options: [
-            { letter: "A", text: "@TestVisible" },
-            { letter: "B", text: "@TestSetup." },
-            { letter: "C", text: "Limits, startTest, stopTest" },
-            { letter: "D", text: "Test.getDmlStatements()" }
-        ],
-        answer: "C"
-    },
-    {
-        id: "q176",
-        isMultiple: false,
-        question: "A company would like to send an offer letter to a candidate, have the candidate sign it electronically, and then send the letter back.What can a developer do to accomplish this?",
-        options: [
-            { letter: "A", text: "Create a visual workflow that will capture the candidate's signature electronically." },
-            { letter: "B", text: "Develop a Process Builder that will send the offer letter and allow the candidate to sign it electronically." },
-            { letter: "C", text: "Install a managed package that will allow the candidate to sign documents electronically." },
-            { letter: "D", text: "Create an assignment rule that will assign the offer letter to the candidate." }
-        ],
-        answer: "C"
-    },
-    {
-        id: "q177",
-        isMultiple: false,
-        question: "Why would a developer use Test. startTest( ) and Test.stopTest( )?",
-        options: [
-            { letter: "A", text: "To create an additional set of governor limits during the execution of a single test class." },
-            { letter: "B", text: "To indicate test code so that it does not Impact Apex line count governor limits." },
-            { letter: "C", text: "To start and stop anonymous block execution when executing anonymous Apex code." },
-            { letter: "D", text: "To avoid Apex code coverage requirements for the code between these lines." }
-        ],
-        answer: "A"
-    },
-    {
-        id: "q178",
-        isMultiple: false,
-        question: "A developer created an Apex trigger using the Developer Console and now wants to debug code. How can the developer accomplish this in the Developer Console?",
-        options: [
-            { letter: "A", text: "Select the Override Log Triggers checkbox for the trigger." },
-            { letter: "B", text: "Open the Progress tab in the Developer Console." },
-            { letter: "C", text: "Open the logs tab in the Developer Console." },
-            { letter: "D", text: "Add the user name in the Log Inspector." }
-        ],
-        answer: "C"
-    },
-    {
-        id: "q179",
-        isMultiple: false,
-        question: "A developer wrote Apex code that calls out to an external system. How should a developer write the test to provide test coverage?",
-        options: [
-            { letter: "A", text: "Write a class that extends HTTPCalloutMock." },
-            { letter: "B", text: "Write a class that implements the WebserviceMock interface." },
-            { letter: "C", text: "Write a class that extends WebserviceMock." },
-            { letter: "D", text: "Write a class that implements the HTTPCalloutMock interface." }
-        ],
-        answer: "D"
-    },
-    {
-        id: "q180",
-        isMultiple: false,
-        question: "Before putting an app into production, which step should be taken?",
-        options: [
-            { letter: "A", text: "Switch to a production database" },
-            { letter: "B", text: "Scale your dynos" },
-            { letter: "C", text: "Ensure that you have installed a performance introspection add-on" },
-            { letter: "D", text: "Run the production check feature via the web interface" }
-        ],
-        answer: "D"
-    },
-    {
-        id: "q181",
-        isMultiple: true,
-        question: "What are two correct examples of the model in the salesforce MVC architecture? Choose 2 answers.",
-        options: [
-            { letter: "A", text: "Workflow rule on the contact object" },
-            { letter: "B", text: "Standard lightning component" },
-            { letter: "C", text: "Standard account lookup on the contract object" },
-            { letter: "D", text: "Custom field on the custom wizard_c object" }
-        ],
-        answer: ["A", "B"]
-    },
-    {
-        id: "q182",
-        isMultiple: true,
-        question: "What is a capability of cross-object formula fields? Choose 3 answers.",
-        options: [
-            { letter: "A", text: "Formula fields can reference fields in a collect of records from a child relationship." },
-            { letter: "B", text: "Formula fields can expose data the user does not have access to in a record." },
-            { letter: "C", text: "Formula fields can reference fields from master-detail or lookup parent relationships." },
-            { letter: "D", text: "Formula fields can reference fields from objects that are up to 10 relationships away." },
-            { letter: "E", text: "Formula fields can be used in three roll-up summaries per object." }
-        ],
-        answer: ["B", "C", "D"]
-    },
-    {
-        id: "q183",
-        isMultiple: false,
-        question: "How should a developer create a new custom exception class?",
-        options: [
-            { letter: "A", text: "public class CustomException extends Exception{}" },
-            { letter: "B", text: "public class CustomException implements Exception{}" },
-            { letter: "C", text: "CustomException ex = new (CustomException)Exception();" },
-            { letter: "D", text: "(Exception)CustomException ex = new Exception();" }
-        ],
-        answer: "A"
-    },
-    {
-        id: "q184",
-        isMultiple: false,
-        question: "An org tracks customer orders on an Order object and the items of an Order on the Line Item object. The Line Item object has a MasterDetail relationship to the order object. A developer has a requirement to calculate the order amount on an Order and the line amount on each Line item based on quantity and price. What is the correct implementation?",
-        options: [
-            { letter: "A", text: "Write a process on the Line item that calculates the item amount and order amount and updates the filed on the Line Item and the order." },
-            { letter: "B", text: "Write a single before trigger on the Line Item that calculates the item amount and updates the order amount on the Order." },
-            { letter: "C", text: "Implement the line amount as a numeric formula field and the order amount as a roll-up summary field." },
-            { letter: "D", text: "Implement the Line amount as a currency field and the order amount as a SUM formula field." }
-        ],
-        answer: "D"
-    },
-    {
-        id: "q185",
-        isMultiple: false,
-        question: "When would the use of Heroku Postgres be appropriate?",
-        options: [
-            { letter: "A", text: "To interconnect Microsoft SQL servers to Heroku Applications." },
-            { letter: "B", text: "To cache commonly accessed data for faster retrieval." },
-            { letter: "C", text: "To store user generated pictures and Word documents." },
-            { letter: "D", text: "To store and retrieve data using the Structured Query Language." }
-        ],
-        answer: "D"
-    },
-    {
-        id: "q186",
-        isMultiple: false,
-        question: "What is the proper process for an Apex Unit Test",
-        options: [
-            { letter: "A", text: "Create data for testing. Execute runAllTests(). Verify that the results are correct." },
-            { letter: "B", text: "Query for test data using SeeAllData = true. Execute runAllTests(). Verify that the results are correct." },
-            { letter: "C", text: "Query for test data using SeeAllData = true. Call the method being tested. Verify that the results are correct." },
-            { letter: "D", text: "Create data for testing. Call the method being tested. Verify that the results are correct." }
-        ],
-        answer: "D"
-    },
-    {
-        id: "q187",
-        isMultiple: true,
-        question: "Where can debug log filter settings be set?Choose 2 answers",
-        options: [
-            { letter: "A", text: "On the monitored user's name." },
-            { letter: "B", text: "The Filters link by the monitored user's name within the web UI." },
-            { letter: "C", text: "The Log Filters tab on a class or trigger detail page." },
-            { letter: "D", text: "The Show More link on the debug log's record." }
-        ],
-        answer: ["B", "C"]
-    },
-    {
-        id: "q188",
-        isMultiple: false,
-        question: "Which code segment can be used to control when the dowork() method is called?",
-        options: [
-            { letter: "A", text: "If(Trigger.isInsert) dowork();" },
-            { letter: "B", text: "For (Trigger.isInsert t: Trigger.new) { dowork(); }" },
-            { letter: "C", text: "If(Trigger.isRunning) dowork();" },
-            { letter: "D", text: "For (Trigger.isRunning t: Trigger.new) { dowork(); }" }
-        ],
-        answer: "A"
-    },
-    {
-        id: "q189",
-        isMultiple: false,
-        question: "A developer wrote a workflow email alert on case creation so that an email is sent to the case owner manager when a case is created. When will the email be sent?",
-        options: [
-            { letter: "A", text: "After Trigger execution." },
-            { letter: "B", text: "Before Trigger execution." },
-            { letter: "C", text: "After Committing to database." },
-            { letter: "D", text: "Before Committing to database." }
-        ],
-        answer: "C"
-    },
-    {
-        id: "q190",
-        isMultiple: false,
-        question: "What should a developer use to implement an automatic Approval Process submission for Cases?",
-        options: [
-            { letter: "A", text: "An Assignment Rule" },
-            { letter: "B", text: "Scheduled Apex" },
-            { letter: "C", text: "Process Builder" },
-            { letter: "D", text: "A Workflow Rule" }
-        ],
-        answer: "C"
-    },
-    {
-        id: "q191",
-        isMultiple: true,
-        question: "Which two Apex data types can be used to reference a Salesforce record ID dynamically? (Choose two.)",
-        options: [
-            { letter: "A", text: "ENUM" },
-            { letter: "B", text: "sObject" },
-            { letter: "C", text: "External ID" },
-            { letter: "D", text: "String" }
-        ],
-        answer: ["B", "D"]
-    },
-    {
-        id: "q192",
-        isMultiple: true,
-        question: "Which two platform features align to the Controller portion of MVC architecture? (Choose two.)",
-        options: [
-            { letter: "A", text: "Process Builder actions" },
-            { letter: "B", text: "Workflow rules" },
-            { letter: "C", text: "Standard objects" },
-            { letter: "D", text: "Date fields" }
-        ],
-        answer: ["A", "B"]
-    },
-    {
-        id: "q193",
-        isMultiple: false,
-        question: "A developer working on a time management application wants to make total hours for each timecard available to application users. A timecard entry has a Master-Detail relationship to a timecard. Which approach should the developer use to accomplish this declaratively?",
-        options: [
-            { letter: "A", text: "A Visualforce page that calculates the total number of hours for a timecard and displays it on the page." },
-            { letter: "B", text: "A Roll-Up Summary field on the Timecard Object that calculates the total hours from timecard entries for that timecard." },
-            { letter: "C", text: "A Process Builder process that updates a field on the timecard when a timecard entry is created." },
-            { letter: "D", text: "An Apex trigger that uses an Aggregate Query to calculate the hours for a given timecard and stores it in a custom field." }
-        ],
-        answer: "B"
-    },
-    {
-        id: "q194",
-        isMultiple: true,
-        question: "A developer encounters APEX heap limit errors in a trigger. Which two methods should the developer use to avoid this error? (Choose two.)",
-        options: [
-            { letter: "A", text: "Use the transient keyword when declaring variables." },
-            { letter: "B", text: "Query and store fields from the related object in a collection when updating related objects." },
-            { letter: "C", text: "Remove or set collections to null after use." },
-            { letter: "D", text: "Use SOQL for loops instead of assigning large queries results to a single collection and looping through the collection." }
-        ],
-        answer: ["C", "D"]
-    },
-    {
-        id: "q195",
-        isMultiple: false,
-        question: "Which approach should a developer take to automatically add a `Maintenance Plan` to each Opportunity that includes an `Annual Subscription` when an opportunity is closed?",
-        options: [
-            { letter: "A", text: "Build a OpportunityLineItem trigger that adds a PriceBookEntry record." },
-            { letter: "B", text: "Build an OpportunityLineItem trigger to add an OpportunityLineItem record." },
-            { letter: "C", text: "Build an Opportunity trigger that adds a PriceBookEntry record." },
-            { letter: "D", text: "Build an Opportunity trigger that adds an OpportunityLineItem record." }
-        ],
-        answer: "D"
-    },
-    {
-        id: "q196",
-        isMultiple: false,
-        question: "What is the requirement for a class to be used as a custom Visualforce controller?",
-        options: [
-            { letter: "A", text: "Any top-level Apex class that has a constructor that returns a PageReference" },
-            { letter: "B", text: "Any top-level Apex class that extends a PageReference" },
-            { letter: "C", text: "Any top-level Apex class that has a default, no-argument constructor " },
-            { letter: "D", text: "Any top-level Apex class that implements the controller interface" }
-        ],
-        answer: "C"
-    },
-    {
-        id: "q197",
-        isMultiple: false,
-        question: "How should a developer prevent a recursive trigger?",
-        options: [
-            { letter: "A", text: "Use a one trigger per object pattern." },
-            { letter: "B", text: "Use a static Boolean variable." },
-            { letter: "C", text: "Use a trigger handler." },
-            { letter: "D", text: "Use a private Boolean variable." }
-        ],
-        answer: "B"
-    },
-    {
-        id: "q198",
-        isMultiple: true,
-        question: "What is a capability of the <ltng:require> tag that is used for loading external Javascript libraries in Lightning Component? (Choose three.)",
-        options: [
-            { letter: "A", text: "Loading files from Documents." },
-            { letter: "B", text: "One-time loading for duplicate scripts." },
-            { letter: "C", text: "Specifying loading order." },
-            { letter: "D", text: "Loading scripts in parallel." },
-            { letter: "E", text: "Loading externally hosted scripts." }
-        ],
-        answer: ["B", "C", "D"]
-    },
-    {
-        id: "q199",
-        isMultiple: true,
-        question: "A Platform Developer needs to write an Apex method that will only perform an action if a record is assigned to a specific Record Type. Which two options allow the developer to dynamically determine the ID of the required Record Type by its name? (Choose two.)",
-        options: [
-            { letter: "A", text: "Make an outbound web services call to the SOAP API." },
-            { letter: "B", text: "Hardcode the ID as a constant in an Apex class." },
-            { letter: "C", text: "Use the getRecordTypeInfosByName() method in the DescribeSObjectResult class." },
-            { letter: "D", text: "Execute a SOQL query on the RecordType object." }
-        ],
-        answer: ["C", "D"]
-    },
-    {
-        id: "q200",
-        isMultiple: false,
-        question: "In a single record, a user selects multiple values from a multi-select picklist. How are the selected values represented in Apex?",
-        options: [
-            { letter: "A", text: "As a List&ltString&gt with each value as an element in the list" },
-            { letter: "B", text: "As a String with each value separated by a comma" },
-            { letter: "C", text: "As a String with each value separated by a semicolon" },
-            { letter: "D", text: "As a Set&ltString&gt with each value as an element in the set" }
-        ],
-        answer: "C"
-    },
-    {
-        id: "q201",
-        isMultiple: false,
-        question: "A visualforce interface is created for Case Management that includes both standard and custom functionality defined in an Apex class called myControllerExtension. The visualforce page should include which <apex:page> attribute(s) to correctly implement controller functionality?", options: [
-            { letter: "A", text: "Controller = 'case' and extensions =' myControllerExtension'" },
-            { letter: "B", text: "StandardController = 'case' and extensions =' myControllerExtension'" },
-            { letter: "C", text: "Extensions=' myControllerExtension'" },
-            { letter: "D", text: "Controller=' myControllerExtension'" }
-        ],
-        answer: "B"
-    },
-    {
-        id: "q202",
-        isMultiple: false,
-        question: "What is the advantage of Salesforce Lightning?",
-        options: [
-            { letter: "A", text: "Option 3" },
-            { letter: "B", text: "Pre-defined components to give Standard Look and Feel" },
-            { letter: "C", text: "Option 4" },
-            { letter: "D", text: "Uses service side for better handling" }
-        ],
-        answer: "B"
-    },
+
+
+
 ];
