@@ -12,6 +12,7 @@ body {
 .quiz-container {
     height: fit-content;
     max-width: 90vh;
+    width: 90%;
     margin: 50px auto;
     padding: 20px;
     border: 1px solid #ccc;
