@@ -352,14 +352,15 @@ const quizData = [
     {
         id: "q29",
         isMultiple: true,
-        question: "Given a value, which two options can a developer use to detect if the value is NaN?",
+        question: "Given a value, which three options can a developer use to detect if the value is NaN?\nChoose 3 answers.",
         options: [
             { letter: "A", text: "value === Number.NaN" },
-            { letter: "B", text: "value == NaN" },
-            { letter: "C", text: "isNaN(value)" },
-            { letter: "D", text: "Object.is(value, NaN)" }
+            { letter: "B", text: "Number.isNaN(value)" },
+            { letter: "C", text: "value == NaN" },
+            { letter: "D", text: "value !== value" },
+            { letter: "E", text: "Object.is(value, NaN)" }
         ],
-        answer: ["C", "D"]
+        answer: ["B", "D", "E"]
     },
     {
         id: "q30",
@@ -412,14 +413,14 @@ const quizData = [
     {
         id: "q34",
         isMultiple: false,
-        question: "A developer needs to debug a Node.js web server because a runtime error keeps occurring at one of the endpoints. The developer wants to test the endpoint on a local machine and make the request against a local server to look at the behavior. In the source code, the server.js file will start the server. The developer wants to debug the Node.js server only using the terminal.\n\nWhich command can the developer use to open the CLI debugger in their current terminal window?",
+        question: "Refer to the code below:\n\nflag();\nanotherFlag();\n\nfunction flag() {\n    console.log(\"flag\");\n}\n\nconst anotherFlag = () => {\n    console.log(\"flag\");\n}\n\nWhat is result of the code block?",
         options: [
-            { letter: "A", text: "node -i server.js" },
-            { letter: "B", text: "node server.js --inspect" },
-            { letter: "C", text: "node start inspect server.js" },
-            { letter: "D", text: "node inspect server.js" }
+            { letter: "A", text: "The console logs only 'flag'." },
+            { letter: "B", text: "The console logs 'flag' and 'another flag'." },
+            { letter: "C", text: "The console logs 'flag' and then an error is thrown." },
+            { letter: "D", text: "An error is thrown." }
         ],
-        answer: "D"
+        answer: "C"
     },
     {
         id: "q35",
@@ -676,15 +677,16 @@ const quizData = [
     },
     {
         id: "q56",
-        isMultiple: false,
-        question: "Refer to the code below:\nconst pi = 3.1415926;\n\nWhat is the data type of pi?",
+        isMultiple: true,
+        question: "Refer to the code:\n\nfunction Animal(size, type) {\n    this.size = size || \"small\";\n    this.type = type || \"Animal\";\n    this.canTalk = false;\n}\n\nlet Pet = function (size, type, name, owner) {\n    Animal.call(this, size, type);\n    this.name = name;\n    this.owner = owner;\n}\n\nPet.prototype = Object.create(Animal.prototype);\nlet pet1 = new Pet();\nconsole.log(pet1);\n\nGiven the code above, which three properties are set pet1?\nChoose 3 answers.",
         options: [
-            { letter: "A", text: "Number" },
-            { letter: "B", text: "Float" },
-            { letter: "C", text: "Double" },
-            { letter: "D", text: "Decimal" }
+            { letter: "A", text: "Owner" },
+            { letter: "B", text: "Size" },
+            { letter: "C", text: "canTalk" },
+            { letter: "D", text: "Type" },
+            { letter: "E", text: "Name" }
         ],
-        answer: "A"
+        answer: ["B", "C", "D"]
     },
     {
         id: "q57",
@@ -892,15 +894,16 @@ const quizData = [
     },
     {
         id: "q74",
-        isMultiple: false,
-        question: "Refer to the code:\nlet car1 = new Promise((_, reject) =>\n    setTimeout(reject, 2000, \"Car 1 crashed in\")\n);\n\nlet car2 = new Promise(resolve =>\n    setTimeout(resolve, 1500, \"Car 2 completed\")\n);\n\nlet car3 = new Promise(resolve =>\n    setTimeout(resolve, 3000, \"Car 3 completed\")\n);\n\nPromise.race([car1, car2, car3])\n    .then(value => {\n        let result = `${value} the race.`;\n    })\n    .catch(err => {\n        console.log(\"Race is cancelled.\", err);\n    });\n\nWhat is the value of result when Promise.race executes?",
+        isMultiple: true,
+        question: "Refer to the code:\n\nfunction Animal(size, type) {\n    this.size = size || \"small\";\n    this.type = type || \"Animal\";\n    this.canTalk = false;\n}\n\nlet Pet = function (size, type, name, owner) {\n    Animal.call(this, size, type);\n    this.name = name;\n    this.owner = owner;\n}\n\nPet.prototype = Object.create(Animal.prototype);\nlet pet1 = new Pet();\nconsole.log(pet1);\n\nGiven the code above, which three properties are set pet1?\nChoose 3 answers.",
         options: [
-            { letter: "A", text: "Car 2 completed the race." },
-            { letter: "B", text: "Car 3 completed the race." },
-            { letter: "C", text: "Race is cancelled." },
-            { letter: "D", text: "Car 1 crashed in the race." }
+            { letter: "A", text: "Owner" },
+            { letter: "B", text: "Size" },
+            { letter: "C", text: "canTalk" },
+            { letter: "D", text: "Type" },
+            { letter: "E", text: "Name" }
         ],
-        answer: "A"
+        answer: ["B", "C", "D"]
     },
     {
         id: "q75",
@@ -1310,14 +1313,15 @@ const quizData = [
     {
         id: "q108",
         isMultiple: true,
-        question: "Given the expressions var1 and var2, what are two valid ways to return the concatenation of the two expressions and ensure it is a string?\nChoose 2 answers.",
+        question: "A developer is trying to convince management that their team will benefit from using Node.js for a backend server that they are going to create. The server will be a web server that handles API requests from a website that the team has already built using HTML, CSS, and JavaScript.\n\nWhich three benefits of Node.js can the developer use to persuade their manager?\nChoose 3 answers.",
         options: [
-            { letter: "A", text: "String(var1).concat(var2)" },
-            { letter: "B", text: "var1 + var2" },
-            { letter: "C", text: "var1.toString() + var2.toString()" },
-            { letter: "D", text: "String.concat(var1 + var2)" }
+            { letter: "A", text: "Performs a static analysis on code before execution to look for runtime errors." },
+            { letter: "B", text: "Uses non-blocking functionality for performant request handling." },
+            { letter: "C", text: "Installs with its own package manager to install and manage third-party libraries." },
+            { letter: "D", text: "Ensures stability with one major release every few years." },
+            { letter: "E", text: "Executes server-side JavaScript code to avoid learning a new language." }
         ],
-        answer: ["A", "C"]
+        answer: ["B", "C", "E"]
     },
     {
         id: "q109",
@@ -1430,12 +1434,12 @@ const quizData = [
     {
         id: "q118",
         isMultiple: false,
-        question: "Refer to the following object:\n\nconst cat = {\n    firstName: 'Fancy',\n    lastName: 'Whiskers',\n    get fullName() {\n        return this.firstName + ' ' + this.lastName;\n    }\n};\n\nHow can a developer access the fullName property for cat?",
+        question: "A developer writes the code below to calculate the factorial of a given number:\n\nfunction sum(number) {\n    return number * sum(number - 1);\n}\nsum(3);\n\nWhat is the result of executing the code?",
         options: [
-            { letter: "A", text: "cat.get.fullName" },
-            { letter: "B", text: "cat.fullName" },
-            { letter: "C", text: "cat.function.fullName()" },
-            { letter: "D", text: "cat.fullName()" }
+            { letter: "A", text: "0" },
+            { letter: "B", text: "Error" },
+            { letter: "C", text: "6" },
+            { letter: "D", text: "-Infinity" }
         ],
         answer: "B"
     },
@@ -1535,69 +1539,6 @@ const quizData = [
             { letter: "D", text: "Outer function's scope" }
         ],
         answer: "D"
-    },
-    {
-        id: "q127",
-        isMultiple: true,
-        question: "Given a value, which three options can a developer use to detect if the value is NaN?\nChoose 3 answers.",
-        options: [
-            { letter: "A", text: "value === Number.NaN" },
-            { letter: "B", text: "Number.isNaN(value)" },
-            { letter: "C", text: "value == NaN" },
-            { letter: "D", text: "value !== value" },
-            { letter: "E", text: "Object.is(value, NaN)" }
-        ],
-        answer: ["B", "D", "E"]
-    },
-    {
-        id: "q128",
-        isMultiple: true,
-        question: "A developer is trying to convince management that their team will benefit from using Node.js for a backend server that they are going to create. The server will be a web server that handles API requests from a website that the team has already built using HTML, CSS, and JavaScript.\n\nWhich three benefits of Node.js can the developer use to persuade their manager?\nChoose 3 answers.",
-        options: [
-            { letter: "A", text: "Performs a static analysis on code before execution to look for runtime errors." },
-            { letter: "B", text: "Uses non-blocking functionality for performant request handling." },
-            { letter: "C", text: "Installs with its own package manager to install and manage third-party libraries." },
-            { letter: "D", text: "Ensures stability with one major release every few years." },
-            { letter: "E", text: "Executes server-side JavaScript code to avoid learning a new language." }
-        ],
-        answer: ["B", "C", "E"]
-    },
-    {
-        id: "q129",
-        isMultiple: false,
-        question: "A developer writes the code below to calculate the factorial of a given number:\n\nfunction sum(number) {\n    return number * sum(number - 1);\n}\nsum(3);\n\nWhat is the result of executing the code?",
-        options: [
-            { letter: "A", text: "0" },
-            { letter: "B", text: "Error" },
-            { letter: "C", text: "6" },
-            { letter: "D", text: "-Infinity" }
-        ],
-        answer: "B"
-    },
-    {
-        id: "q130",
-        isMultiple: true,
-        question: "Refer to the code:\n\nfunction Animal(size, type) {\n    this.size = size || \"small\";\n    this.type = type || \"Animal\";\n    this.canTalk = false;\n}\n\nlet Pet = function (size, type, name, owner) {\n    Animal.call(this, size, type);\n    this.name = name;\n    this.owner = owner;\n}\n\nPet.prototype = Object.create(Animal.prototype);\nlet pet1 = new Pet();\nconsole.log(pet1);\n\nGiven the code above, which three properties are set pet1?\nChoose 3 answers.",
-        options: [
-            { letter: "A", text: "Owner" },
-            { letter: "B", text: "Size" },
-            { letter: "C", text: "canTalk" },
-            { letter: "D", text: "Type" },
-            { letter: "E", text: "Name" }
-        ],
-        answer: ["B", "C", "D"]
-    },
-    {
-        id: "q131",
-        isMultiple: false,
-        question: "Refer to the code below:\n\nflag();\nanotherFlag();\n\nfunction flag() {\n    console.log(\"flag\");\n}\n\nconst anotherFlag = () => {\n    console.log(\"flag\");\n}\n\nWhat is result of the code block?",
-        options: [
-            { letter: "A", text: "The console logs only 'flag'." },
-            { letter: "B", text: "The console logs 'flag' and 'another flag'." },
-            { letter: "C", text: "The console logs 'flag' and then an error is thrown." },
-            { letter: "D", text: "An error is thrown." }
-        ],
-        answer: "C"
     },
 
 
