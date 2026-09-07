@@ -3,22 +3,53 @@ body {
     background-color: #57ADBF;
 }
 
+.buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.btn {
+    width: 60px;
+    padding: 12px 24px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 600px) {
+    .buttons .btn {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
+
 .main {
     height: 100vh;
     display: flex;
     align-content: center;
     justify-content: center;
 }
+
 .quiz-container {
     height: fit-content;
+    width: fit-content;
     max-width: 90vh;
-    width: 90%;
     margin: 50px auto;
     padding: 20px;
     border: 1px solid #ccc;
     background-color: white;
     border-radius: 5px;
 }
+
 img {
     display: block;
     width: auto;
@@ -27,20 +58,27 @@ img {
     height: auto;
     margin: auto;
 }
+
 .question {
     margin-bottom: 10px;
-    white-space: pre-line;
+    font-size: 0.80em;
+    font-weight: bold;
 }
+
 .options label {
     display: block;
     margin-bottom: 5px;
+    font-size: 0.80em;
+    font-weight: bold;
 }
+
 .result {
     font-weight: bold;
     text-align: center;
 }
 
 .answer {
+    font-size: 0.80em;
     font-weight: bold;
 }
 
@@ -48,10 +86,12 @@ img {
     background-color: #9BD7D1;
     border-radius: 5px;
 }
+
 .wrong {
     background-color: #F1828D;
     border-radius: 5px;
 }
+
 .button-container {
     display: flex;
     align-content: center;
@@ -63,6 +103,6 @@ button {
     margin: 5px;
 }
 
-h2 {
+h1,h2 {
     text-align: center;
 }
