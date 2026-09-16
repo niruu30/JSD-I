@@ -388,28 +388,54 @@ const quizData = [
     id: "q25",
     isMultiple: true,
     question:
-      "Refer to the code below: \nconst addBy = ? \nconst addByEight = addBy(8); \nconst sum = addByEight(50); \nWhich two functions can replace line 01 and return 58 to sum?",
+      "Refer to the code below. Which two functions can replace line 01 and return 58 to sum?",
+    code: `const addBy = ?
+
+const addByEight = addBy(8);
+const sum = addByEight(50);`,
     options: [
       {
         letter: "A",
-        text: "const addBy = function(num1) {\nreturn function(num2) {\nreturn num1 + num2;\n}\n}",
+        text: `const addBy = function(num1) {
+        return function(num2) {
+            return num1 + num2;
+        }
+    }`,
       },
       {
         letter: "B",
-        text: "const addBy = function(num1) {\nreturn num1 * num2;\n}",
+        text: `const addBy = function(num1) {
+        return num1 * num2;
+    }`,
       },
-      { letter: "C", text: "const addBy = (num1) = > num1 + num2;" },
+      {
+        letter: "C",
+        text: `const addBy = (num1) => num1 + num2;`,
+      },
       {
         letter: "D",
-        text: "(Corrected for typing errors)\nconst addBy = (num1) = > {\nreturn function(num2) {\nreturn num1 + num2;\n}\n}",
+        text: `const addBy = (num1) => {
+        return function(num2) {
+            return num1 + num2;
+        }
+    }`,
       },
     ],
+
     answer: ["A", "D"],
   },
   {
     id: "q26",
     isMultiple: false,
     question: "What is the value of result when line 10 executes?",
+    code: `function Person() {
+this.firstName = "John";
+}
+Person.prototype = {
+job: x => "Developer"
+};
+const myFather = new Person();
+const result = myFather.firstName + " " + myFather.job();`,
     options: [
       { letter: "A", text: "Error: myFather.job is not a function" },
       { letter: "B", text: "undefined Developer" },

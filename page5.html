@@ -15,6 +15,11 @@
             <h2>Set V</h2>
             <div class="question" id="question"></div>
             <div class="imgquestion" id="imgquestion"></div>
+
+            <div id="codeEditor" class="code-editor">
+                <pre><code id="code"></code></pre>
+            </div>
+            
             <div class="options" id="options"></div>
             <div class="button-container">
                 <button id="submitBtn" onclick="checkAnswer()">Submit</button>
@@ -32,6 +37,8 @@
         let qnum = 0;
 
         const questionElement = document.getElementById("question");
+        const codeEditor = document.getElementById("codeEditor");
+        const codeElement = document.getElementById("code");
         const imgquestionElement = document.getElementById("imgquestion");
         const optionsElement = document.getElementById("options");
         const answerElement = document.getElementById("answer");
@@ -57,11 +64,19 @@
                 answerElement.style.display = "none"; // Hide answer
                 submitButton.style.display = "none"; // Hide submit button
                 nextButton.style.display = "none"; // Hide next button
+                codeEditor.style.display = "none";
                 return;
             }
 
             qnum++;
             const currentQuizData = shuffledQuestions[currentQuestion];
+
+            if (currentQuizData.code) {
+                codeEditor.style.display = "block";
+                codeElement.textContent = currentQuizData.code;
+            } else {
+                codeEditor.style.display = "none";
+            }
 
             if (currentQuizData.imageUrl) {
                 imgquestionElement.style.display = "block";
