@@ -93,4 +93,17 @@ export default foo, bar;`
         ],
         answer: ["B", "C"]
     },
+    {
+    id: "q126",
+    isMultiple: true,
+    question:
+      "A developer wants to advocate for a mature, well-supported web framework/library instead of a new one (Minimalist.js). Which two should be recommended?",
+    options: [
+      { letter: "A", text: "React" },
+      { letter: "B", text: "Koa" },
+      { letter: "C", text: "Vue" },
+      { letter: "D", text: "Express" },
+    ],
+    answer: ["A", "C"],
+  },
 ];
