@@ -368,23 +368,19 @@ let timerId = setTimeout(timedFunction, 1000);`,
     {
         id: "q113",
         isMultiple: false,
-        question: "Refer to the code below:\n\nWhat is the value of result when Promise.race executes?",
-        code: `01 let car1 = new Promise((_, reject) =>
-02     setTimeout(reject, 2000, "Car 1 crashed in"));
-03 let car2 = new Promise(resolve => setTimeout(resolve, 1500, "Car 2 completed"));
-04 let car3 = new Promise(resolve => setTimeout(resolve, 3000, "Car 3 completed"));
-05 Promise.race([car1, car2, car3])
-06 .then(value => {
-07     let result = \${value} the race.;
-08 })
-09 .catch(err => {
-10     console.log("Race is cancelled.", err);
-11 });`,
+        question: "Why does the function bar have access to variable a?",
+        code: `function foo() {
+    const a = 2;
+    function bar() {
+        console.log(a);
+    }
+    return bar;
+}`,
         options: [
-            { letter: "A", text: "Car 3 completed the race." },
-            { letter: "B", text: "Car 1 crashed in the race." },
-            { letter: "C", text: "Race is cancelled." },
-            { letter: "D", text: "Car 2 completed the race." }
+            { letter: "A", text: "Prototype chain" },
+            { letter: "B", text: "Hoisting" },
+            { letter: "C", text: "Inner function's scope" },
+            { letter: "D", text: "Outer function's scope" }
         ],
         answer: "D"
     },

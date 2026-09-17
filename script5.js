@@ -93,23 +93,4 @@ export default foo, bar;`
         ],
         answer: ["B", "C"]
     },
-    {
-        id: "q126",
-        isMultiple: false,
-        question: "Why does the function bar have access to variable a?",
-        code: `function foo() {
-    const a = 2;
-    function bar() {
-        console.log(a);
-    }
-    return bar;
-}`,
-        options: [
-            { letter: "A", text: "Prototype chain" },
-            { letter: "B", text: "Hoisting" },
-            { letter: "C", text: "Inner function's scope" },
-            { letter: "D", text: "Outer function's scope" }
-        ],
-        answer: "D"
-    }
 ];
