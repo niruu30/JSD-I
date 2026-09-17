@@ -2961,7 +2961,7 @@ sum(3);`,
       },
       {
         letter: "B",
-        text: `console.assert(await functionUnderTest(true), 'OK')`,
+        text: `console.assert(functionUnderTest(true), 'OK')`,
       },
       {
         letter: "C",

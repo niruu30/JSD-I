@@ -9,7 +9,7 @@ const quizData = [
 }`,
         options: [
             { letter: "A", text: `console.assert(await functionUnderTest(true), 'not OK')` },
-            { letter: "B", text: `console.assert(await functionUnderTest(true), 'OK')` },
+            { letter: "B", text: `console.assert(functionUnderTest(true), 'OK')` },
             { letter: "C", text: `console.assert(await functionUnderTest(false), 'not OK')` },
             { letter: "D", text: `console.assert(await functionUnderTest(true), 'OK')` }
         ],
